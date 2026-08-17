@@ -5,6 +5,19 @@
  */
 
 
+    void work() {
+        System.out.println("Employee is working.");
+    }
+}
+
+class Manager extends Employee {
+    String department;
+
+    void displayDepartment() {
+        System.out.println("Department: " + department);
+    }
+}
+
 class SeniorManager extends Manager {
     int teamSize;
 
@@ -16,14 +29,3 @@ class SeniorManager extends Manager {
 class Codechef {
     public static void main(String[] args) {
         SeniorManager sm = new SeniorManager();
-        sm.name = "Alice";
-        sm.employeeId = 2001;
-        sm.department = "Computer Science";
-        sm.teamSize = 12;
-
-        sm.displayEmployeeInfo();   // Inherited from Employee Class
-        sm.displayDepartment();     // Inherited from Manager Class
-        sm.displayTeamSize();       // Defined in SeniorManager Class
-        sm.work();                  // Inherited from Employee Class
-    }
-}
