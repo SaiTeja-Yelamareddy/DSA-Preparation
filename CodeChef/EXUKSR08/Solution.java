@@ -4,6 +4,8 @@
  * Saved via CodeSync Extension
  */
 
+        System.out.println("Name: " + name + ", Employee ID: " + employeeId);
+    }
 
     void work() {
         System.out.println("Employee is working.");
@@ -29,3 +31,4 @@ class SeniorManager extends Manager {
 class Codechef {
     public static void main(String[] args) {
         SeniorManager sm = new SeniorManager();
+        sm.name = "Alice";
