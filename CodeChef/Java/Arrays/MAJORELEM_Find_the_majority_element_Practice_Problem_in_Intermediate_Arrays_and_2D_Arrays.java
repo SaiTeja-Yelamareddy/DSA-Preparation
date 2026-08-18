@@ -8,8 +8,25 @@
  * Status: ACCEPTED
  */
 
-2
-6
-7 1 7 7 3 7
-3
-5 5 2
+import java.util.*;
+
+class Solution
+{
+    public int majorityElement(int[] arr)
+    {
+        HashMap<Integer, Integer> map = new HashMap<>();
+        int n = arr.length;
+        for(int i = 0; i < n; i++)
+        {
+            map.put(arr[i], map.getOrDefault(arr[i], 0) + 1);
+        }
+        for(int x : map.keySet())
+        {
+            if(map.get(x) > n / 2)
+            {
+                return x;
+            }
+        }
+        return -1;
+    }
+}
