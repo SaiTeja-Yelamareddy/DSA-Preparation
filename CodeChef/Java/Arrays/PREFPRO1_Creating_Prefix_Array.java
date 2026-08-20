@@ -19,14 +19,20 @@ class Codechef
 		// your code goes here
 		Scanner sc=new Scanner(System.in);
 		int n=sc.nextInt();
+		int[] a=new int[n];
+		int[] prefix=new int[n];
 		for(int i=0;i<n;i++)
 		{
 		    a[i]=sc.nextInt();
 		}
+		prefix[0]=a[0];
+		for(int i=1;i<n;i++)
+		{
+		    prefix[i]=prefix[i-1]+a[i];
+		}
 		for(int i=0;i<n;i++)
 		{
-		    prefix[i]=prefix[i-1]
+		    System.out.print(prefix[i]+" ");
 		}
-		
 	}
 }
