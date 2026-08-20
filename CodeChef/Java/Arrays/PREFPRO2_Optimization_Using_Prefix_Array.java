@@ -8,11 +8,37 @@
  * Status: ACCEPTED
  */
 
-5
-1 2 3 4 5 
-5
-1 2
-2 3
-2 4
-4 4
-1 5
+import java.util.Scanner;
+import java.util.Vector;
+
+class Codechef {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int N = sc.nextInt();
+
+        int[] A = new int[N + 1];
+        int[] prefix = new int[N + 1];
+
+        for(int i = 1; i <= N; i++) {
+            A[i] = sc.nextInt();
+        }
+
+        prefix[0] = 0;
+
+        for(int i = 1; i <= N; i++) {
+            prefix[i] = prefix[i - 1] + A[i];
+        }
+
+        int K = sc.nextInt();
+
+        for(int i = 0; i < K; i++) {
+
+            int a = sc.nextInt();
+            int b = sc.nextInt();
+
+            int sum = prefix[b] - prefix[a - 1];
+            System.out.println(sum);
+        }
+    }
+}
