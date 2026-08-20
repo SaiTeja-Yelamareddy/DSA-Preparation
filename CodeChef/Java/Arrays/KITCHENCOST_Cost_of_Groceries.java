@@ -8,4 +8,9 @@
  * Status: ACCEPTED
  */
 
-# cook your dish here
+class Solution {
+    public int compute(int n, int x, int[] a, int[] b) {
+        // write your code here 
+        
+    }
+}
