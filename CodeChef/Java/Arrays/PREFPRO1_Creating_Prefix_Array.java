@@ -5,6 +5,7 @@
  * Problem Link: https://www.codechef.com/practice/course/arrays-new/ARRAYSP03/problems/PREFPRO1
  * Language: Java
  * Concept: Arrays
+ * Difficulty: Medium
  * Status: ACCEPTED
  */
 
