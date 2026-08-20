@@ -5,7 +5,6 @@
  * Problem Link: https://www.codechef.com/practice/course/arrays-strings-sorting/INTARR01/problems/MISSP
  * Language: Java
  * Concept: Arrays
- * Difficulty: Medium
  * Status: ACCEPTED
  */
 
