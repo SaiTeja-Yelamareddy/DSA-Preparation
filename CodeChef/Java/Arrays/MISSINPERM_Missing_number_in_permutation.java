@@ -8,10 +8,16 @@
  * Status: ACCEPTED
  */
 
-3
-2
-2 0
-4
-4 2 1 0
-3
-1 2 3
+class Solution {
+    public int missingNumber(int[] nums) {
+        // write your code here
+        int n=nums.length;
+        int sum=0;
+        for(int i=0;i<n;i++)
+        {
+            sum+=nums[i];
+        }
+        return (n*(n+1))/2-sum;
+    }
+}
+
