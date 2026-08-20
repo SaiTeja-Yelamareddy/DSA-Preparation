@@ -8,4 +8,14 @@
  * Status: ACCEPTED
  */
 
-# cook your dish here
+class Solution {
+    public int singleNumber(int[] nums) {
+        // write your code here
+        int ans=0;
+        for(int x:nums)
+        {
+            ans^=x;
+        }
+        return ans;
+    }
+}
