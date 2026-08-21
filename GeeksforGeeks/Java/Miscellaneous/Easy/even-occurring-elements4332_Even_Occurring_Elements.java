@@ -25,6 +25,8 @@ class Solution {
             if(map.get(i)%2==0)
             al.add(i);
         }
+        if(al.size()!=0)
         return al;
+        return -1;
     }
 }
