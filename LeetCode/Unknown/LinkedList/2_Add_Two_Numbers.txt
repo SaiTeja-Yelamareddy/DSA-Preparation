@@ -1,0 +1,17 @@
+/*
+ * Platform: LeetCode
+ * Problem ID: 2
+ * Problem: Add Two Numbers
+ * Problem Link: https://leetcode.com/problems/add-two-numbers/
+ * Language: Unknown
+ * Concept: LinkedList
+ * Difficulty: Medium
+ * Tags: Linked List, Math, Recursion
+ * Status: ACCEPTED
+ */
+
+class Solution {
+    public int maximumWealth(int[][] accounts) {
+        
+    }
+}
