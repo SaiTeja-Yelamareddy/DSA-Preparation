@@ -1,0 +1,17 @@
+/*
+ * Platform: LeetCode
+ * Problem ID: 2148
+ * Problem: Count Elements With Strictly Smaller and Greater Elements
+ * Problem Link: https://leetcode.com/problems/count-elements-with-strictly-smaller-and-greater-elements/
+ * Language: Unknown
+ * Concept: Arrays
+ * Difficulty: Easy
+ * Tags: Array, Sorting, Counting
+ * Status: ACCEPTED
+ */
+
+class Solution {
+    public int countElements(int[] nums) {
+        
+    }
+}
