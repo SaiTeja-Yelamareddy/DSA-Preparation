@@ -2,7 +2,7 @@
  * Platform: LeetCode
  * Problem ID: 1672
  * Problem: Richest Customer Wealth
- * Problem Link: https://leetcode.com/problems/richest-customer-wealth/
+ * Problem Link: https://leetcode.com/problems/add-two-numbers/
  * Language: Unknown
  * Concept: Arrays
  * Difficulty: Easy
