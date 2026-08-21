@@ -1,0 +1,17 @@
+/*
+ * Platform: LeetCode
+ * Problem ID: 1672
+ * Problem: Richest Customer Wealth
+ * Problem Link: https://leetcode.com/problems/richest-customer-wealth/
+ * Language: Unknown
+ * Concept: Arrays
+ * Difficulty: Easy
+ * Tags: Array, Matrix
+ * Status: ACCEPTED
+ */
+
+class Solution {
+    public int maximumWealth(int[][] accounts) {
+        
+    }
+}
