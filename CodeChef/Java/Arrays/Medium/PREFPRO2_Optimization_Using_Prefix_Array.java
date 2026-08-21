@@ -1,45 +1,48 @@
 /*
  * Platform: CodeChef
  * Problem ID: PREFPRO2
- * Problem: Optimization Using Prefix Array Practice Problem in Arrays
- * Problem Link: https://www.codechef.com/practice/course/arrays-new/ARRAYSP03/problems/PREFPRO2
+ * Problem: Optimization Using Prefix Array Practice Problem in Prefix Sum Problems
+ * Problem Link: https://www.codechef.com/practice/course/prefix-sums/PREFIXSUMS/problems/PREFPRO2
  * Language: Java
  * Concept: Arrays
  * Difficulty: Medium
- * Status: TIME_LIMIT_EXCEEDED
+ * Status: ACCEPTED
  */
 
 import java.util.Scanner;
-import java.util.Vector;
+import java.util.*;
 
 class Codechef {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-
-        int N = sc.nextInt();
-
-        int[] A = new int[N + 1];
-        int[] prefix = new int[N + 1];
-
-        for(int i = 1; i <= N; i++) {
-            A[i] = sc.nextInt();
+        Scanner scanner = new Scanner(System.in);
+        int len = scanner.nextInt();
+            ArrayList<Integer> ar = new ArrayList<>();
+        for (int i = 0; i < len; i++) {
+            int n1 = scanner.nextInt();
+            ar.add(n1);
         }
-
-        prefix[0] = 0;
-
-        for(int i = 1; i <= N; i++) {
-            prefix[i] = prefix[i - 1] + A[i];
+        
+        long[] pre = new long[len];
+        for (int i = 0; i < len; i++) {
+            if (i != 0) {
+                pre[i] += pre[i - 1];
+            }
+            pre[i] += ar.get(i);
         }
-
-        int K = sc.nextInt();
-
-        for(int i = 0; i < K; i++) {
-
-            int a = sc.nextInt();
-            int b = sc.nextInt();
-
-            int sum = prefix[b] - prefix[a - 1];
-            System.out.println(sum);
+        
+        int q = scanner.nextInt();
+        while (q-- > 0) {
+            int n1 = scanner.nextInt();
+            int n2 = scanner.nextInt();
+            n1--;
+            n2--;
+            if (n1 == 0) {
+                System.out.println(pre[n2]);
+            } else {
+                System.out.println(pre[n2] - pre[n1 - 1]);
+            }
         }
+        
+        scanner.close();
     }
 }
