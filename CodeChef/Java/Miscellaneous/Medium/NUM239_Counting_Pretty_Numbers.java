@@ -9,4 +9,6 @@
  * Status: ACCEPTED
  */
 
-# cook your dish here
+2
+1 10
+11 33
