@@ -27,6 +27,6 @@ class Solution {
         }
         if(al.size()!=0)
         return al;
-        return -1;
+        return al.add(-1);
     }
 }
