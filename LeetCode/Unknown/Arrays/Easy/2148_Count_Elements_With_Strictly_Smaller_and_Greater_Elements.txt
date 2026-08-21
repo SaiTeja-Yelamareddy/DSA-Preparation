@@ -14,9 +14,31 @@ class Solution {
     public int countElements(int[] nums) {
         int count=0;
         int n=nums.length;
-        for(int i=1;i<n-1;i++)
-        {
-            if(arr[i]>arr[i+1]&&arr[i])
+        int min = nums[0];
+        int max = nums[0];
+
+        // Find minimum and maximum
+        for (int i = 0; i < nums.length; i++) {
+
+            if (nums[i] < min) {
+                min = nums[i];
+            }
+
+            if (nums[i] > max) {
+                max = nums[i];
+            }
         }
+
+        int count = 0;
+
+        // Count elements between min and max
+        for (int i = 0; i < nums.length; i++) {
+
+            if (nums[i] > min && nums[i] < max) {
+                count++;
+            }
+        }
+
+        return count;
     }
 }
