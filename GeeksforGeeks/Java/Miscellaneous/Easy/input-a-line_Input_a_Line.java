@@ -9,8 +9,9 @@
  * Status: ACCEPTED
  */
 
-impoet
+import java.util.*;
 class Solution {
+    
     public static void getLine() {
         String s;
         
