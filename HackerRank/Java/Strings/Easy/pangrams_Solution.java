@@ -10,13 +10,12 @@
  * Status: ACCEPTED
  */
 
+(new InputStreamReader(System.in));
+        BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
 
-    public static String pangrams(String s) {
-    // Write your code here
-     if(s.length()<26)
-                 return "not pangram";
-                s=s.toLowerCase();
-                int[] freq=new int[26];
-                for(int i=0;i<s.length();i++)
-                {
-                    char ch=s.charAt(i);
+        String s = bufferedReader.readLine();
+
+        String result = Result.pangrams(s);
+
+        bufferedWriter.write(result);
+        bufferedWriter.newLine();
