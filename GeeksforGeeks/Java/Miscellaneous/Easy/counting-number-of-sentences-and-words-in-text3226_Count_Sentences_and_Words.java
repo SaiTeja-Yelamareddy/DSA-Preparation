@@ -10,7 +10,7 @@
  */
 
 class Solution {
-    public static ArrayList<Integer> countSentencesAndWords(String s) {
+    public static ArrayList<Integer> sentenceWord(String s) {
 
         int sentenceCount = 0;
         int wordCount = 0;
