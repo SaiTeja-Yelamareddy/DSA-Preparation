@@ -14,6 +14,7 @@ class Solution {
         // code here
         if(s.length()<26)
                 return false;
+                s=s.toLowerCase();
                 int[] freq=new int[26];
                 for(int i=0;i<s.length();i++)
                 {
