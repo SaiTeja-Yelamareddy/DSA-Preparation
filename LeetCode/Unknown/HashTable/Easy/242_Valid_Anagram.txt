@@ -1,0 +1,17 @@
+/*
+ * Platform: LeetCode
+ * Problem ID: 242
+ * Problem: Valid Anagram
+ * Problem Link: https://leetcode.com/problems/valid-anagram/
+ * Language: Unknown
+ * Concept: HashTable
+ * Difficulty: Easy
+ * Tags: Hash Table, String, Sorting
+ * Status: ACCEPTED
+ */
+
+class Solution {
+    public boolean isAnagram(String s, String t) {
+        
+    }
+}
