@@ -9,13 +9,14 @@
  * Status: ACCEPTED
  */
 
+impoet
 class Solution {
     public static void getLine() {
         String s;
         
         // Take input of 's' using nextLine()
          Scanner sc = new Scanner(System.in);
-         s=sc.nextLine
+         s=sc.nextLine();
 
         System.out.println(s);
     }
