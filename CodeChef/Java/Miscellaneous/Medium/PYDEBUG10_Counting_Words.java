@@ -9,8 +9,8 @@
  * Status: ACCEPTED
  */
 
-4
-1 1
-4 2
-2 4
-95 42
+# cook your dish here
+T=int(input())
+for _ in range(T):
+    N,M=map(int,input().split())
+    print(n**m)
