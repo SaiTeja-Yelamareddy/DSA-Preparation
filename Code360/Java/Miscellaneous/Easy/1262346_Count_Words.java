@@ -16,6 +16,8 @@ class Solution {
 	
     static int  countWords(String input) {
         // Write your code here
+        String sarr=input.split(" ");
+        return sarr.length;
     }
     
 	public static void main(String args[]) {
