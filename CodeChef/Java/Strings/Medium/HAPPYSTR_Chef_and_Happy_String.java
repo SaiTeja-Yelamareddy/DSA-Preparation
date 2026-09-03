@@ -9,4 +9,8 @@
  * Status: ACCEPTED
  */
 
-# cook your dish here
+4
+aeiou
+abxy
+aebcdefghij
+abcdeeafg
