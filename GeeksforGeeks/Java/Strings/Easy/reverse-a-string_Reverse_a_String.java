@@ -13,7 +13,7 @@ class Solution {
     public static String reverseString(String s) {
         // code here
         StringBuilder sb=new StringBuilder();
-        for(int i=0;i<s.length;i++)
+        for(int i=0;i<s.length();i++)
         {
             char ch=sb.charAt(i);
             sb.append(ch);
