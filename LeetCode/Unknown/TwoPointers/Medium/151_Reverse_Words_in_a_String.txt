@@ -16,7 +16,8 @@ class Solution {
     StringBuilder sb=new StringBuilder();
     for(int i=sarr.length-1;i>=0;i--)
     {
-       if()
+       if(srr[i]=="")
+       
     }
     return sb.toString().trim();
     }
