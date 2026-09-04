@@ -9,4 +9,15 @@
  * Status: ACCEPTED
  */
 
-# cook your dish here
+
+public static String reverseWords(String s) {
+    // write your code here 
+    String[] sarr=s.split(" ");
+    StringBuilder sb=new StringBuilder();
+    for(int i=sarr.length-1;i>=0;i--)
+    {
+        sb.append(sarr[i]);
+        sb.append(" ");
+    }
+    return sb.toString();
+}
