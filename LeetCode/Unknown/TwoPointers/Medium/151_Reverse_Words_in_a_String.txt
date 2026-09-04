@@ -17,7 +17,7 @@ class Solution {
     for(int i=sarr.length-1;i>=0;i--)
     {
        if(srr[i]=="")
-       
+       sb.app
     }
     return sb.toString().trim();
     }
