@@ -15,7 +15,7 @@ class Solution {
         StringBuilder sb=new StringBuilder();
         for(int i=0;i<s.length();i++)
         {
-            char ch=sb.charAt(i);
+            char ch=s.charAt(i);
             sb.append(ch);
         }
         return sb.toString();
