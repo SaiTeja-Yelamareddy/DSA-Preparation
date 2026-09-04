@@ -19,6 +19,6 @@ class Solution {
         sb.append(sarr[i]);
         sb.append(" ");
     }
-    return sb.toString();
+    return sb.toString().trim();
     }
 }
