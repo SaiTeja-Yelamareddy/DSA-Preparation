@@ -20,7 +20,6 @@ class Solution {
                        sb.append(s.charAt(i));
                    }
                }
-
                String str = sb.toString();
                int left = 0;
                int right = str.length() - 1;
@@ -33,7 +32,6 @@ class Solution {
                    left++;
                    right--;
                }
-
                return true;
     }
 }
