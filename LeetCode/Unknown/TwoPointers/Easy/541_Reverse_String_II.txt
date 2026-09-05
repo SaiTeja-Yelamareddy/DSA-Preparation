@@ -15,6 +15,9 @@ class Solution {
         char[] arr=s.toCharArray();
         int left=0;
         int right=k-1;
+        for (int start = 0; start < arr.length; start += 2 * k) {         
+         int left = start;            
+         int right = Math.min(start + k - 1, arr.length - 1);
         while(left<right)
         {
             char temp=arr[left];
