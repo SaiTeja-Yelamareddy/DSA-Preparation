@@ -11,4 +11,13 @@
  * Status: ACCEPTED
  */
 
-# cook your dish here
+import java.util.Scanner;
+
+class Codechef
+{
+	public static void main (String[] args)
+	{
+		// update your code below this line
+		
+	}
+}
