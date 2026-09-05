@@ -6,7 +6,7 @@
  * Language: Java
  * Concept: Strings
  * Difficulty: Easy
- * Tags: Algorithms, Strings
+ * Tags: Algorithms, Strings, 7%
  * Status: ACCEPTED
  */
 
