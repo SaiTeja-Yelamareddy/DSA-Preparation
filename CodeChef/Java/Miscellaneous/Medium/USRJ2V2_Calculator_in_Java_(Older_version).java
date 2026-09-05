@@ -11,4 +11,19 @@
  * Status: ACCEPTED
  */
 
-# cook your dish here
+import java.util.Scanner;
+
+class Codechef
+{
+	public static void main (String[] args)
+	{
+		// Update the blank in the code below
+		Scanner read = new Scanner(_____);
+		int a = _____;
+		int b = _____;
+		int sum = _____;
+		int diff = _____;
+		System.out.println("Sum is: " + sum);
+		System.out.println("Difference is: " + diff);
+	}
+}
