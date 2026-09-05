@@ -11,8 +11,15 @@
  * Status: ACCEPTED
  */
 
-2
-5 3
-1 5 3 4 2
-6 5
-10 1 2 9 8 2
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		// your code goes here
+
+	}
+}
