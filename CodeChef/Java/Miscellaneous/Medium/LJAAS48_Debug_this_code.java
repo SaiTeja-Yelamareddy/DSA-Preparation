@@ -9,4 +9,11 @@
  * Status: ACCEPTED
  */
 
-# cook your dish here
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner();
+        int one = scanner.nextInt();
+        System.out.println(one / two);
+    }
+}
