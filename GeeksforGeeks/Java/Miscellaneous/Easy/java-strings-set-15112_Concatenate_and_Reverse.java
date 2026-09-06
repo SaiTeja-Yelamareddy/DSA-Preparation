@@ -12,7 +12,7 @@
 class Solution {
     static String conRevstr(String s1, String s2) {
         // code here
-        Stringbuilder sb=new StringBulider(s1);
+        StringBuilder sb=new StringBulider(s1);
         sb.append(s2);
         sb.reverse();
         return sb.toString();
