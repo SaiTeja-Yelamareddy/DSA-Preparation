@@ -17,7 +17,7 @@ class Solution {
             if(i%2==0)
             {
                 char ch=s.charAt(i);
-                System.out.print(ch+" ");
+                System.out.print(ch);
             }
         }
     }
