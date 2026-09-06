@@ -9,4 +9,6 @@
  * Status: ACCEPTED
  */
 
-# cook your dish here
+public static String sortByFrequency(String s) {
+    //write your code here...
+}
