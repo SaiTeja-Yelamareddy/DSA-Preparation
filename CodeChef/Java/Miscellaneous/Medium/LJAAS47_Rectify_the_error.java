@@ -9,4 +9,12 @@
  * Status: ACCEPTED
  */
 
-# cook your dish here
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        scanner scanner = new Scanner(System.in);
+        String name = scanner.Line();
+        System.out.println(name[7]);
+    }
+}
+
