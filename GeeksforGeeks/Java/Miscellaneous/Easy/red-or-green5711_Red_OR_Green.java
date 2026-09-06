@@ -10,7 +10,7 @@
  */
 
 class Solution {
-    public int RedOrGreen(int n, String s) {
+    public int redOrGreen(int n, String s) {
         int[] arr = new int[2];
         for (int i = 0; i < s.length(); i++) {
             if (s.charAt(i) == 'R')
