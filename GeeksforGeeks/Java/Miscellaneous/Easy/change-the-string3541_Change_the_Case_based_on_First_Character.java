@@ -12,7 +12,7 @@
 class Solution {
     String modify(String s) {
         boolean lower=false;
-        if(Character.isLower(s.charAt(0)))
+        if(Character.isLowerCase(s.charAt(0)))
         lower=true;
         char[] arr=s.toCharArray();
         for(int i=0;i<arr.length;i++)
