@@ -13,7 +13,7 @@ class Solution {
     int isSame(String s) {
         // code here
         int len=Integer.valueOf(s.charAt(s.length()-1));
-        int slen=s.length()-1;
+        int slen=s.length();
         if(len==slen)
         return 1;
         return 0;
