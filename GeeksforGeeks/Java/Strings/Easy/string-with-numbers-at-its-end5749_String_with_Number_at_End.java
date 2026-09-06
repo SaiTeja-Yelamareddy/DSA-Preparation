@@ -11,17 +11,17 @@
 
 class Solution {
     int isSame(String s) {
-        // code here
         int i = s.length() - 1;
         while (i >= 0 && Character.isDigit(s.charAt(i))) {
-              i--;
-          }
-          String num = s.substring(i + 1);
-          num = num.replaceFirst("^0+", "");
-          int len = Integer.parseInt(num);
-          int slen = i + 1;
-          if (len == slen)
+            i--;
+        }
+        String num = s.substring(i + 1);
+        num = num.replaceFirst("^0+", "");
+        if (num.length() == 0)
+            num = "0";
+        int len = i + 1;
+        if (num.equals(String.valueOf(len)))
             return 1;
-            return 0;
+        return 0;
     }
 }
