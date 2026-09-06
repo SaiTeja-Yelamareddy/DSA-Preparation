@@ -13,9 +13,9 @@ class Solution {
     int isSame(String s) {
         // code here
         int len = s.charAt(s.length() - 1) - '0';
-        int slen=s.length();
+        int slen=s.length()-1;
         if(len==slen)
-        return 0;
         return 1;
+        return 0;
     }
 }
