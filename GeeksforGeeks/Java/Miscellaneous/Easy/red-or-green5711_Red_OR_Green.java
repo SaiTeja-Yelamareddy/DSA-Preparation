@@ -5,12 +5,12 @@
  * Problem Link: https://www.geeksforgeeks.org/problems/red-or-green5711/1
  * Language: Java
  * Concept: Miscellaneous
- * Difficulty: Easy
  * Status: ACCEPTED
  */
 
 class Solution {
-    public int redOrGreen(int n, String s) {
+    public int redOrGreen(String s) {
+        // code here
         int[] arr = new int[2];
         for (int i = 0; i < s.length(); i++) {
             if (s.charAt(i) == 'R')
