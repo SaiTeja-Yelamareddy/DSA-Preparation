@@ -1,0 +1,31 @@
+/*
+ * Platform: Code360
+ * Problem ID: 920324
+ * Problem: First non repeating character
+ * Problem Link: https://www.naukri.com/code360/problems/first-non-repeating-character_920324
+ * Language: Java
+ * Concept: Miscellaneous
+ * Difficulty: Easy
+ * Status: ACCEPTED
+ */
+
+import java.util.* ;
+import java.io.*; 
+public class Solution {
+
+	public static char firstNonRepeatingCharacter(String str) {
+
+		// Write your code here
+		LinkedHashMap<Character, Integer> map = new LinkedHashMap<>();
+        for (int i = 0; i < str.length(); i++) {
+            char ch = str.charAt(i);
+            map.put(ch, map.getOrDefault(ch, 0) + 1);
+        }
+        for (char ch : map.keySet()) {
+            if (map.get(ch) == 1) {
+                return ch;
+            }
+        }
+        return str.charAt(0);
+	}
+}
