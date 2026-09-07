@@ -9,6 +9,7 @@
  * Status: ACCEPTED
  */
 
+import java.util.HashMap;
 public class Solution {
     public static char repeatedCharacter(String str){
         // Write your code here.
