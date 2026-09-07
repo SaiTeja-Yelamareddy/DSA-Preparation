@@ -20,7 +20,6 @@ class Solution {
                       continue;
                   } 
                   char ch = s.charAt(right);
-
                   if (seen.contains(ch)) {
                       return false;
                   }
