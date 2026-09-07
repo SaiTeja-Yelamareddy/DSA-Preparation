@@ -1,0 +1,17 @@
+/*
+ * Platform: LeetCode
+ * Problem ID: 387
+ * Problem: First Unique Character in a String
+ * Problem Link: https://leetcode.com/problems/first-unique-character-in-a-string/
+ * Language: Unknown
+ * Concept: HashTable
+ * Difficulty: Easy
+ * Tags: Hash Table, String, Queue, Counting
+ * Status: ACCEPTED
+ */
+
+class Solution {
+    public int firstUniqChar(String s) {
+        
+    }
+}
