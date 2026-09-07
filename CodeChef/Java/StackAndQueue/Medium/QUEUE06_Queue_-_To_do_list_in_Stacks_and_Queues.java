@@ -5,7 +5,6 @@
  * Problem Link: https://www.codechef.com/learn/course/stacks-and-queues/LQUEUES/problems/QUEUE06
  * Language: Java
  * Concept: StackAndQueue
- * Difficulty: Medium
  * Course: Stacks And Queues
  * Module: LQUEUES
  * Status: ACCEPTED
@@ -37,7 +36,9 @@ class CircularQueueExample {
             System.out.println("Queue is full. Cannot enqueue.");
             return;
         }
-        // Write your code here
+        rear = (rear + 1) % maxSize;
+        a[rear] = item;
+        currentSize++;
     }
 
     static int dequeue() {
@@ -52,7 +53,12 @@ class CircularQueueExample {
     }
 
     static boolean contains(int task) {
-        // Write your code here
+        int idx = front;
+        for (int i = 0; i < currentSize; i++) {
+            if (a[idx] == task) return true;
+            idx = (idx + 1) % maxSize;
+        }
+        return false;
     }
 
     static void addTask(int task) {
@@ -62,7 +68,11 @@ class CircularQueueExample {
     }
 
     static void displayToDoList() {
-        // Write your code here
+        int count = currentSize;
+        for (int i = 0; i < count; i++) {
+            int task = dequeue(); // remove and print from queue
+            System.out.println(task);
+        }
     }
 
     public static void main(String[] args) {
