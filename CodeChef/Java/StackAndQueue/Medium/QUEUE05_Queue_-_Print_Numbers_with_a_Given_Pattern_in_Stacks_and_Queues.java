@@ -5,7 +5,6 @@
  * Problem Link: https://www.codechef.com/learn/course/stacks-and-queues/LQUEUES/problems/QUEUE05
  * Language: Java
  * Concept: StackAndQueue
- * Difficulty: Medium
  * Course: Stacks And Queues
  * Module: LQUEUES
  * Status: ACCEPTED
@@ -53,6 +52,17 @@ public class Main {
 
     public static void main(String[] args) {
         int n = 10;
-        // write your code here
+
+        for (int i = 1; i <= n; i++) {
+            if (i % 2 == 1) {
+                System.out.print(i + " ");
+            } else {
+                enqueue(i);
+            }
+        }
+
+        while (!isEmpty()) {
+            System.out.print(dequeue() + " ");
+        }
     }
 }
