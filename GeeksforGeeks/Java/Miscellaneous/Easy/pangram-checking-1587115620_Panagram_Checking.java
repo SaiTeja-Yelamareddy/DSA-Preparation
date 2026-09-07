@@ -5,7 +5,6 @@
  * Problem Link: https://www.geeksforgeeks.org/problems/pangram-checking-1587115620/1
  * Language: Java
  * Concept: Miscellaneous
- * Difficulty: Easy
  * Status: ACCEPTED
  */
 
