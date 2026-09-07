@@ -5,7 +5,6 @@
  * Problem Link: https://www.codechef.com/learn/course/java-previous/LTJPP11/problems/USRJ1AV2
  * Language: Java
  * Concept: Miscellaneous
- * Difficulty: Medium
  * Course: With Java Previous
  * Module: LTJPP11
  * Status: ACCEPTED
@@ -17,7 +16,9 @@ class Codechef
 {
 	public static void main (String[] args)
 	{
-		// update your code below this line
-		
+		// Solution as follows
+		Scanner read = new Scanner(System.in);
+		int num = read.nextInt();
+		System.out.println(num * num);
 	}
 }
