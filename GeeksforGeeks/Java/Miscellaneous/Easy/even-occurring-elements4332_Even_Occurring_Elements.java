@@ -5,7 +5,6 @@
  * Problem Link: https://www.geeksforgeeks.org/problems/even-occurring-elements4332/1
  * Language: Java
  * Concept: Miscellaneous
- * Difficulty: Easy
  * Status: ACCEPTED
  */
 
@@ -25,8 +24,8 @@ class Solution {
             if(map.get(i)%2==0)
             al.add(i);
         }
-        if(al.size()!=0)
+        if(al.size()==0)
+        al.add(-1);
         return al;
-        return al.add(-1);
     }
 }
