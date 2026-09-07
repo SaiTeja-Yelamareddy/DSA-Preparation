@@ -5,7 +5,6 @@
  * Problem Link: https://www.codechef.com/learn/course/java-previous/LTJPP08/problems/STRJ2V2
  * Language: Java
  * Concept: Miscellaneous
- * Difficulty: Medium
  * Course: With Java Previous
  * Module: LTJPP08
  * Status: ACCEPTED
