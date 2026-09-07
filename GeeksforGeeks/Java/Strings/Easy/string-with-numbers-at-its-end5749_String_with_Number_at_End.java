@@ -5,7 +5,6 @@
  * Problem Link: https://www.geeksforgeeks.org/problems/string-with-numbers-at-its-end5749/1
  * Language: Java
  * Concept: Strings
- * Difficulty: Easy
  * Status: ACCEPTED
  */
 
