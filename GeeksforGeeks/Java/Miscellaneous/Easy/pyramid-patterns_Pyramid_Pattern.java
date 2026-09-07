@@ -5,7 +5,6 @@
  * Problem Link: https://www.geeksforgeeks.org/problems/pyramid-patterns/1
  * Language: Java
  * Concept: Miscellaneous
- * Difficulty: Easy
  * Status: ACCEPTED
  */
 
@@ -22,8 +21,9 @@ class GFG {
             for (int j = 1; j <= 2 * i - 1; j++) {
                 System.out.print("*");
             }
-        }
             System.out.println();
+        }
+            
         sc.close();
     }
 }
