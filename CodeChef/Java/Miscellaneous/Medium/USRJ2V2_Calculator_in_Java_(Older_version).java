@@ -5,7 +5,6 @@
  * Problem Link: https://www.codechef.com/learn/course/java-previous/LTJPP11/problems/USRJ2V2
  * Language: Java
  * Concept: Miscellaneous
- * Difficulty: Medium
  * Course: With Java Previous
  * Module: LTJPP11
  * Status: ACCEPTED
@@ -17,12 +16,12 @@ class Codechef
 {
 	public static void main (String[] args)
 	{
-		// Update the blank in the code below
-		Scanner read = new Scanner(_____);
-		int a = _____;
-		int b = _____;
-		int sum = _____;
-		int diff = _____;
+		// Solution as follows
+		Scanner read = new Scanner(System.in);
+        int a = read.nextInt();
+        int b = read.nextInt();
+		int sum = a + b;
+		int diff = a - b;
 		System.out.println("Sum is: " + sum);
 		System.out.println("Difference is: " + diff);
 	}
