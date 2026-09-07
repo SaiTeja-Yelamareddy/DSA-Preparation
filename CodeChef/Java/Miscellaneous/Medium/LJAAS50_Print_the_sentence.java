@@ -5,7 +5,6 @@
  * Problem Link: https://www.codechef.com/practice/course/java/LPJAAS05/problems/LJAAS50
  * Language: Java
  * Concept: Miscellaneous
- * Difficulty: Medium
  * Status: ACCEPTED
  */
 
