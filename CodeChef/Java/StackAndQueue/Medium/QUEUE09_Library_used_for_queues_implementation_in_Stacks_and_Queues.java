@@ -5,7 +5,6 @@
  * Problem Link: https://www.codechef.com/learn/course/stacks-and-queues/LQUEUES02/problems/QUEUE09
  * Language: Java
  * Concept: StackAndQueue
- * Difficulty: Medium
  * Course: Stacks And Queues
  * Module: LQUEUES02
  * Status: ACCEPTED
