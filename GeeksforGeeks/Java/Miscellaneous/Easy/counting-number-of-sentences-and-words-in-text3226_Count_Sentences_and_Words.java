@@ -5,7 +5,6 @@
  * Problem Link: https://www.geeksforgeeks.org/problems/counting-number-of-sentences-and-words-in-text3226/1
  * Language: Java
  * Concept: Miscellaneous
- * Difficulty: Easy
  * Status: ACCEPTED
  */
 
