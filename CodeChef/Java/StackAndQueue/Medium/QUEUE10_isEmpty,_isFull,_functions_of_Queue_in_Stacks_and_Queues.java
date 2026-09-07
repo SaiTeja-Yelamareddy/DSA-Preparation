@@ -5,7 +5,6 @@
  * Problem Link: https://www.codechef.com/learn/course/stacks-and-queues/LQUEUES/problems/QUEUE10
  * Language: Java
  * Concept: StackAndQueue
- * Difficulty: Medium
  * Course: Stacks And Queues
  * Module: LQUEUES
  * Status: ACCEPTED
@@ -21,25 +20,25 @@ public class Main {
     private static boolean isEmpty() {
         if(currentSize == 0)
         {
-            return __;
+            return true;
         }
         else
         {
-            return __;
+            return false;
         }
     }
 
     private static boolean isFull() {
         if(currentSize == maxSize)
         {
-            return __;
+            return true;
         }
         else
         {
-            return __;
+            return false;
         }
     }
     
-    private static int size() {
-        return ___;
+     private static int size() {
+        return maxSize;
     }
