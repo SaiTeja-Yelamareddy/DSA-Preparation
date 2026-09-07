@@ -17,38 +17,30 @@ class Codechef
 {
 	public static void main (String[] args) throws java.lang.Exception
 	{
-		// your code goes here
-		 Scanner sc = new Scanner(System.in);
-        int T = sc.nextInt();
-        while(T-- > 0) {
-            int N = sc.nextInt();
-            int[] A = new int[2 * N];
-            for(int i = 0; i < 2 * N; i++) {
-                A[i] = sc.nextInt();
+        Scanner scanner = new Scanner(System.in);
+        int t = scanner.nextInt(); 
+        while (t-- > 0) {
+            int n = scanner.nextInt(); 
+            int[] prices = new int[2 * n];
+            for (int i = 0; i < 2 * n; i++) {
+                prices[i] = scanner.nextInt();
             }
-            HashMap<Integer, Integer> map1 = new HashMap<>();
-            HashMap<Integer, Integer> map2 = new HashMap<>();
-            boolean possible = true;
-            for(int i = 0; i < 2 * N; i++) {
-                int value = A[i];
-                if(!map1.containsKey(value)) {
-                    map1.put(value, 1);
-                }
-                else if(!map2.containsKey(value)) {
-                    map2.put(value, 1);
-                }
-                else {
-                    possible = false;
+            HashMap<Integer, Integer> priceCount = new HashMap<>();
+            boolean isValid = true;
+            for (int i = 0; i < 2 * n; i++) {
+                priceCount.put(prices[i], priceCount.getOrDefault(prices[i], 0) + 1);
+                if (priceCount.get(prices[i]) > 2) {
+                    isValid = false;
                     break;
                 }
             }
-            if(possible) {
+            if (isValid) {
                 System.out.println("Yes");
-            }
-            else {
+            } else {
                 System.out.println("No");
             }
         }
 
-	}
+        scanner.close();
+    }
 }
