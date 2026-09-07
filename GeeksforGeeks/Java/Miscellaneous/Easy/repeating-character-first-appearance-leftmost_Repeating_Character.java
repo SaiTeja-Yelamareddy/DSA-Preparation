@@ -13,14 +13,14 @@ class Solution {
     static int repeatedCharacter(String S) {
         // code here
             HashMap<Character, ArrayList<Integer>> map = new HashMap<>();
-             for (int i = 0; i < s.length(); i++) {
-                 char ch = s.charAt(i);
+             for (int i = 0; i < S.length(); i++) {
+                 char ch = S.charAt(i);
                 if (!map.containsKey(ch))
                 map.put(ch, new ArrayList<>());
                  map.get(ch).add(i);
              }
-             for (int i = 0; i < s.length(); i++) {
-                 char ch = s.charAt(i);
+             for (int i = 0; i < S.length(); i++) {
+                 char ch = S.charAt(i);
                  if (map.get(ch).size() > 1) {
                      return i;
                  }
