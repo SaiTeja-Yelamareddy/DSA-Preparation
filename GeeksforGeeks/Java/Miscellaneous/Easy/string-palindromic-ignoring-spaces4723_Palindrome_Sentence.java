@@ -5,7 +5,6 @@
  * Problem Link: https://www.geeksforgeeks.org/problems/string-palindromic-ignoring-spaces4723/1
  * Language: Java
  * Concept: Miscellaneous
- * Difficulty: Easy
  * Status: ACCEPTED
  */
 
