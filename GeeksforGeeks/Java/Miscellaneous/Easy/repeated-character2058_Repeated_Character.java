@@ -13,8 +13,8 @@ class Solution {
     char firstRep(String S) {
         // your code here
         LinkedHashMap<Character, Integer> map = new LinkedHashMap<>();
-                for (int i = 0; i < s.length(); i++) {
-                    char ch = s.charAt(i);
+                for (int i = 0; i < S.length(); i++) {
+                    char ch = S.charAt(i);
                     map.put(ch, map.getOrDefault(ch, 0) + 1);
                 }
                 for (char ch : map.keySet()) {
