@@ -5,7 +5,6 @@
  * Problem Link: https://www.codechef.com/learn/course/stacks-and-queues/LQUEUES/problems/QUEUE11
  * Language: Java
  * Concept: StackAndQueue
- * Difficulty: Medium
  * Course: Stacks And Queues
  * Module: LQUEUES
  * Status: ACCEPTED
@@ -36,8 +35,8 @@ class CircularQueue {
             return;
         }
         rear = (rear + 1) % maxSize; // Circular increment
-        a[___] = item;
-        currentSize__;
+        a[rear] = item;
+        currentSize++;
     }
 
     public int dequeue() {
@@ -47,8 +46,8 @@ class CircularQueue {
         }
         int removedItem = a[front];
         front = (front + 1) % maxSize; // Circular increment
-        currentSize__;
-        return ___;
+        currentSize--;
+        return removedItem;
     }
 
-    
+   
