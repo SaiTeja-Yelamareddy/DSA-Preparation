@@ -5,7 +5,6 @@
  * Problem Link: https://www.codechef.com/practice/course/strings-intermediate/STRINGSP02/problems/FREQUENCYSOR
  * Language: Java
  * Concept: Sorting
- * Difficulty: Medium
  * Status: ACCEPTED
  */
 
