@@ -12,20 +12,25 @@
 class Solution {
     public int secFrequent(String[] arr) {
         // code here
-        HashMap<String, Integer> map = new HashMap<>();
-              for (int i = 0; i < arr.length; i++) {
-                  map.put(arr[i], map.getOrDefault(arr[i], 0) + 1);
-              }
-              if(map.size()<=1)
-              return -1;
-              int count=0;
-              for (int i = 0; i < arr.length; i++) {
-                  if (map.get(arr[i]) > 1) {
-                      count++;
-                      if(count==2)
-                      return i+1;
-                  }
-              }
-              return -1;
+        if (arr.length == 0) {
+                   return -1;
+               }
+               HashMap<String, Integer> map = new HashMap<>();
+               for (int i = 0; i < arr.length; i++) {
+                   map.put(arr[i], map.getOrDefault(arr[i], 0) + 1);
+               }
+               int first = 0;
+               int second = 0;
+               for (int freq : map.values()) {
+
+                   if (freq > first) {
+                       second = first;
+                       first = freq;
+                   } 
+                   else if (freq > second && freq < first) {
+                       second = freq;
+                   }
+               }
+               return second == 0 ? -1 : second;
     }
 }
