@@ -5,7 +5,6 @@
  * Problem Link: https://www.geeksforgeeks.org/problems/change-the-string3541/1
  * Language: Java
  * Concept: Miscellaneous
- * Difficulty: Easy
  * Status: ACCEPTED
  */
 
