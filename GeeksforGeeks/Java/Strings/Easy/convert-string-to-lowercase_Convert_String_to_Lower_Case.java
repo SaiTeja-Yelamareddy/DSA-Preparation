@@ -5,7 +5,6 @@
  * Problem Link: https://www.geeksforgeeks.org/problems/convert-string-to-lowercase/1
  * Language: Java
  * Concept: Strings
- * Difficulty: Easy
  * Status: ACCEPTED
  */
 
