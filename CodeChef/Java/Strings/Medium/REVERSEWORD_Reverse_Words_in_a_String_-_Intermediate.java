@@ -5,6 +5,7 @@
  * Problem Link: https://www.codechef.com/practice/course/strings-intermediate/STRINGSP02/problems/REVERSEWORD
  * Language: Java
  * Concept: Strings
+ * Difficulty: Medium
  * Status: ACCEPTED
  */
 
