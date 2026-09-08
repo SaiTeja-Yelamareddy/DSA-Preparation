@@ -9,7 +9,7 @@
  * Status: ACCEPTED
  */
 
-
+import java.util.*;
 public class Solution {
 
 	public static char highestOccuringChar(String str) {
