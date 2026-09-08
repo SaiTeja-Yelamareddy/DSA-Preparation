@@ -12,20 +12,19 @@
 class Solution {
     public String encryptString(String S) {
 
-        StringBuilder sb = new StringBuilder();
-        int count = 1;
-        for (int i = 1; i < S.length(); i++) {
-            if (S.charAt(i) == S.charAt(i - 1)) {
-                count++;
-            } else {
-                sb.append(S.charAt(i - 1));
-                sb.append(Integer.toHexString(count));
+       StringBuilder ans = new StringBuilder();
+     int i = 0;
+     while (i < S.length()) {
+         char ch = S.charAt(i);
+         int count = 0;
+         while (i < S.length() && S.charAt(i) == ch) {
+             count++;
+             i++;
+         }
+         ans.append(ch);
+         ans.append(Integer.toHexString(count));
+     }
 
-                count = 1;
-            }
-        }
-        sb.append(S.charAt(S.length() - 1));
-        sb.append(Integer.toHexString(count));
-        return sb.reverse().toString();
+     return ans.reverse().toString();
     }
 }
