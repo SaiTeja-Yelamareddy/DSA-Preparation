@@ -12,7 +12,11 @@
 
 class Solution {
     public String reverseWords(String s) {
-        String[] s1=s.split()
+        String[] s1=s.split("\\s+");
+        for(String s2:s1)
+        {
+            
+        }
        
     }
 }
