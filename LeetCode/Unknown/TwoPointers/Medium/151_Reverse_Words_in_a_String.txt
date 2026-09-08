@@ -12,6 +12,10 @@
 
 class Solution {
     public String reverseWords(String s) {
-        f
+        for(int i=0;i<s.length();i++)
+        {
+            char ch= s.charAt(i);
+            sb.append(ch);
+        }
     }
 }
