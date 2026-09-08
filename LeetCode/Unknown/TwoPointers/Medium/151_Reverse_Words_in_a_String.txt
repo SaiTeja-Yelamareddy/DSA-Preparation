@@ -13,9 +13,12 @@
 class Solution {
     public String reverseWords(String s) {
         String[] s1=s.split("\\s+");
-        for(String s2:s1)
+        int left=0,right=s1.length()-1;
+        while(left<right)
         {
-            
+          String temp=s1[left];
+          s1[left]=s1[right];
+          s1
         }
        
     }
