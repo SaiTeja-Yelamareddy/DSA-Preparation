@@ -22,7 +22,7 @@ class Solution {
           left++;
           right--;
         }
-        return new String(s1);
+        return s1.toString();
        
     }
 }
