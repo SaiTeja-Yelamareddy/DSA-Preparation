@@ -11,20 +11,18 @@
 
 class Solution {
     public String encryptString(String S) {
-
-       StringBuilder ans = new StringBuilder();
-     int i = 0;
-     while (i < S.length()) {
-         char ch = S.charAt(i);
-         int count = 0;
-         while (i < S.length() && S.charAt(i) == ch) {
-             count++;
-             i++;
-         }
-         ans.append(ch);
-         ans.append(Integer.toHexString(count));
-     }
-
-     return ans.reverse().toString();
+        StringBuilder result = new StringBuilder();
+        int i = 0;
+        while (i < S.length()) {
+            char ch = S.charAt(i);
+            int count = 0;
+            while (i < S.length() && S.charAt(i) == ch) {
+                count++;
+                i++;
+            }
+            result.append(ch);
+            result.append(Integer.toHexString(count));
+        }
+        return result.reverse().toString();
     }
 }
