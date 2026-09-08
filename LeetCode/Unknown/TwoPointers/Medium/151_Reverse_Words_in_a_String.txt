@@ -22,7 +22,7 @@ class Solution {
           left++;
           right--;
         }
-        return s1.toString();
+        return String.join(" ", s1).trim();
        
     }
 }
