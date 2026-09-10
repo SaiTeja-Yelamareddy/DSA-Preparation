@@ -9,4 +9,6 @@
  * Status: ACCEPTED
  */
 
-# cook your dish here
+2
+11111110
+10101010101010
