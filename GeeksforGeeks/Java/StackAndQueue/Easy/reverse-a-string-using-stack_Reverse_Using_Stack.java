@@ -10,7 +10,7 @@
  */
 
 class Solution {
-    public String reverse(String S) {
+    public String reverse(String s) {
         // code here
         Stack<Character> stack = new Stack<>();
                 for (int i = 0; i < s.length(); i++) {
