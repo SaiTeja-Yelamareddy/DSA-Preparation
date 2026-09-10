@@ -9,42 +9,36 @@
  * Status: ACCEPTED
  */
 
-import java.util.Scanner;
+import java.util.*;
 
-class CodeChef {
-
-    public static String toTitleCase(String input) {
-        String[] words = input.split(" ");
-        StringBuilder titleCase = new StringBuilder(input.length());
-        for (String word : words) {
-            if (word.isEmpty()) continue;
-            boolean isAcronym = true;
-            for (int i = 0; i < word.length(); i++) {
-                if (!Character.isUpperCase(word.charAt(i))) {
-                    isAcronym = false;
-                    break;
-                }
-            }
-            if (isAcronym) {
-                titleCase.append(word);
-            } else {
-                titleCase.append(Character.toUpperCase(word.charAt(0)));
-                titleCase.append(word.substring(1).toLowerCase());
-            }
-            titleCase.append(" ");
-        }
-        return titleCase.toString().trim();
-    }
+public class Main {
 
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        int t = Integer.parseInt(scanner.nextLine()); // Read the number of test cases
+        Scanner sc = new Scanner(System.in);
+        int T = sc.nextInt();
+        sc.nextLine();
+        while (T-- > 0) {
+            String s = sc.nextLine();
+            String[] words = s.split(" ");
+            for (int i = 0; i < words.length; i++) {
+                String word = words[i];
+                boolean acronym = true;
+                for (char ch : word.toCharArray()) {
+                    if (!Character.isUpperCase(ch)) {
+                        acronym = false;
+                        break;
+                    }
+                }
+                if (!acronym) {
+                    word = Character.toUpperCase(word.charAt(0))
+                           + word.substring(1).toLowerCase();
+                }
 
-        for (int i = 0; i < t; i++) {
-            String input = scanner.nextLine();
-            System.out.println(toTitleCase(input));
+                words[i] = word;
+            }
+            System.out.println(String.join(" ", words));
         }
 
-        scanner.close();
+        sc.close();
     }
 }
