@@ -12,14 +12,14 @@
 class Solution {
     boolean twoSum(int arr[], int target) {
         // code here
-        for (int i = 0; i < arr.length; i++) {
-            for (int j = i + 1; j < arr.length; j++) {
-                if (arr[i] + arr[j] == target) {
-                    return true;
-                }
-            }
-        }
-
-        return false;
+      HashSet<Integer> set = new HashSet<>();
+      for (int x : arr) {
+          int needed = target - x;
+          if (set.contains(needed)) {
+              return true;
+          }
+          set.add(x);
+      }
+      return false;
     }
 }
