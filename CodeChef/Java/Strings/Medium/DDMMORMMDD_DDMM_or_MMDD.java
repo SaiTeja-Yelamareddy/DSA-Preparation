@@ -9,4 +9,26 @@
  * Status: ACCEPTED
  */
 
-# cook your dish here
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int T = sc.nextInt();
+        while (T-- > 0) {
+            String S = sc.next();
+
+            int first = Integer.parseInt(S.substring(0, 2));
+            int second = Integer.parseInt(S.substring(3, 5));
+
+            if (first <= 12 && second <= 12) {
+                System.out.println("BOTH");
+            }
+            else if (first <= 12 && second > 12) {
+                System.out.println("MM/DD/YYYY");
+            }
+            else {
+                System.out.println("DD/MM/YYYY");
+            }
+        }
+    }
+}
