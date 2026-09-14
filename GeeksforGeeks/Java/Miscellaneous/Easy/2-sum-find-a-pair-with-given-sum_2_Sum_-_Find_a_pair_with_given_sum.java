@@ -11,18 +11,17 @@
 
 class Solution {
     public ArrayList<Integer> twoSum(int[] arr, int target) {
-        ArrayList<Integer> list = new ArrayList<>();
+        HashSet<Integer> set = new HashSet<>();
+        ArrayList<Integer> result = new ArrayList<>();
         for (int num : arr) {
             int needed = target - num;
-            if (list.contains(needed)) {
-                ArrayList<Integer> result = new ArrayList<>();
+            if (set.contains(needed)) {
                 result.add(needed);
                 result.add(num);
                 return result;
             }
-            list.add(num);
+            set.add(num);
         }
-
-        return new ArrayList<>();
+        return result;
     }
 }
