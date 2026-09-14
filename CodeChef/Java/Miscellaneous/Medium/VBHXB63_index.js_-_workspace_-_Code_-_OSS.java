@@ -19,5 +19,5 @@ const server = http.createServer((req, res) => {
   const path = parsedUrl.pathname;
   const name = parsedUrl.query.name;
 
-  if (__________) {
+  if (path === '/greet') {
     let greeting;
