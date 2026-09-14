@@ -10,6 +10,12 @@
  */
 
 class Solution {
+    public List<List<Integer>> (int[] arr, int target) {
+        // Your code here
+        
+    }
+}
+class Solution {
     public ArrayList<ArrayList<Integer>> findAllPairs(int[] arr, int target) {
         ArrayList<ArrayList<Integer>> result = new ArrayList<>();
 
