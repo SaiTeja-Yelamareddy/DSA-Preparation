@@ -12,7 +12,6 @@
 import java.util.*;
 
 public class Solution {
-
     public static int[] twoSum(int[] arr, int n, int target) {
         HashMap<Integer, Integer> map = new HashMap<>();
 
@@ -23,6 +22,7 @@ public class Solution {
                 return new int[]{map.get(needed), i};
             }
 
+            // Keep the first occurrence only
             if (!map.containsKey(arr[i])) {
                 map.put(arr[i], i);
             }
