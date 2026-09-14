@@ -10,7 +10,7 @@
  */
 
 class Solution {
-    public String SnakeCase(String s) {
+    public String snakeCase(String s) {
         StringBuilder result = new StringBuilder();
         for (int i = 0; i < s.length(); i++) {
             char ch = s.charAt(i);
