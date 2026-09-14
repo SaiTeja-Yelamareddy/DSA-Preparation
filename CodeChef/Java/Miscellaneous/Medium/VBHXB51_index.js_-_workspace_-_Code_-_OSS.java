@@ -11,13 +11,13 @@
  * Status: ACCEPTED
  */
 
-const fs = require('fs');
-const path = require('path');
+  console.log(`Directory "${dirName}" created successfully.`);
 
-const dirName = 'my_directory';
+  fs.readdir('.', (err, files) => {
+    if (err) {
+      return console.error('Error reading current directory:', err);
+    }
 
-fs.mkdir(dirName, { recursive: true }, (err) => {
-  if (err) {
-    return console.error('Error creating directory:', err);
-  }
-
+    console.log('Contents of current directory:');
+    // write code to print all the files in the directory
+    files.forEach(file => console.log(file));
