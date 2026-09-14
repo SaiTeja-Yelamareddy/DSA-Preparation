@@ -12,6 +12,15 @@
 
 class Solution {
     public String reverseWords(String s) {
+      String[] str=s.split(" ");
+      StringBuilder rev=new StringBuilder();
+      for(String str1: str)
+      {
+        StringBuilder sb=new StringBuilder(str1);
+        sb.reverse();
+        rev.append(sb).append(" ");
+      }
+      return rev.toString().trim();
         
     }
 }
