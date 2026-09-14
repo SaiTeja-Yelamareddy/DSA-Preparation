@@ -10,7 +10,7 @@
  */
 
 class Solution {
-    static String findDay(int Day, int Month, int Year) {
+    static String findDay(int day, int month, int year) {
         // Code Here
         Calendar cal = Calendar.getInstance();
 
