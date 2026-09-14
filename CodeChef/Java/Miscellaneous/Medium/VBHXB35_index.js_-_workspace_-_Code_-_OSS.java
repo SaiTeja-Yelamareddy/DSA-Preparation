@@ -11,13 +11,13 @@
  * Status: ACCEPTED
  */
 
-function runCountdown() {
-  ____(() => { // TODO: run immediately after current code
-    console.log("Countdown is starting...");
+      if (seconds === 0) {
+        clearInterval(intervalId); // TODO: stop the repeated timer
 
-    let seconds = 3;
-
-    const intervalId = ____(() => { // TODO: run repeatedly
-      console.log(`${seconds} seconds left`);
-      seconds--;
-
+        // After last countdown, wait 1 second then print final message
+        setTimeout(() => { // TODO: run once after delay
+          console.log("Countdown complete!");
+        }, 1000);
+      }
+    }, 1000);
+  });
