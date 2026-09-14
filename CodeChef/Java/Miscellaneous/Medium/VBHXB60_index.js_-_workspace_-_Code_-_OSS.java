@@ -11,4 +11,9 @@
  * Status: ACCEPTED
  */
 
-// write your code here
+                        res.writeHead(200, { 'Content-Type': 'text/plain' });
+                            res.write(greeting);
+                                res.end();
+                                });
+
+                                server.listen(3000);
