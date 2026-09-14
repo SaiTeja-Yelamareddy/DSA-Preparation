@@ -9,15 +9,20 @@
  * Status: ACCEPTED
  */
 
-class Solution {
-    static boolean check_duck(String num) {
-        // code here
-        for (int i = 1; i < num.length(); i++) {
-                    if (num.charAt(i) == '0') {
-                        return true;
-                    }
-                }
 
-                return false;
+class Solution {
+    public boolean check_duck(String num) {
+        int i = 0;
+        while (i < num.length() && num.charAt(i) == '0') {
+            i++;
+        }
+        while (i < num.length()) {
+            if (num.charAt(i) == '0') {
+                return true;
+            }
+            i++;
+        }
+
+        return false;
     }
 }
