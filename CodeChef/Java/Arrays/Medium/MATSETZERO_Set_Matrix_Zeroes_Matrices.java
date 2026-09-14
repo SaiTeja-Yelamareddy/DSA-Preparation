@@ -9,7 +9,6 @@
  * Status: ACCEPTED
  */
 
-3 3
-4 6 0
-8 2 1
-3 1 5
+public static void setZeroes(int[][] mat) {
+    // write logic here...
+}
