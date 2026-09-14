@@ -10,15 +10,18 @@
  */
 
 class Solution {
-    public String arrangeString(String s) {
+    public String reArrange(String s) {
         int[] freq = new int[26];
         int sum = 0;
+        boolean hasDigit = false;
         for (int i = 0; i < s.length(); i++) {
             char ch = s.charAt(i);
+
             if (ch >= 'A' && ch <= 'Z') {
                 freq[ch - 'A']++;
             } else {
                 sum += ch - '0';
+                hasDigit = true;
             }
         }
         StringBuilder result = new StringBuilder();
@@ -28,7 +31,10 @@ class Solution {
                 freq[i]--;
             }
         }
-        result.append(sum);
-       return result.toString();
+        if (hasDigit) {
+            result.append(sum);
+        }
+
+        return result.toString();
     }
 }
