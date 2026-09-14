@@ -11,7 +11,6 @@
  * Status: ACCEPTED
  */
 
-                const filling = await addFilling();
                     console.log(filling);
 
                         const sandwich = await wrapSandwich();
@@ -21,3 +20,4 @@
                                 }
 
                                 prepareSandwich().then(result => console.log(result));
+  
