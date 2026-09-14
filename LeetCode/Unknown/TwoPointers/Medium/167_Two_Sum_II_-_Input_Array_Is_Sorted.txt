@@ -1,0 +1,17 @@
+/*
+ * Platform: LeetCode
+ * Problem ID: 167
+ * Problem: Two Sum II - Input Array Is Sorted
+ * Problem Link: https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/
+ * Language: Unknown
+ * Concept: TwoPointers
+ * Difficulty: Medium
+ * Tags: Array, Two Pointers, Binary Search
+ * Status: ACCEPTED
+ */
+
+class Solution {
+    public int[] twoSum(int[] numbers, int target) {
+        
+    }
+}
