@@ -11,12 +11,6 @@
 
 class Solution {
     public char decodeIt(String s, long k) {
-        // code here
-        
-    }
-}
-class Solution {
-    public char decodeIt(String s, long k) {
 
         long length = 0;
         for (int i = 0; i < s.length(); i++) {
