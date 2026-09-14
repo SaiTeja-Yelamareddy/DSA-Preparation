@@ -16,7 +16,7 @@ const fs = require('fs');
 
 const server = http.createServer((req, res) => {
   // complete the code to read the file
-  ________________________________________________ {
+ fs.readFile('my-file.txt', 'utf8', (err, data) => {
     if (err) {
       res.writeHead(500, { 'Content-Type': 'text/plain' });
       res.end('Error reading file!');
