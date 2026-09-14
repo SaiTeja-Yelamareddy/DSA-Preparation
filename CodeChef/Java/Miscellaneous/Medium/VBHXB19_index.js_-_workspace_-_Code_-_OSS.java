@@ -19,5 +19,5 @@
 
                                 return "Sandwich is ready to eat!";
                                 }
-  }
-prepareSandwich().then(result => console.log(result));
+
+                                prepareSandwich().then(result => console.log(result));
