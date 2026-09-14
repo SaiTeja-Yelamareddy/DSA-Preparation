@@ -11,4 +11,7 @@
  * Status: ACCEPTED
  */
 
-// write your code here
+const newAbsolutePath = path.join(path.dirname(absolutePath), newFileName);
+
+console.log('Original Absolute Path:', absolutePath);
+console.log('New Absolute Path:', newAbsolutePath);
