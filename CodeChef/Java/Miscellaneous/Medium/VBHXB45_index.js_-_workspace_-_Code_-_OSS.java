@@ -20,4 +20,4 @@ const outputFile = path.resolve(__dirname, 'filtered_fruits.txt');
 console.log('Reading fruits.txt...');
 
 // complete the code to read the inputFile
-________________________________________ {
+fs.readFile(inputFile, 'utf8', (err, data) =>  {
