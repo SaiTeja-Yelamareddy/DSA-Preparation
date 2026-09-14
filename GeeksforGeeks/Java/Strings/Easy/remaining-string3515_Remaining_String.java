@@ -10,7 +10,13 @@
  */
 
 class Solution {
-    public String remainingString(String s, char ch, int count) {
+    public String (String s, char ch, int count) {
+        // code here
+        
+    }
+}
+class Solution {
+    public String printString(String s, char ch, int count) {
         int found = 0;
 
         for (int i = 0; i < s.length(); i++) {
@@ -22,6 +28,7 @@ class Solution {
                 }
             }
         }
+
         return "";
     }
 }
