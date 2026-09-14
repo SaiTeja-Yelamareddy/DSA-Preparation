@@ -10,7 +10,7 @@
  */
 
 class Solution {
-    public ArrayList<Integer> palindromeNumbers(int m, int n) {
+    public ArrayList<Integer> printPalindromes((int m, int n) {
         ArrayList<Integer> result = new ArrayList<>();
 
         for (int i = m; i <= n; i++) {
