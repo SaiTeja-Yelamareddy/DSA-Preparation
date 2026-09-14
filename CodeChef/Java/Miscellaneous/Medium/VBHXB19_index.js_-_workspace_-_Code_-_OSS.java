@@ -11,13 +11,13 @@
  * Status: ACCEPTED
  */
 
-    }, 500); // Simulate wrapping for 0.5 seconds
-  });
-}
+                const filling = await addFilling();
+                    console.log(filling);
 
-async function prepareSandwich() {
-  // Your code here
-  
-}
+                        const sandwich = await wrapSandwich();
+                            console.log(sandwich);
 
+                                return "Sandwich is ready to eat!";
+                                }
+  }
 prepareSandwich().then(result => console.log(result));
