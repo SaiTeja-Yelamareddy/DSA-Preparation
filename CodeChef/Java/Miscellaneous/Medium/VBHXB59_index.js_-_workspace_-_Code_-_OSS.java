@@ -18,6 +18,6 @@ const server = http.createServer((req, res) => {
   res.writeHead(200, { 'Content-Type': 'text/html' });
 
   // complete the code to write the HTML content
-  ____________(`
+  res.write(`
     <!DOCTYPE html>
     <html>
