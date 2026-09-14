@@ -11,13 +11,6 @@
  * Status: ACCEPTED
  */
 
-function grindCoffeeBeans() {
-    return new Promise(resolve => {
-      setTimeout(() => {
-        resolve("Coffee beans ground!");
-      }, 1000); // Simulate grinding for 1 second
-    });
-  }
-  
-  function brewCoffee() {
-    return new Promise(resolve => {
+                                                                  placeOrder().then(result => {
+                                                                                                                                                                                              console.log(result);
+                                                                                                                                                                                              });                                                                                                                                                                                   
