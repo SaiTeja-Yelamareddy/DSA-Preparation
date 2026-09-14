@@ -22,7 +22,7 @@ class Solution {
         return String.format("%02d:%02d:%02d", hours, minutes, seconds);
     }
 
-    priv int toSeconds(String time) {
+    public int toSeconds(String time) {
         int hours = Integer.parseInt(time.substring(0, 2));
         int minutes = Integer.parseInt(time.substring(3, 5));
         int seconds = Integer.parseInt(time.substring(6, 8));
