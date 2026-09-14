@@ -11,10 +11,7 @@
  * Status: ACCEPTED
  */
 
-// Define the Celsius temperature
-
-// Convert Celsius to Fahrenheit using the formula: F = (C * 9/5) + 32
-
+console.log(`${celsius}°C is equal to ${fahrenheit}°F`);
 
 
 // Print the result
