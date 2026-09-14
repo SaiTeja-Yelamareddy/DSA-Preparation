@@ -12,14 +12,21 @@
 class Solution {
     public boolean isStringExist(String s, String[] arr) {
         // code here
-        int count = 0;
-        for (int i = 0; i < s.length(); i++) {
-            if (s.charAt(i) != arr.charAt(i)) {
-                count++;
-            }
-        }
+        for (String word : arr) {
+         if (word.length() != s.length()) {
+                       continue;
+                   }
+                   int count = 0;
+                   for (int i = 0; i < s.length(); i++) {
+                       if (s.charAt(i) != word.charAt(i)) {
+                           count++;
+                       }
+                   }
+                   if (count == 1) {
+                       return true;
+                   }
+               }
 
-        if (count == 1)
-            return true;
+               return false;
     }
 }
