@@ -11,13 +11,7 @@
  * Status: ACCEPTED
  */
 
-function getIngredients() {
-  return new Promise((resolve) => {
-    setTimeout(() => {
-      resolve("Ingredients acquired");
-    }, 500);
-  });
-}
-
-function mixIngredients(ingredients) {
-  return new Promise((resolve) => {
+                                                                                        })
+                                                                                            .catch((error) => {
+                                                                                                    console.log("Error:", error);
+                                                                                                        });
