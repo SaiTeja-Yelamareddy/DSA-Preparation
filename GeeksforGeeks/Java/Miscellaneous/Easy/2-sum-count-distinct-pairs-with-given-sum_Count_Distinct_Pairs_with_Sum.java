@@ -9,12 +9,7 @@
  * Status: ACCEPTED
  */
 
-class Solution {
-    static int countDistinctPairs(int arr[], int target) {
-        // code here
-        
-    }
-}
+
 class Solution {
     public int countDistinctPairs(int[] arr, int target) {
         HashSet<Integer> set = new HashSet<>();
