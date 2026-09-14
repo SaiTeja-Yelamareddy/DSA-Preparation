@@ -11,13 +11,13 @@
  * Status: ACCEPTED
  */
 
-function prepareBread() {
-  return new Promise(resolve => {
-    setTimeout(() => {
-      resolve("Bread prepared!");
-    }, 1000); // Simulate preparing bread for 1 second
+    }, 500); // Simulate wrapping for 0.5 seconds
   });
 }
 
-function addFilling() {
-  return new Promise(resolve => {
+async function prepareSandwich() {
+  // Your code here
+  
+}
+
+prepareSandwich().then(result => console.log(result));
