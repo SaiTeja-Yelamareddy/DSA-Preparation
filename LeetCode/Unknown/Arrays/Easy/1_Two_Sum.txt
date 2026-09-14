@@ -1,0 +1,17 @@
+/*
+ * Platform: LeetCode
+ * Problem ID: 1
+ * Problem: Two Sum
+ * Problem Link: https://leetcode.com/problems/two-sum/
+ * Language: Unknown
+ * Concept: Arrays
+ * Difficulty: Easy
+ * Tags: Array, Hash Table
+ * Status: ACCEPTED
+ */
+
+class Solution {
+    public int[] twoSum(int[] nums, int target) {
+        
+    }
+}
