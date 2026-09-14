@@ -9,7 +9,6 @@
  * Status: ACCEPTED
  */
 
-
 class Solution {
     public String timeToWords(int h, int m) {
 
@@ -18,10 +17,10 @@ class Solution {
             "five", "six", "seven", "eight", "nine",
             "ten", "eleven", "twelve", "thirteen",
             "fourteen", "fifteen", "sixteen", "seventeen",
-            "eighteen", "nineteen", "twenty", "twenty-one",
-            "twenty-two", "twenty-three", "twenty-four",
-            "twenty-five", "twenty-six", "twenty-seven",
-            "twenty-eight", "twenty-nine"
+            "eighteen", "nineteen", "twenty", "twenty one",
+            "twenty two", "twenty three", "twenty four",
+            "twenty five", "twenty six", "twenty seven",
+            "twenty eight", "twenty nine"
         };
         if (m == 0) {
             return numbers[h] + " o' clock";
@@ -37,14 +36,9 @@ class Solution {
         }
         int remaining = 60 - m;
         int nextHour = h + 1;
-        if (nextHour == 12) {
-            nextHour = 12;
-        }
-
         if (remaining == 15) {
             return "quarter to " + numbers[nextHour];
         }
-
         return numbers[remaining] + " minutes to " + numbers[nextHour];
     }
 }
