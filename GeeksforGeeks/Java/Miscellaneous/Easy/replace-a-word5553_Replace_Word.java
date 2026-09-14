@@ -11,23 +11,50 @@
 
 class Solution {
     public String replaceAll(String s, String s1, String s2) {
-        StringBuilder result = new StringBuilder();
 
-        int i = 0;
+        int n = s.length();
+        int m = s1.length();
+        int[] lps = new int[m];
 
-        while (i < s.length()) {
-
-            if (i + s1.length() <= s.length()
-                    && s.regionMatches(i, s1, 0, s1.length())) {
-
-                result.append(s2);
-                i += s1.length();
-
+        for (int i = 1, len = 0; i < m; ) {
+            if (s1.charAt(i) == s1.charAt(len)) {
+                lps[i++] = ++len;
+            } else if (len > 0) {
+                len = lps[len - 1];
             } else {
-                result.append(s.charAt(i));
+                lps[i++] = 0;
+            }
+        }
+        StringBuilder result = new StringBuilder();
+        int i = 0;
+        int j = 0;
+        int last = 0;
+        while (i < n) {
+
+            if (s.charAt(i) == s1.charAt(j)) {
+                i++;
+                j++;
+
+                // Found s1
+                if (j == m) {
+                    int start = i - m;
+
+                    result.append(s, last, start);
+                    result.append(s2);
+
+                    last = i;
+                    j = 0;
+                }
+
+            } else if (j > 0) {
+                j = lps[j - 1];
+            } else {
                 i++;
             }
         }
+
+        // Add remaining part
+        result.append(s, last, n);
 
         return result.toString();
     }
