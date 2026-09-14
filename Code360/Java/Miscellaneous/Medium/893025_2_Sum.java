@@ -9,10 +9,23 @@
  * Status: ACCEPTED
  */
 
-
 public class Solution {
-    public static int[] twoSum(int arr[], int n,int target) {
-        // Write your code here.
-        
+    public static int[] twoSum(int[] arr, int target) {
+        HashMap<Integer, Integer> map = new HashMap<>();
+
+        for (int i = 0; i < arr.length; i++) {
+            int needed = target - arr[i];
+
+            if (map.containsKey(needed)) {
+                return new int[]{map.get(needed), i};
+            }
+
+            // Store only the first index
+            if (!map.containsKey(arr[i])) {
+                map.put(arr[i], i);
+            }
+        }
+
+        return new int[]{-1, -1};
     }
 }
