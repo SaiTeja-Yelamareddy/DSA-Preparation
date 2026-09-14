@@ -11,4 +11,9 @@
  * Status: ACCEPTED
  */
 
-// write your code here
+4;
+                                                                                                            res.end('404 Not Found');
+                                                                                                                }
+                                                                                                                });
+
+                                                                                                                server.listen(3000);
