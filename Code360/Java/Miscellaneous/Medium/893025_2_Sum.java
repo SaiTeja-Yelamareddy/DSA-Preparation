@@ -10,24 +10,20 @@
  */
 
 import java.util.*;
-
 public class Solution {
     public static int[] twoSum(int[] arr, int n, int target) {
         HashMap<Integer, Integer> map = new HashMap<>();
-
-        for (int i = 0; i < n; i++) {
-            int needed = target - arr[i];
-
-            if (map.containsKey(needed)) {
-                return new int[]{map.get(needed), i};
+        for (int i = 0; i < n; i++) 
+        {
+            int complement = target - arr[i];
+            if (map.containsKey(complement)) 
+            {
+                return new int[]{map.get(complement), i};
             }
-
-            // Keep the first occurrence only
             if (!map.containsKey(arr[i])) {
                 map.put(arr[i], i);
             }
         }
-
         return new int[]{-1, -1};
     }
 }
