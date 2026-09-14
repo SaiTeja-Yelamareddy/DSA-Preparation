@@ -12,15 +12,19 @@
 class Solution {
     public boolean checkBinary(String s) {
         // code here
-            boolean foundZero = false;
-            for (int i = 0; i < s.length(); i++) {
-                if (s.charAt(i) == '0') {
-                    foundZero = true;
-                }
-                if (s.charAt(i) == '1' && foundZero) {
-                    return false;
-                }
-            }
-            return true;   
+           boolean foundOne = false;
+                   for (int i = 0; i < s.length(); i++) {
+                       if (s.charAt(i) == '1') {
+                           foundOne = true;
+                       }
+                       if (s.charAt(i) == '0' && foundOne) {
+                           for (int j = i + 1; j < s.length(); j++) {
+                               if (s.charAt(j) == '1') {
+                                   return false;
+                               }
+                           }
+                       }
+                   }
+             return true;
     }
 }
