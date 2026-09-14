@@ -10,22 +10,22 @@
  */
 
 class Solution {
-    static String findDay(int day, int month, int year) {
+    static String findDay(int Day, int Month, int Year) {
         // Code Here
         Calendar cal = Calendar.getInstance();
 
-               cal.set(year, month - 1, date);
+             cal.set(Year, Month - 1, Date);
 
-               String[] days = {
-                   "SUNDAY",
-                   "MONDAY",
-                   "TUESDAY",
-                   "WEDNESDAY",
-                   "THURSDAY",
-                   "FRIDAY",
-                   "SATURDAY"
-               };
+             String[] days = {
+                 "SUNDAY",
+                 "MONDAY",
+                 "TUESDAY",
+                 "WEDNESDAY",
+                 "THURSDAY",
+                 "FRIDAY",
+                 "SATURDAY"
+             };
 
-               return days[cal.get(Calendar.DAY_OF_WEEK) - 1];
+             return days[cal.get(Calendar.DAY_OF_WEEK) - 1];
     }
 }
