@@ -14,10 +14,10 @@ class Solution {
         // code here
         for (int i = 1; i < num.length(); i++) {
                     if (num.charAt(i) == '0') {
-                        return "YES";
+                        return true;
                     }
                 }
 
-                return "NO";
+                return false;
     }
 }
