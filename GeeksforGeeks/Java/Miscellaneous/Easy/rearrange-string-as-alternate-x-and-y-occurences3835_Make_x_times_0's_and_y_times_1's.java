@@ -9,10 +9,11 @@
  * Status: ACCEPTED
  */
 
-class Solution {
-    public String arrangeString(String s, int x, int y) {
+class  Solution {
+    public String arrangeString(int x, int y, String s) {
         int zeros = 0;
         int ones = 0;
+
         for (int i = 0; i < s.length(); i++) {
             if (s.charAt(i) == '0') {
                 zeros++;
@@ -21,32 +22,34 @@ class Solution {
             }
         }
 
-        StringBuilder result = new StringBuilder();
+        StringBuilder ans = new StringBuilder(s.length());
 
-        while (zeros > 0 && ones > 0) {
-            int z = Math.min(x, zeros);
-            for (int i = 0; i < z; i++) {
-                result.append('0');
+        while (zeros >= x && ones >= y) {
+
+            for (int i = 0; i < x; i++) {
+                ans.append('0');
             }
-       
-            int o = Math.min(y, ones);
-            for (int i = 0; i < o; i++) {
-                result.append('1');
+
+            for (int i = 0; i < y; i++) {
+                ans.append('1');
             }
-            ones -= o;
+
+            zeros -= x;
+            ones -= y;
         }
 
-        // Add remaining characters
+        // One of the characters is finished.
+        // Append whatever is left.
         while (zeros > 0) {
-            result.append('0');
+            ans.append('0');
             zeros--;
         }
 
         while (ones > 0) {
-            result.append('1');
+            ans.append('1');
             ones--;
         }
 
-        return result.toString();
+        return ans.toString();
     }
 }
