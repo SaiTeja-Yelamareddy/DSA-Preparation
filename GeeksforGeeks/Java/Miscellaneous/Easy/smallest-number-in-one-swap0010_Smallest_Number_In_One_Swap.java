@@ -13,20 +13,31 @@ class Solution {
     public String smallestNumber(String s) {
         char[] arr = s.toCharArray();
         int n = arr.length;
+        int first = 0;
+        for (int i = 1; i < n; i++) {
+            if (arr[i] != '0' && arr[i] < arr[first]) {
+                first = i;
+            }
+        }
+        if (first != 0) {
+            char temp = arr[0];
+            arr[0] = arr[first];
+            arr[first] = temp;
+
+            return new String(arr);
+        }
         for (int i = 0; i < n; i++) {
-            char smallest = arr[i];
-            int index = i;
+            int index = -1;
+
             for (int j = i + 1; j < n; j++) {
-                if (arr[j] < smallest) {
-                    smallest = arr[j];
-                    index = j;
+                if (arr[j] < arr[i]) {
+                    if (index == -1 || arr[j] <= arr[index]) {
+                        index = j;
+                    }
                 }
             }
-            if (index != i) {
-                if (i == 0 && arr[index] == '0') {
-                    continue;
-                }
 
+            if (index != -1) {
                 char temp = arr[i];
                 arr[i] = arr[index];
                 arr[index] = temp;
