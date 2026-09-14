@@ -10,10 +10,10 @@
  */
 
 class Solution {
-    public String reArrange(String s) {
+    public String arrangeString(String s) {
         int[] freq = new int[26];
         int sum = 0;
-        boolean hasDigit = false;
+
         for (int i = 0; i < s.length(); i++) {
             char ch = s.charAt(i);
 
@@ -21,17 +21,21 @@ class Solution {
                 freq[ch - 'A']++;
             } else {
                 sum += ch - '0';
-                hasDigit = true;
             }
         }
+
         StringBuilder result = new StringBuilder();
+
+        // Add alphabets in lexicographical order
         for (int i = 0; i < 26; i++) {
             while (freq[i] > 0) {
                 result.append((char) ('A' + i));
                 freq[i]--;
             }
         }
-        if (hasDigit) {
+
+        // Add sum only if it is greater than 0
+        if (sum > 0) {
             result.append(sum);
         }
 
