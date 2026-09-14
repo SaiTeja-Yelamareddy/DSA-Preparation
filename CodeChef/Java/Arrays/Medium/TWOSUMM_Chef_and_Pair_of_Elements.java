@@ -9,4 +9,6 @@
  * Status: ACCEPTED
  */
 
-# cook your dish here
+public static int[] findPair(int[] nums, int target) {
+    // Write your code here
+}
