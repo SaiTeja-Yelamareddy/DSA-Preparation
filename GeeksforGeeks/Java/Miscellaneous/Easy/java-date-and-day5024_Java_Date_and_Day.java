@@ -9,23 +9,21 @@
  * Status: ACCEPTED
  */
 
+
 class Solution {
-    static String findDay(int Day, int Month, int Year) {
-        // Code Here
+    public String findDay(int date, int month, int year) {
         Calendar cal = Calendar.getInstance();
+        cal.set(year, month - 1, date);
+        String[] days = {
+            "SUNDAY",
+            "MONDAY",
+            "TUESDAY",
+            "WEDNESDAY",
+            "THURSDAY",
+            "FRIDAY",
+            "SATURDAY"
+        };
 
-             cal.set(Year, Month - 1, Date);
-
-             String[] days = {
-                 "SUNDAY",
-                 "MONDAY",
-                 "TUESDAY",
-                 "WEDNESDAY",
-                 "THURSDAY",
-                 "FRIDAY",
-                 "SATURDAY"
-             };
-
-             return days[cal.get(Calendar.DAY_OF_WEEK) - 1];
+        return days[cal.get(Calendar.DAY_OF_WEEK) - 1];
     }
 }
