@@ -10,24 +10,13 @@
  */
 
 class Solution {
-    public boolean isCircular(String s) {
-        // code here
-        
-    }
-}class Solution {
-     public boolean isCircular(String s) {
+     public boolean isCircular(String s) 
+     {
          int x = 0;
          int y = 0;
          int direction = 0;
-
-         // 0 = North
-         // 1 = East
-         // 2 = South
-         // 3 = West
-
          for (int i = 0; i < s.length(); i++) {
              char ch = s.charAt(i);
-
              if (ch == 'G') {
                  if (direction == 0) {
                      y++;
