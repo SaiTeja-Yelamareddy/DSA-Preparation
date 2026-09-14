@@ -9,4 +9,7 @@
  * Status: ACCEPTED
  */
 
-# cook your dish here
+public static void rotateClockwise(int[][] matrix) {
+    // write your code here 
+    
+}
