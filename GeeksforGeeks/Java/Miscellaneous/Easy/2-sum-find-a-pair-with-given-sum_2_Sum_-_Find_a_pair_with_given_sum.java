@@ -9,21 +9,20 @@
  * Status: ACCEPTED
  */
 
-
 class Solution {
-    public int[] twoSum(int[] arr, int target) {
+    public ArrayList<Integer> twoSum(int[] arr, int target) {
         ArrayList<Integer> list = new ArrayList<>();
-
         for (int num : arr) {
             int needed = target - num;
-
             if (list.contains(needed)) {
-                return new int[]{needed, num};
+                ArrayList<Integer> result = new ArrayList<>();
+                result.add(needed);
+                result.add(num);
+                return result;
             }
-
             list.add(num);
         }
 
-        return new int[]{};
+        return new ArrayList<>();
     }
 }
