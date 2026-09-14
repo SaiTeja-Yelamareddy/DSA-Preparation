@@ -11,37 +11,45 @@
 
 class Solution {
     public String arrangeString(String s, int x, int y) {
-        int zeros = 0;
-        int ones = 0;
+        int zero = 0;
+        int one = 0;
+
         for (int i = 0; i < s.length(); i++) {
             if (s.charAt(i) == '0') {
-                zeros++;
+                zero++;
             } else {
-                ones++;
+                one++;
             }
         }
-        StringBuilder ans = new StringBuilder();
-        while (zeros >= x && ones >= y) {
 
-            for (int i = 0; i < x; i++) {
+        StringBuilder ans = new StringBuilder();
+
+        while (zero > 0 && one > 0) {
+            int z = Math.min(x, zero);
+            for (int i = 0; i < z; i++) {
                 ans.append('0');
             }
-
-            for (int i = 0; i < y; i++) {
+            zero -= z;
+            if (zero == 0) {
+                break;
+            }
+            int o = Math.min(y, one);
+            for (int i = 0; i < o; i++) {
                 ans.append('1');
             }
-
-            zeros -= x;
-            ones -= y;
+            one -= o;
+            if (one == 0) {
+                break;
+            }
         }
-        while (zeros > 0) {
+        while (zero > 0) {
             ans.append('0');
-            zeros--;
+            zero--;
         }
 
-        while (ones > 0) {
+        while (one > 0) {
             ans.append('1');
-            ones--;
+            one--;
         }
 
         return ans.toString();
