@@ -12,6 +12,6 @@
 class Solution {
     public String extractMessage(String s) {
         // code here
-         return s.replace("LIE", " ");
+          return s.replace("LIE", " ").replaceAll(" +", " ").trim();
     }
 }
