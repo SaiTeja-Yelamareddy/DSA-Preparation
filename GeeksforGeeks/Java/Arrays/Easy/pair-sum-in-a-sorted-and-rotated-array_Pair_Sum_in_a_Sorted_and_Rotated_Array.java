@@ -9,32 +9,24 @@
  * Status: ACCEPTED
  */
 
+import java.util.*;
+
 class Solution {
     public boolean pairInSortedRotated(int[] arr, int target) {
-
-        int n = arr.length;
-        int pivot = 0;
-        for (int i = 0; i < n - 1; i++) {
-            if (arr[i] > arr[i + 1]) {
-                pivot = i + 1;
-                break;
-            }
-        }
-        int low = pivot;
-        int high = (pivot - 1 + n) % n;
-
-        while (low != high) {
-            int sum = arr[low] + arr[high];
+        Arrays.sort(arr);
+        int left = 0;
+        int right = arr.length - 1;
+        while (left < right) {
+            int sum = arr[left] + arr[right];
             if (sum == target) {
                 return true;
             }
             if (sum < target) {
-                low = (low + 1) % n;
+                left++;
             } else {
-                high = (high - 1 + n) % n;
+                right--;
             }
         }
-
         return false;
     }
 }
