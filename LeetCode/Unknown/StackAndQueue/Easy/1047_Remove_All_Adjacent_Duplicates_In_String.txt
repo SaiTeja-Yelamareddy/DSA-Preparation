@@ -10,8 +10,24 @@
  * Status: ACCEPTED
  */
 
+import java.util.*;
+
 class Solution {
     public String removeDuplicates(String s) {
-        
+
+        HashMap<Character, Integer> map = new HashMap<>();
+        StringBuilder result = new StringBuilder();
+
+        for (char ch : s.toCharArray()) {
+
+            if (map.containsKey(ch) && map.get(ch) == 1) {
+                map.remove(ch);
+            } else {
+                map.put(ch, 1);
+                result.append(ch);
+            }
+        }
+
+        return result.toString();
     }
 }
