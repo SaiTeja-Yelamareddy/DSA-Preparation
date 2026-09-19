@@ -10,7 +10,7 @@
  */
 
 class Solution {
-    public String mergeAlternately(String s1, String s2) {
+    public String merge(String s1, String s2) {
         StringBuilder result = new StringBuilder();
         int i = 0;
         int j = 0;
