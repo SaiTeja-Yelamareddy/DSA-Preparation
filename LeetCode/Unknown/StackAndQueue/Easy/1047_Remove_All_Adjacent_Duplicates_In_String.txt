@@ -1,0 +1,17 @@
+/*
+ * Platform: LeetCode
+ * Problem ID: 1047
+ * Problem: Remove All Adjacent Duplicates In String
+ * Problem Link: https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/
+ * Language: Unknown
+ * Concept: StackAndQueue
+ * Difficulty: Easy
+ * Tags: String, Stack
+ * Status: ACCEPTED
+ */
+
+class Solution {
+    public String removeDuplicates(String s) {
+        
+    }
+}
