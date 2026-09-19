@@ -9,4 +9,8 @@
  * Status: ACCEPTED
  */
 
-# cook your dish here
+ public static int removeDuplicates(int[] nums) {
+     //code here...
+     
+     
+ }
