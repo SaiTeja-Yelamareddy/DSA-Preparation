@@ -16,6 +16,7 @@ class Solution {
         int count = 0;
         while (left < right) {
             int sum = arr[left] + arr[right];
+
             if (sum < target) {
                 left++;
             }
@@ -23,7 +24,8 @@ class Solution {
                 right--;
             }
             else {
-                if (arr[left] == arr[right]) {
+                if (arr[left] == arr[right]){
+
                     int n = right - left + 1;
                     count += (n * (n - 1)) / 2;
                     break;
@@ -36,14 +38,14 @@ class Solution {
                 }
                 int rightValue = arr[right];
                 int rightCount = 0;
+
                 while (left <= right && arr[right] == rightValue) {
                     rightCount++;
                     right--;
-                
+                }
                 count += leftCount * rightCount;
             }
         }
-
         return count;
     }
 }
