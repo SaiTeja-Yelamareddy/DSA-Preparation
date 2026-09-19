@@ -1,0 +1,17 @@
+/*
+ * Platform: LeetCode
+ * Problem ID: 977
+ * Problem: Squares of a Sorted Array
+ * Problem Link: https://leetcode.com/problems/squares-of-a-sorted-array/
+ * Language: Unknown
+ * Concept: TwoPointers
+ * Difficulty: Easy
+ * Tags: Array, Two Pointers, Sorting
+ * Status: ACCEPTED
+ */
+
+class Solution {
+    public int[] sortedSquares(int[] nums) {
+        
+    }
+}
