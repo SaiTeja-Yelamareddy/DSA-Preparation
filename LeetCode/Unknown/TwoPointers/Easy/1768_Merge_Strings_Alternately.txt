@@ -1,0 +1,17 @@
+/*
+ * Platform: LeetCode
+ * Problem ID: 1768
+ * Problem: Merge Strings Alternately
+ * Problem Link: https://leetcode.com/problems/merge-strings-alternately/
+ * Language: Unknown
+ * Concept: TwoPointers
+ * Difficulty: Easy
+ * Tags: Two Pointers, String
+ * Status: ACCEPTED
+ */
+
+class Solution {
+    public String mergeAlternately(String word1, String word2) {
+        
+    }
+}
