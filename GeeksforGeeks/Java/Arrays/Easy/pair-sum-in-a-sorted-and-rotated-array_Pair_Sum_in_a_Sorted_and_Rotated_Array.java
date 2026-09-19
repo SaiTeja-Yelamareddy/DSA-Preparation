@@ -24,9 +24,7 @@ class Solution {
         int high = (pivot - 1 + n) % n;
 
         while (low != high) {
-
             int sum = arr[low] + arr[high];
-
             if (sum == target) {
                 return true;
             }
