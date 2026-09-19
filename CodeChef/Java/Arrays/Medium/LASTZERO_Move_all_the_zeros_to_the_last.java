@@ -9,4 +9,9 @@
  * Status: ACCEPTED
  */
 
-# cook your dish here
+class Solution {
+    public void moveZeroes(int[] nums) {
+        // write your code here
+        
+    }
+}
