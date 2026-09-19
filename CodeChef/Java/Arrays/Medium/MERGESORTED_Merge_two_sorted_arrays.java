@@ -9,15 +9,28 @@
  * Status: ACCEPTED
  */
 
-import java.util.*;
-import java.lang.*;
-import java.io.*;
+import java.util.Scanner;
 
-class Codechef
-{
-	public static void main (String[] args) throws java.lang.Exception
-	{
-		// your code goes here
+public class Main {
+    public static void mergeArrays(int[] a, int[] b, int n, int m) {
+        int i = 0, j = 0;
+        while (i < n && j < m) {
+            if (a[i] < b[j]) System.out.print(a[i++] + " ");
+            else System.out.print(b[j++] + " ");
+        }
+        while (i < n) System.out.print(a[i++] + " ");
+        while (j < m) System.out.print(b[j++] + " ");
+    }
 
-	}
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int m = sc.nextInt();
+        int[] a = new int[n];
+        int[] b = new int[m];
+        for (int i = 0; i < n; i++) a[i] = sc.nextInt();
+        for (int j = 0; j < m; j++) b[j] = sc.nextInt();
+        
+        mergeArrays(a, b, n, m);
+    }
 }
