@@ -28,7 +28,6 @@ class Solution {
             if (sum == target) {
                 return true;
             }
-
             if (sum < target) {
                 low = (low + 1) % n;
             } else {
