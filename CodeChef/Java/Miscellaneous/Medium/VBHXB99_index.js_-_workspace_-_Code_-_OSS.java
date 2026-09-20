@@ -11,13 +11,6 @@
  * Status: ACCEPTED
  */
 
-const express = require('express');
-const path = require('path');
-
-const app = express();
-
-// Middleware to parse URL-encoded form data
-app.use(express.urlencoded({ extended: false }));
-
-// Middleware to parse JSON data
-app.use(express.json());
+            app.listen(PORT, () => {
+              console.log(`Server listening on port ${PORT}`);
+              });
