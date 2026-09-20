@@ -11,6 +11,7 @@
  * Status: ACCEPTED
  */
 
+// Simulated weather API function
 function fetchWeather(city) {
     return new Promise((resolve, reject) => {
       setTimeout(() => {
@@ -20,4 +21,5 @@ function fetchWeather(city) {
         } else {
           reject(`Error: Could not fetch weather for ${city}`);
         }
-      }, 50);
+…  getWeatherCallback("Bangalore");
+  
