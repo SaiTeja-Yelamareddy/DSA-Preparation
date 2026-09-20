@@ -11,13 +11,8 @@
  * Status: ACCEPTED
  */
 
-<!DOCTYPE html>
-<html>
-<head>
-    <title>My First EJS Page</title>
-</head>
-<body>
-    <h1>Welcome to my website!</h1>
-    <p>The best place to learn web development!</p>
-</body>
-</html>
+
+const port = 3000;
+app.listen(port, () => {
+  console.log(`Server is running on port ${port}`);
+});
