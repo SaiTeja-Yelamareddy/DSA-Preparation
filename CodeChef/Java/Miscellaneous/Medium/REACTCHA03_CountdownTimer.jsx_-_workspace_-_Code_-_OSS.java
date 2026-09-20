@@ -15,9 +15,17 @@ import { useState, useEffect } from 'react';
 import TimerControls from './TimerControls';
 
 function CountdownTimer() {
-  const [timeLeft, setTimeLeft] = useState(10); // Start from 10 seconds
+  const [timeLeft, setTimeLeft] = useState(10);
   const [isRunning, setIsRunning] = useState(false);
 
-  // TODO: Implement useEffect for the countdown logic
-  // 1. Start interval when isRunning=true
-  // 2. Clear interval on unmount or when paused
+  useEffect(() => {
+    let interval;
+    
+…          setTimeLeft(10);
+        }}
+      />
+    </div>
+  );
+}
+
+export default CountdownTimer;
