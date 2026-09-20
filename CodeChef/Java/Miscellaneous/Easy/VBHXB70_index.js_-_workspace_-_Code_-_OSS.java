@@ -11,4 +11,13 @@
  * Status: ACCEPTED
  */
 
-// write your code here.
+// Define root route
+app.get('/', (req, res) => {
+  res.send(greeting);
+  });
+
+  // Start the server
+  app.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}`);
+    });
+    
