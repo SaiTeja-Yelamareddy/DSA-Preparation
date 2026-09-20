@@ -11,4 +11,14 @@
  * Status: ACCEPTED
  */
 
-// write your code here
+// app.js
+const express = require('express');
+const app = express();
+const port = 3000;
+
+// Middleware 1: Sets the response message
+const messageMiddleware = (req, res, next) => {
+  res.locals.message = 'hello world';
+  next();
+};
+…});
