@@ -11,13 +11,10 @@
  * Status: ACCEPTED
  */
 
-const express = require('express');
-const app = express();
+                                              console.log('Product received:', { name, price, quantity });
+                                                res.send('Product added successfully!');
+                                                });
 
-// Middleware to parse JSON request bodies
-
-app.post('/products', (req, res) => {
-
-  // Check if all required fields are present
-
-
+                                                app.listen(8080, () => {
+                                                  console.log('Server listening on port 8080');
+                                                  });
