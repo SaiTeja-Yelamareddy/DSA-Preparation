@@ -1,0 +1,23 @@
+/*
+ * Platform: CodeChef
+ * Problem ID: ZWDLEP03
+ * Problem: index.js - workspace - Code - OSS
+ * Problem Link: https://www.codechef.com/learn/course/nodejs/UQMFVA/problems/ZWDLEP03
+ * Language: Java
+ * Concept: Miscellaneous
+ * Difficulty: Medium
+ * Course: Nodejs
+ * Module: UQMFVA
+ * Status: ACCEPTED
+ */
+
+const express = require('express');
+const path = require('path');
+
+const app = express();
+
+// Middleware to parse URL-encoded form data
+app.use(express.urlencoded({ extended: false }));
+
+// Middleware to parse JSON data
+app.use(express.json());
