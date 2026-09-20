@@ -11,4 +11,6 @@
  * Status: ACCEPTED
  */
 
-// write your code here.
+    console.log(`Server is running on port ${PORT}`);
+    });
+    
