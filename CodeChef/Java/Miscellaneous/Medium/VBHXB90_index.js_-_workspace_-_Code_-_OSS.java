@@ -11,13 +11,7 @@
  * Status: ACCEPTED
  */
 
-const express = require('express');
-const app = express();
-const port = 3000;
-
-const routeCounts = {};
-
-const requestCounter = (req, res, next) => {
-  const route = req.path;
-
-  if (!routeCounts[route]) {
+                    app.listen(port, () => {
+                      console.log(`Server listening on port ${port}`);
+                      });
+                      
