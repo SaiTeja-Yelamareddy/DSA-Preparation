@@ -12,17 +12,12 @@
  */
 
 const express = require('express');
-const fs = require('fs');
 const path = require('path');
-const router = express.Router();
+const notesRouter = require('./routes/notes');
+const fs = require('fs');
 
-const notesDir = path.join(__dirname, '..', 'notes');
+const app = express();
+const PORT = process.env.PORT || 3000;
 
-// Form Page to Add Note
-router.get('/add', (req, res) => {
-  res.render('add-note');
-…    return res.status(200).send('Note saved'); 
-  });
-});
-
-module.exports = router;
+// Middleware
+app.use(express.urlencoded({ extended: true }));
