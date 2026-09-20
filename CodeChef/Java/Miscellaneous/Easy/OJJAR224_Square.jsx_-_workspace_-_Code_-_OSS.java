@@ -11,9 +11,6 @@
  * Status: ACCEPTED
  */
 
-// Implemented before
-function Square(____________) {
-  return null; 
-}
+                                    }
 
-export default Square;
+                                    export default Square;
