@@ -2,12 +2,12 @@
  * Platform: CodeChef
  * Problem ID: FYAOAZ11
  * Problem: layout.ejs - workspace - Code - OSS
- * Problem Link: https://www.codechef.com/learn/course/vasavi-v23csse03-fsd-2026/JHASDA100/problems/FYAOAZ11
+ * Problem Link: https://www.codechef.com/learn/course/nodejs/IUFUSV/problems/FYAOAZ11
  * Language: Java
  * Concept: Miscellaneous
  * Difficulty: Medium
- * Course: Vasavi V23csse03 Fsd 2026
- * Module: JHASDA100
+ * Course: Nodejs
+ * Module: IUFUSV
  * Status: ACCEPTED
  */
 
