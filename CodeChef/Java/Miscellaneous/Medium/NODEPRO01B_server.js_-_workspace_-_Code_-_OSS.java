@@ -2,12 +2,12 @@
  * Platform: CodeChef
  * Problem ID: NODEPRO01B
  * Problem: server.js - workspace - Code - OSS
- * Problem Link: https://www.codechef.com/learn/course/nodejs/NODEJSPRO2/problems/NODEPRO01B
+ * Problem Link: https://www.codechef.com/learn/course/vasavi-v23csse03-fsd-2026/JHASDA101/problems/NODEPRO01B
  * Language: Java
  * Concept: Miscellaneous
  * Difficulty: Medium
- * Course: Nodejs
- * Module: NODEJSPRO2
+ * Course: Vasavi V23csse03 Fsd 2026
+ * Module: JHASDA101
  * Status: ACCEPTED
  */
 
