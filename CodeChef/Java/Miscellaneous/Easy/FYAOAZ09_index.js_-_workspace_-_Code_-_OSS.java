@@ -11,7 +11,18 @@
  * Status: ACCEPTED
  */
 
-  res.render('quote', { quote: quote });
+const express = require('express');
+const app = express();
+
+// Set the view engine to ejs
+
+
+app.get('/', (req, res) => {
+  // Array of motivational quotes
+  const quotes = [
+    "I am build upon the small things I do everyday and the end results are no more than a byproduct of that. -Shinsuke Kita",
+…
+  
 });
 
 app.listen(3000, () => {
