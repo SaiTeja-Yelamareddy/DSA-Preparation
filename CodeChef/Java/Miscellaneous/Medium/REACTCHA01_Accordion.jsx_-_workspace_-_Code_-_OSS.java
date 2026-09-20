@@ -14,10 +14,18 @@
 import { useState } from 'react';
 import AccordionItem from './AccordionItem';
 
-// USER IMPLEMENTATION AREA
 function Accordion({ items }) {
-  // TODO: Create state to track active index
-  // TODO: Implement click handler to toggle items
-  // Requirements:
-  // 1. Only one item should be open at a time
-  // 2. Clicking an open item should close it
+  const [activeIndex, setActiveIndex] = useState(null);
+
+  const handleItemClick = (index) => {
+    // Toggle: if clicking the currently active item, close it
+    // Otherwise, set the clicked index as active
+    setActiveIndex(activeIndex === index ? null : index);
+…          onClick={() => handleItemClick(index)}
+        />
+      ))}
+    </div>
+  );
+}
+
+export default Accordion;
