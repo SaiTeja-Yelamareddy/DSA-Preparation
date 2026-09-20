@@ -11,13 +11,13 @@
  * Status: ACCEPTED
  */
 
-const express = require('express');
-const app = express();
-const port = 3000;
+  res.send('Welcome to the Bookstore API!');
+});
 
-// Import routers
-const booksRouter = require('./books');
-const authorsRouter = require('./authors');
+// Mount routers
+app.use('/books', booksRouter);
+app.use('/authors', authorsRouter);
 
-// Root route
-app.get('/', (req, res) => {
+// Start the server
+______________________
+  console.log(`Server listening on port ${port}`);
