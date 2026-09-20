@@ -21,3 +21,5 @@ app.use(express.urlencoded({ extended: false }));
 
 // Middleware to parse JSON data
 app.use(express.json());
+…  console.log(`Server listening on port ${PORT}`);
+});
