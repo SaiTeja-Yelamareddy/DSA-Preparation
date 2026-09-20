@@ -11,8 +11,13 @@
  * Status: ACCEPTED
  */
 
-                                                                                                 res.end('404 "Not Found"');
-                                                                                                                    }
-                                                                                                                    });
+const http = require('http');
+const url = require('url');
+const server = http.createServer((req, res) => {
+const parsedUrl = url.parse(req.url, true);
+const path = parsedUrl.pathname;
+const id = parsedUrl.query.id;
 
-                                                                                                                    server.listen(3000);
+if (path === '/product') {
+res.writeHead(200, { 'Content-Type': 'text/plain' });
+
