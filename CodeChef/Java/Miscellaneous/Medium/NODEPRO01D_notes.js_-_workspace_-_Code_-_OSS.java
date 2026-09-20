@@ -11,13 +11,13 @@
  * Status: ACCEPTED
  */
 
-const express = require('express');
-const fs = require('fs');
-const path = require('path');
-const router = express.Router();
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Notes App</title>
+        <link rel="stylesheet" href="/styles.css" />
+    </head>
+    <body>
+        <!-- complete the code to show the title and content of the note and option to delete it -->
+        
 
-const notesDir = path.join(__dirname, '..', 'notes');
-
-// View All Notes
-router.get('/', (req, res) => {
-  fs.readdir(notesDir, (err, files) => {
