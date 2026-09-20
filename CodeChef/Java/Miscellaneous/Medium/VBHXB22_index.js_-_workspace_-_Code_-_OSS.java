@@ -11,13 +11,13 @@
  * Status: ACCEPTED
  */
 
-function fetchWeather(city) {
-    return new Promise((resolve, reject) => {
-      setTimeout(() => {
-        const success = Math.random() > 0.5;
-        if (success) {
-          resolve({ city, temp: "30°C", condition: "Sunny" });
-        } else {
-          reject(`Error: Could not fetch weather for ${city}`);
-        }
-      }, 50);
+  function getWeatherPromise(city) {
+      // Using .then()/.catch()
+    
+
+
+  }
+  
+  // 3️⃣ Using callback style
+  function fetchWeatherWithCallback(city, callback) {
+    setTimeout(() => {
