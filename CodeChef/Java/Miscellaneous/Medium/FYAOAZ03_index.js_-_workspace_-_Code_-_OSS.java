@@ -11,4 +11,8 @@
  * Status: ACCEPTED
  */
 
-// write your code here
+
+const port = 3000;
+app.listen(port, () => {
+  console.log(`Server is running on port ${port}`);
+});
