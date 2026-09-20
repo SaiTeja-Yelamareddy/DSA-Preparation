@@ -11,13 +11,13 @@
  * Status: ACCEPTED
  */
 
-const http = require('http');
-const url = require('url');
-const server = http.createServer((req, res) => {
-const parsedUrl = url.parse(req.url, true);
-const path = parsedUrl.pathname;
-const id = parsedUrl.query.id;
 
-if (path === '/product') {
-res.writeHead(200, { 'Content-Type': 'text/plain' });
+res.end('Error: Product ID is required');
+return;
+}
 
+res.writeHead(404, { 'Content-Type': 'text/plain' });
+res.end('404 "Not Found"');
+});
+
+server.listen(3000);
