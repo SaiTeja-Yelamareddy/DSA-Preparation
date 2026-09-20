@@ -11,5 +11,15 @@
  * Status: ACCEPTED
  */
 
-// write your code here
+const fs = require('fs');
+const path = require('path');
 
+const inputFile = path.resolve(__dirname, 'words.txt');
+const outputFile = path.resolve(__dirname, 'short_words.txt');
+
+console.log('Reading words.txt...');
+
+fs.readFile(inputFile, 'utf8', (err, data) => {
+  if (err) {
+…  });
+});
