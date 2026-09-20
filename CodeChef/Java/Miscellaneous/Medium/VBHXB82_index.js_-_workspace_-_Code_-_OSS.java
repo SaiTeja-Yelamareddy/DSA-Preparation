@@ -11,13 +11,13 @@
  * Status: ACCEPTED
  */
 
-const express = require('express');
-const app = express();
-const port = 3000;
+            responseText += `, Chapter: ${chapter}`;
+              }
 
-app.get('/books/:bookId', (req, res) => {
-  const bookId = req.params.bookId;
-  const chapter = req.query.chapter;
+                res.send(responseText);
+                });
 
-  let responseText = `Book ID: ${________}`;
-  if (chapter) {
+                app.listen(port, () => {
+                  console.log(`Server listening on port ${port}`);
+                  });
+                  
