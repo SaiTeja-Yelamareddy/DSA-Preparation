@@ -17,7 +17,7 @@ return;
 }
 
 res.writeHead(404, { 'Content-Type': 'text/plain' });
-res.end('404 "Not Found"');
+res.end('404 Not Found');
 });
 
 server.listen(3000);
