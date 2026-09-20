@@ -19,5 +19,14 @@ app.get('/books/:bookId', (req, res) => {
   const bookId = req.params.bookId;
   const chapter = req.query.chapter;
 
-  let responseText = `Book ID: ${________}`;
+  let responseText = `Book ID: ${bookId}`;
   if (chapter) {
+    responseText += `, Chapter: ${chapter}`;
+  }
+
+  res.send(responseText);
+});
+
+app.listen(port, () => {
+  console.log(`Server listening on port ${port}`);
+});
