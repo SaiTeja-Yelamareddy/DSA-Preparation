@@ -11,13 +11,13 @@
  * Status: ACCEPTED
  */
 
-const express = require('express');
-const path = require('path');
 
-const app = express();
+app.post('/submit-feedback-json', (req, res) => {
+  console.log('JSON data received:');
+  console.log(req.body);
+  res.json({ message: 'Feedback JSON data received!' });
+});
 
-// Middleware to parse URL-encoded form data
-app.use(express.urlencoded({ extended: false }));
+const PORT = 3000;
 
-// Middleware to parse JSON data
-app.use(express.json());
+app.listen(PORT, () => {
