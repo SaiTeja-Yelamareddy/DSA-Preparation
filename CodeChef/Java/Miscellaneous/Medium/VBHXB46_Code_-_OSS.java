@@ -11,5 +11,12 @@
  * Status: ACCEPTED
  */
 
-// write your code here
 
+fs.writeFile(outputFile, result, 'utf8', (err) => {
+if (err) {
+return console.error('Error writing file:', err);
+}
+
+console.log('Short words written successfully!');
+});
+});
