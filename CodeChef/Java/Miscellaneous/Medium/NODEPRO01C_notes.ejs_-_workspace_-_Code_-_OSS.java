@@ -11,13 +11,13 @@
  * Status: ACCEPTED
  */
 
-const express = require('express');
-const fs = require('fs');
-const path = require('path');
-const router = express.Router();
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Notes App</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <h1><a href="/">📓 Notes App</a></h1>
 
-const notesDir = path.join(__dirname, '..', 'notes');
-
-// View All Notes
-
-
+  <a href="/" style="text-decoration: none;">
