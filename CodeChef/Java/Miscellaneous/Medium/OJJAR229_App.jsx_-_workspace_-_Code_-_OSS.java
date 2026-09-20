@@ -11,13 +11,20 @@
  * Status: ACCEPTED
  */
 
-import { useState, useEffect } from 'react'
-import { fetchCryptoPrices } from './data'
+  }, [])
 
-function App() {
-  const [prices, setPrices] = useState([])
+  return (
+    <div style={{ fontFamily: 'sans-serif', padding: '20px' }}>
+      <h1>📈 Crypto Dashboard</h1>
+      <p>Updates every 5 seconds...</p>
+      <table style={{ borderCollapse: 'collapse', marginTop: '20px' }}>
+        <thead>
+          <tr>
+            <th style={{ padding: '8px', border: '1px solid gray' }}>Name</th>
+…        </tbody>
+      </table>
+    </div>
+  )
+}
 
-  useEffect(() => {
-    // TODO 1: Create a polling function that calls fetchCryptoPrices every 5 seconds
-    // TODO 2: On each poll, update state with new prices
-    // TODO 3: Don't forget to clean up interval when component unmounts
+export default App
