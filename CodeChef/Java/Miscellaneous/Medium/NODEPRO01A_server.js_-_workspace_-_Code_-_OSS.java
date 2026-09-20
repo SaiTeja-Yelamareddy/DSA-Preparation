@@ -17,7 +17,12 @@ const fs = require('fs');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
+// Middleware
 app.use(express.urlencoded({ extended: true }));
-// Middleware to handle the public folder to serve css in static format
+app.use(express.static(path.join(__dirname, 'public')));
 
+…if (!fs.existsSync('./notes')) fs.mkdirSync('./notes');
 
+app.listen(PORT, () => {
+  console.log(`Server running at http://localhost:${PORT}`);
+});
