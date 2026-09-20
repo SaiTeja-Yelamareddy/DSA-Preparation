@@ -11,13 +11,9 @@
  * Status: ACCEPTED
  */
 
-const express = require('express');
-const app = express();
+  res.render('quote', { quote: quote });
+});
 
-// Set the view engine to ejs
-
-
-app.get('/', (req, res) => {
-  // Array of motivational quotes
-  const quotes = [
-    "I am build upon the small things I do everyday and the end results are no more than a byproduct of that. -Shinsuke Kita",
+app.listen(3000, () => {
+  console.log('Server is running on port 3000');
+});
