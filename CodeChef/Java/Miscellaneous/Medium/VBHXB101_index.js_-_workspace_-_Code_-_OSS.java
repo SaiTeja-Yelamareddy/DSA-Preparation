@@ -11,13 +11,7 @@
  * Status: ACCEPTED
  */
 
-  const express = require('express');
-  const app = express();
+                                                                                        console.log('Server listening on port 8080');
+                                                                                          });
 
-  // Middleware to parse JSON request bodies
-
-
-  app.post('/contact', (req, res) => {
-    const { name, email, message } = req.body;
-
-    // Check if required fields are present
+                                                                                          
