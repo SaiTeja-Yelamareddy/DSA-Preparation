@@ -11,13 +11,21 @@
  * Status: ACCEPTED
  */
 
-import React, { createContext, useState, useContext } from "react";
+import { createContext, useState, useContext } from "react";
 
+// 1. Create the context
 const ThemeContext = createContext();
 
-// ThemeProvider component to wrap around the app
+// 2. Create the provider component
 export function ThemeProvider({ children }) {
-  // TODO: Create a theme state (light/dark), default should be "light"
-  const [theme, setTheme] = useState(/** TODO */);
+  const [theme, setTheme] = useState("light");
 
-  // TODO: Implement toggleTheme function that switches between light and dark
+  const toggleTheme = () => {
+…// 3. Create a custom hook for easy access
+export function useTheme() {
+  const context = useContext(ThemeContext);
+  if (!context) {
+    throw new Error("useTheme must be used within a ThemeProvider");
+  }
+  return context;
+}
