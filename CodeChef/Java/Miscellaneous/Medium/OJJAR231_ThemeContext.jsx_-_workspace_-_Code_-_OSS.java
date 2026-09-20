@@ -21,3 +21,4 @@ export function ThemeProvider({ children }) {
   const [theme, setTheme] = useState(/** TODO */);
 
   // TODO: Implement toggleTheme function that switches between light and dark
+…}
