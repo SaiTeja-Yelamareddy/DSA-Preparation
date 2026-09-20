@@ -11,9 +11,13 @@
  * Status: ACCEPTED
  */
 
-4;
-                                                                                                            res.end('404 Not Found');
-                                                                                                                }
-                                                                                                                });
+const http = require('http');
+const url = require('url');
 
-                                                                                                                server.listen(3000);
+const products = {
+'123': { name: 'Example Product', price: '$25' },
+'456': { name: 'Another Product', price: '$50' }
+};
+
+const server = http.createServer((req, res) => {
+const parsedUrl = url.parse(req.url, true);
