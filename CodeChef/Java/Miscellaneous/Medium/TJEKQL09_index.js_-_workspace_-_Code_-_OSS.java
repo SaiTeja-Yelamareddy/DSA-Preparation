@@ -11,13 +11,14 @@
  * Status: ACCEPTED
  */
 
-// write your code here
+const express = require('express');
+const path = require('path');
+const app = express();
+const port = 3000;
 
+// Serve static files (including JSON) from the 'public' directory
+app.use(express.static(path.join(__dirname, 'public')));
 
-
-
-
-// our server only accept frontend running on port 3000.
-const port=3000;
 app.listen(port, () => {
     console.log(`Server is running at http://localhost:${port}`);
+});
