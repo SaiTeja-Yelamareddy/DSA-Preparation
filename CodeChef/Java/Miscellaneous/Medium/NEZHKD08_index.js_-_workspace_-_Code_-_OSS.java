@@ -11,13 +11,12 @@
  * Status: ACCEPTED
  */
 
-const express = require('express');
 
-const app = express();
+// Define a route for GET requests to the path "/products" that responds with "Our products are coming soon!"
+app.get('/products', (req, res) => {
+  res.send('Our products are coming soon!');
+});
 
-const PORT = 3000;
-
-// Define a route for GET requests to the root path ("/") that responds with "Welcome to the homepage!"
-___________________________________
-  res.send('Welcome to the homepage!');
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
 });
