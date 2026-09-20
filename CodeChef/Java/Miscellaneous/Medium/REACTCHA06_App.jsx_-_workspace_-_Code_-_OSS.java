@@ -14,10 +14,11 @@
 import { useState, useEffect, useRef } from 'react';
 import './App.css';
 
-// Utility function to get random position for a circle
 const getRandomPosition = () => {
-  const x = Math.floor(Math.random() * 90); // % position for left
-  const y = Math.floor(Math.random() * 80); // % position for top
+  const x = Math.floor(Math.random() * 90); // percent
+  const y = Math.floor(Math.random() * 80);
   return { x, y };
 };
 
+function Circle({ x, y, onClick }) {
+…export default App;
