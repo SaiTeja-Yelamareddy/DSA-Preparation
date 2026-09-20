@@ -18,6 +18,14 @@ function App() {
   const [prices, setPrices] = useState([])
 
   useEffect(() => {
-    // TODO 1: Create a polling function that calls fetchCryptoPrices every 5 seconds
-    // TODO 2: On each poll, update state with new prices
-    // TODO 3: Don't forget to clean up interval when component unmounts
+    // Function to fetch and update prices
+    const updatePrices = async () => {
+      const data = await fetchCryptoPrices()
+…          ))}
+        </tbody>
+      </table>
+    </div>
+  )
+}
+
+export default App
