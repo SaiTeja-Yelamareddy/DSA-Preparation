@@ -11,4 +11,14 @@
  * Status: ACCEPTED
  */
 
-// write your code here
+const http = require('http');
+const url = require('url');
+
+const products = {
+  '123': { name: 'Example Product', price: '$25' },
+  '456': { name: 'Another Product', price: '$50' }
+};
+
+const server = http.createServer((req, res) => {
+  const parsedUrl = url.parse(req.url, true);
+…});
