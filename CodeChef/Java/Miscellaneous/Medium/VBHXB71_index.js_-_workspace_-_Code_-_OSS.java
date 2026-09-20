@@ -11,13 +11,6 @@
  * Status: ACCEPTED
  */
 
-// Import the important liberaries and declare the variables used.
+    console.log(`Server is running at http://localhost:${PORT}`);
+});
 
-
-const PORT = 3000;
-
-// Root route to serve the HTML file
-app.get('/', (req, res) => {
-    const filePath = path.join(__dirname, 'index.html');
-    
-    fs.readFile(filePath, 'utf8', (err, data) => {
