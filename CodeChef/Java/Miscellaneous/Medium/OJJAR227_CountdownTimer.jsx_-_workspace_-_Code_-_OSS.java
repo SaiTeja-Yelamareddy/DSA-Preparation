@@ -21,3 +21,12 @@ function CountdownTimer() {
   // TODO: Implement useEffect for the countdown logic
   // 1. Start interval when isRunning=true
   // 2. Clear interval on unmount or when paused
+…          setIsRunning(false);
+          setTimeLeft(10);
+        }}
+      />
+    </div>
+  );
+}
+
+export default CountdownTimer;
