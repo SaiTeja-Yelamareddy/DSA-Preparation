@@ -11,7 +11,7 @@
  */
 
 class Solution {
-    public String reverseString(String s) {
+    public String reverseOnlyLetters(String s) {
         char[] sarr = s.toCharArray();
         int l = 0, r = sarr.length - 1;
         while (l < r) {
