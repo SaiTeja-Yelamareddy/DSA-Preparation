@@ -15,9 +15,12 @@
   const app = express();
 
   // Middleware to parse JSON request bodies
-
+  app.use(express.json());
 
   app.post('/contact', (req, res) => {
     const { name, email, message } = req.body;
 
     // Check if required fields are present
+…    console.log('Server listening on port 8080');
+  });
+
