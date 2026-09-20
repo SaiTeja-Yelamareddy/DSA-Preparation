@@ -19,5 +19,12 @@ const server = http.createServer((req, res) => {
   if (req.url === '/') {
     res.writeHead(200, { 'Content-Type': 'text/plain' });
     res.end('Welcome to the server!');
-  } 
-//   add your else if block here
+  } else if (req.url === '/message') {
+    const filePath = path.join(__dirname, 'message.txt');
+…  }
+});
+
+const port = 3000;
+server.listen(port, () => {
+  console.log(`Server listening on port ${port}`);
+});
