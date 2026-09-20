@@ -11,9 +11,13 @@
  * Status: ACCEPTED
  */
 
-4;
-                                                                                                            res.end('404 Not Found');
-                                                                                                                }
-                                                                                                                });
 
-                                                                                                                server.listen(3000);
+if (String(id) === '123') {
+res.end('Product ID: 123, Name: Example Product, Price: $25');
+} else if (String(id) === '456') {
+res.end('Product ID: 456, Name: Another Product, Price: $50');
+} else {
+res.end('Error: Product ID is required');
+}
+} else {
+res.writeHead(404, { 'Content-Type': 'text/plain' });
