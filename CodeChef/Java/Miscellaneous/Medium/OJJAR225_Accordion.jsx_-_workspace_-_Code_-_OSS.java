@@ -21,3 +21,11 @@ function Accordion({ items }) {
   // Requirements:
   // 1. Only one item should be open at a time
   // 2. Clicking an open item should close it
+…          onClick={() => {}} // TODO: Replace with actual handler
+        />
+      ))}
+    </div>
+  );
+}
+
+export default Accordion;
