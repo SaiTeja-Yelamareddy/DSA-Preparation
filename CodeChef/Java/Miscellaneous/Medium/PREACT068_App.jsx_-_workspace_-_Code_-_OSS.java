@@ -15,9 +15,12 @@ import React from "react";
 
 const StudentList = () => {
   const students = [
-    { name: "John", age: 20 },
-    { name: "Emma", age: 22 },
-    { name: "Liam", age: 19 },
-    { name: "Olivia", age: 21 }
+    { id: 1, name: "John", age: 20 },
+    { id: 2, name: "Emma", age: 22 },
+    { id: 3, name: "Liam", age: 19 },
+    { id: 4, name: "Olivia", age: 21 }
   ];
 
+…};
+
+export default StudentList;
