@@ -21,3 +21,12 @@ export default function App() {
         backgroundColor: 'lightblue',
         color: 'white',
         display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        fontSize: '18px'
+      }}
+    >
+      Styled Box
+    </div>
+  );
+}
