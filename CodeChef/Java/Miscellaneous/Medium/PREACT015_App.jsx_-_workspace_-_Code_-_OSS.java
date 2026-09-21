@@ -11,13 +11,23 @@
  * Status: ACCEPTED
  */
 
-// UserProfile component: A reusable component to display user information
 function UserProfile(props) {
   return (
     <div>
-      {/* Heading for the user profile section */}
-      {/* Displaying the user's name from props */}
-      {/* Displaying the user's age from props */}
+      <h3>User Profile:</h3>
+      <p>Name: {props.name}</p>
+      <p>Age: {props.age}</p>
     </div>
   );
 }
+
+function App() {
+  return (
+    <div>
+      <UserProfile name="Alice" age={25} />  
+      <UserProfile name="Bob" age={30} />  
+    </div>
+  );
+}
+
+export default App;
