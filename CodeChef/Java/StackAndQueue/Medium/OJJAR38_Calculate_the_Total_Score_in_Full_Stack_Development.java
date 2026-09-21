@@ -11,4 +11,13 @@
  * Status: ACCEPTED
  */
 
-# cook your dish here
+let scores = [10, 45, 23, 8];
+let totalScore = 0; // Start with a total of 0
+
+// Use forEach to go through each score
+scores.forEach((score) => {
+  // Add the current score to the totalScore
+  totalScore = totalScore + score;
+});
+
+console.log("Total Score:", totalScore); 
