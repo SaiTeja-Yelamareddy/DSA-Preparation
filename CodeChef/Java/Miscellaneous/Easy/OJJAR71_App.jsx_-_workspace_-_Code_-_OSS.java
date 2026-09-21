@@ -11,13 +11,6 @@
  * Status: ACCEPTED
  */
 
-  return (
-    <div>
-      {students.map((student) => (
-        <div className="student-card">
-          <h3>{student.name}</h3>
-          <p>Age: {student.age}</p>
-        </div>
-      ))}
-    </div>
-  );
+                                                                                };
+
+                                                                                export default StudentList;
