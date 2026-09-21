@@ -11,13 +11,15 @@
  * Status: ACCEPTED
  */
 
-// Task: Convert this code to use a reusable component `<GreetingCard />`  
-// Instead of hardcoding values, pass `name`, `age`, and `greeting` as props  
-// Use instances of `<GreetingCard />` inside `App` 
-
+// GreetingCard component: A reusable component that displays a greeting card
 export function GreetingCard({ name, age, greeting }) {
     // Inline CSS styling for the card
-
-    return (
-        
-            // Greeting message
+    const cardStyle = {
+        border: "2px solid #333",
+        padding: "20px",
+        borderRadius: "10px",
+        width: "250px",
+        textAlign: "center",
+        boxShadow: "2px 2px 10px rgba(0,0,0,0.1)"
+…
+export default App;
