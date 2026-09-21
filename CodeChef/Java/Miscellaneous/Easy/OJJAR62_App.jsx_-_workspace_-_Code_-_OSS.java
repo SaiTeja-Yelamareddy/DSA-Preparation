@@ -11,13 +11,13 @@
  * Status: ACCEPTED
  */
 
-function Welcome() {
-  return <h2>Welcome to My React App! 🎉</h2>;
-}
+        return (
+            <div>
+                  <Welcome /> {/* Using the Welcome component */}
+                        <p>React components make the UI more structured and reusable.</p>
+                              <Goodbye /> {/* Using the Goodbye component */}
+                                  </div>
+                                    );
+                                    }
 
-// Creating the new Goodbye component
-
-
-
-
-function App() {
+                                    export default App;
