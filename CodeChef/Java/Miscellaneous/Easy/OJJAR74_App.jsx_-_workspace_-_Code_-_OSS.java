@@ -21,3 +21,12 @@ export function WelcomeMessage({ isLoggedIn, isPremiumUser }) {
       {/* Conditional rendering: Show different messages based on user status  */}
       
       
+…// App component: Manages state and renders the WelcomeMessage component
+export default function App() {
+  const isLoggedIn = true;  // Change these values to test different scenarios
+  const isPremiumUser = false; // Change these values to test different scenarios
+
+  return (
+    <WelcomeMessage isLoggedIn={isLoggedIn} isPremiumUser={isPremiumUser} />
+  );
+}
