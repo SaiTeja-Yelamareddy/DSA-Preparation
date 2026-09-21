@@ -11,9 +11,9 @@
  * Status: ACCEPTED
  */
 
-const numbers = [1, 2, 3, 4, 5];
+const words = ['hello', 'world', 'javascript'];
 
 // complete the code 
-const squaredNumbers = numbers.map(num => num * num); 
+const uppercaseWords = words.map(word => word.toUpperCase());;
 
-console.log(squaredNumbers);
+console.log(uppercaseWords); 
