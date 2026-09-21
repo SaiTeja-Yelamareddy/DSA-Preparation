@@ -11,13 +11,11 @@
  * Status: ACCEPTED
  */
 
-export default function App() {
-  return (
-    <div
-      style={{
-        // add the width here 
-        // add the height here 
-
-        backgroundColor: 'lightblue',
-        color: 'white',
-        display: 'flex',
+        alignItems: 'center',
+        fontSize: '18px'
+      }}
+    >
+      Styled Box
+    </div>
+  );
+}
