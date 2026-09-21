@@ -21,3 +21,9 @@ function GreetingCard({ name, age, greeting, favoriteColor }) {
     boxShadow: "0 6px 20px rgba(0, 0, 0, 0.1)",
     fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
     margin: "20px",
+…      }
+    </div>
+  );
+}
+
+export default App;
