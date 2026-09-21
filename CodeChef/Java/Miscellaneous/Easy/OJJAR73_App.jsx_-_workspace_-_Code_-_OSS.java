@@ -11,13 +11,9 @@
  * Status: ACCEPTED
  */
 
-// This component displays the light status based on the `isLightOn` prop.
-export function LightStatus({ isLightOn }) {
-  {/* If `isLightOn` is true, it shows "Lights ON", otherwise "Lights OFF" */}
-  return (
-
-
-      
-
-  );
-}
+                  export default function App() {
+                    return (
+                        <LightStatus isLightOn={true} />
+                          );
+                          }
+                          
