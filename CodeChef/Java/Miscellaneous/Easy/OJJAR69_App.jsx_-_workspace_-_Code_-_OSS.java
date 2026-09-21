@@ -11,13 +11,6 @@
  * Status: ACCEPTED
  */
 
-function GreetingCard({ name, age, greeting, favoriteColor }) {
-  const cardStyle = {
-    backgroundColor: "#fff",
-    padding: "30px",
-    borderRadius: "12px",
-    width: "300px",
-    textAlign: "left",
-    boxShadow: "0 6px 20px rgba(0, 0, 0, 0.1)",
-    fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
-    margin: "20px",
+               }
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                              export default App;
