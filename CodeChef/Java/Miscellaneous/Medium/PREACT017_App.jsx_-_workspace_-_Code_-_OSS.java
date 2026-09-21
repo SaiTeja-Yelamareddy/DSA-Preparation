@@ -11,13 +11,16 @@
  * Status: ACCEPTED
  */
 
-const Message = ({ text }) => {
-  return <p>{text}</p>;
+const Message = ({ children }) => {
+  return <p>{children}</p>;
 };
 
 function App() {
   return (
     <div>
-      <Message text="Hello, this is a message!" />
+      <Message>Hello, this is a message!</Message>
     </div>
   );
+}
+
+export default App;
