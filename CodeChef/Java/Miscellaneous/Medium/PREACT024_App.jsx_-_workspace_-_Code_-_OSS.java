@@ -11,13 +11,14 @@
  * Status: ACCEPTED
  */
 
-// WelcomeMessage component: Displays a message based on login and premium status
 export function WelcomeMessage({ isLoggedIn, isPremiumUser }) {
   return (
     <>
-      {/* Application title  */}
-      
-
-      {/* Conditional rendering: Show different messages based on user status  */}
-      
-      
+      <h1>My React App</h1>
+      {isLoggedIn && isPremiumUser ? (
+        <p>Welcome to Premium Content! 🎉</p>
+      ) : (
+        <p>Please log in and upgrade to premium...</p>
+      )}
+    </>
+…}
