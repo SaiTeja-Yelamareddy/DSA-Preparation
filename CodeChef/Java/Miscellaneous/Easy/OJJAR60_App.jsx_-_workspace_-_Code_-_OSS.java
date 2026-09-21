@@ -11,13 +11,6 @@
  * Status: ACCEPTED
  */
 
-export function App() {  
-    // Defining dynamic values
-    const name = "John"; 
-    const age = 25; // Number type (demonstrating type conversion)
-    const greeting = "Happy Birthday!";  
-
-    // Inline CSS styling
-    const cardStyle = {
-        border: "2px solid #333", 
-        padding: "20px", 
+            </div>  
+                                                                                                                                                                                                                                            );  
+                                                                                                                                                                                                                                            }
