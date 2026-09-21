@@ -20,4 +20,7 @@ const ProfileCard = ({ name, bio, avatarUrl }) => {
     textAlign: "center",
     boxShadow: "2px 2px 10px rgba(0,0,0,0.1)",
     fontFamily: "Arial, sans-serif",
-    margin: "auto",
+    margin: "auto"
+…};
+
+export default App;
