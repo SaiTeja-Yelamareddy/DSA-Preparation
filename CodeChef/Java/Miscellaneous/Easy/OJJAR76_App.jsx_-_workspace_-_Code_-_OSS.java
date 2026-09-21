@@ -11,13 +11,13 @@
  * Status: ACCEPTED
  */
 
-import styles from './Notification.module.css';
+                  function App() {
+                    return (
+                        <div>
+                              <Notification message="Success! Your changes have been saved." />
+                                    <Notification message="File uploaded successfully!" />
+                                        </div>
+                                          );
+                                          }
 
-export function Notification({ message }) {
-  return (
-    <>
-
-
-
-
-
+                                          export default App;
