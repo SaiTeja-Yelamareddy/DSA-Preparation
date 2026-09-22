@@ -1,0 +1,17 @@
+/*
+ * Platform: LeetCode
+ * Problem ID: 15
+ * Problem: 3Sum
+ * Problem Link: https://leetcode.com/problems/3sum/
+ * Language: Unknown
+ * Concept: TwoPointers
+ * Difficulty: Medium
+ * Tags: Array, Two Pointers, Sorting
+ * Status: ACCEPTED
+ */
+
+class Solution {
+    public List<List<Integer>> threeSum(int[] nums) {
+        
+    }
+}
