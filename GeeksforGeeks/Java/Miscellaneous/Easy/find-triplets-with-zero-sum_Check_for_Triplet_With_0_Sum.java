@@ -10,7 +10,7 @@
  */
 
 class Solution {
-    public boolean findTriplet(int[] arr) {
+    public boolean findTriplets(int[] arr) {
         Arrays.sort(arr);
         int n = arr.length;
         for (int i = 0; i < n - 2; i++) {
