@@ -9,43 +9,56 @@
  * Status: ACCEPTED
  */
 
+import java.util.*;
+
 class Solution {
-    public static ArrayList<ArrayList<Integer>> triplets(int[] nums) {
-        // code here
+    public ArrayList<ArrayList<Integer>> triplets(int[] arr) {
         ArrayList<ArrayList<Integer>> ans = new ArrayList<>();
-                Arrays.sort(nums);
-                int n = nums.length;
-                for (int i = 0; i < n - 2; i++) {
-                    if (i > 0 && nums[i] == nums[i - 1]) {
-                        continue;
-                    }
-                    int l = i + 1;
-                    int r = n - 1;
-                    while (l < r) {
-                        int sum = nums[i] + nums[l] + nums[r];
-                        if (sum == 0) {
+        Arrays.sort(arr);
+        int n = arr.length;
 
-                            ans.add(Arrays.asList(
-                                nums[i],
-                                nums[l],
-                                nums[r]
-                            ));
-                            l++;
-                            r--;
-                            while (l < r && nums[l] == nums[l - 1]) {
-                                l++;
-                            }
-                            while (l < r && nums[r] == nums[r + 1]) {
-                                r--;
-                            }
-                        } else if (sum < 0) {
-                            l++;
-                        } else {
-                            r--;
-                        }
+        for (int i = 0; i < n - 2; i++) {
+
+            if (i > 0 && arr[i] == arr[i - 1]) {
+                continue;
+            }
+
+            int l = i + 1;
+            int r = n - 1;
+
+            while (l < r) {
+
+                int sum = arr[i] + arr[l] + arr[r];
+
+                if (sum == 0) {
+
+                    ArrayList<Integer> triplet = new ArrayList<>();
+
+                    triplet.add(arr[i]);
+                    triplet.add(arr[l]);
+                    triplet.add(arr[r]);
+
+                    ans.add(triplet);
+
+                    l++;
+                    r--;
+
+                    while (l < r && arr[l] == arr[l - 1]) {
+                        l++;
                     }
+
+                    while (l < r && arr[r] == arr[r + 1]) {
+                        r--;
+                    }
+
+                } else if (sum < 0) {
+                    l++;
+                } else {
+                    r--;
                 }
+            }
+        }
 
-                return ans;
+        return ans;
     }
 }
