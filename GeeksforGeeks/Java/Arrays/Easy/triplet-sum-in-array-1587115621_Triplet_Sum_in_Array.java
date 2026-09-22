@@ -12,7 +12,7 @@
 import java.util.*;
 
 class Solution {
-    public boolean hasTriplet(int[] arr, int target) {
+    public boolean hasTripletSum(int[] arr, int target) {
         Arrays.sort(arr);
         int n = arr.length;
         for (int i = 0; i < n - 2; i++) {
