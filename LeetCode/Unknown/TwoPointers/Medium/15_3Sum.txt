@@ -24,11 +24,12 @@ class Solution {
             {
                 List<Integer> row=new ArrayList<>();
                 row.add(nums[i]);
-                 row.add(nums[i]);
-
-
+                row.add(nums[l]);
+                row.add(nums[r]);
+                ans.add(row);
             }
         }
        } 
+       return ans;
     }
 }
