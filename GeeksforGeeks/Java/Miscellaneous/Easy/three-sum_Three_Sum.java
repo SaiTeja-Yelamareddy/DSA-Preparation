@@ -10,7 +10,7 @@
  */
 
 class Solution {
-    public static ArrayList<ArrayList<Integer>> triplets(int[] arr) {
+    public static ArrayList<ArrayList<Integer>> triplets(int[] nums) {
         // code here
         ArrayList<ArrayList<Integer>> ans = new ArrayList<>();
                 Arrays.sort(nums);
