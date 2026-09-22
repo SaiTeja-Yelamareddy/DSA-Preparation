@@ -22,6 +22,25 @@ class Solution {
             int sum=nums[i]+nums[l]+nums[r];
             if(sum==0)
             {
+                 while (l < r && nums[l] == nums[l - 1]) {
+        l++;
+    }
+
+    // Skip duplicate r
+    while (l < r && nums[r] == nums[r + 1]) {
+        r--;
+    }
+
+}
+else if (sum < 0) {
+
+    l++;
+
+}
+else {
+
+    r--;
+}
                 List<Integer> row=new ArrayList<>();
                 row.add(nums[i]);
                 row.add(nums[l]);
