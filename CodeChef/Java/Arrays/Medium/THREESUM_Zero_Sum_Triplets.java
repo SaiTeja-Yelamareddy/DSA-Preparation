@@ -9,4 +9,6 @@
  * Status: ACCEPTED
  */
 
-# cook your dish here
+ public static List<List<Integer>> findZeroSumTriplets(int[] nums) {
+     //write your logic here...
+ }
