@@ -13,18 +13,13 @@ import java.util.*;
 
 public class Solution {
 
-    public static ArrayList<ArrayList<Integer>> triplet(int n, int[] arr) {
-        ArrayList<ArrayList<Integer>> ans = new ArrayList<>();
-
-         Arrays.sort(arr);
-
+    public static List<List<Integer>> triplet(int n, int[] arr) {
+        List<List<Integer>> ans = new ArrayList<>()
+        Arrays.sort(arr);
         for (int i = 0; i < n - 2; i++) {
-
-            // Skip duplicate first element
             if (i > 0 && arr[i] == arr[i - 1]) {
                 continue;
             }
-
             int l = i + 1;
             int r = n - 1;
 
@@ -34,7 +29,7 @@ public class Solution {
 
                 if (sum == 0) {
 
-                    ArrayList<Integer> temp = new ArrayList<>();
+                    List<Integer> temp = new ArrayList<>();
 
                     temp.add(arr[i]);
                     temp.add(arr[l]);
@@ -45,21 +40,17 @@ public class Solution {
                     l++;
                     r--;
 
-                    // Skip duplicate left values
                     while (l < r && arr[l] == arr[l - 1]) {
                         l++;
                     }
 
-                    // Skip duplicate right values
                     while (l < r && arr[r] == arr[r + 1]) {
                         r--;
                     }
 
-                } 
-                else if (sum < 0) {
+                } else if (sum < 0) {
                     l++;
-                } 
-                else {
+                } else {
                     r--;
                 }
             }
