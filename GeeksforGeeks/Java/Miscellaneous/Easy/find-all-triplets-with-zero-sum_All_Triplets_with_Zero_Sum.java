@@ -9,23 +9,26 @@
  * Status: ACCEPTED
  */
 
+import java.util.*;
+
 class Solution {
     public List<List<Integer>> findTriplets(int[] arr) {
-        List<List<Integer>> ans = new ArrayList<>();
-        int n = arr.length;
-        for (int i = 0; i < n - 2; i++) {
-            HashMap<Integer, Integer> map = new HashMap<>();
-            for (int j = i + 1; j < n; j++) {
-                int needed = -(arr[i] + arr[j]);
-                if (map.containsKey(needed)) {
-                    List<Integer> triplet = new ArrayList<>();
-                    triplet.add(i);
-                    triplet.add(map.get(needed));
-                    triplet.add(j);
-                    ans.add(triplet);
-                }
 
-                map.put(arr[j], j);
+        List<List<Integer>> ans = new ArrayList<>();
+
+        int n = arr.length;
+
+        for (int i = 0; i < n - 2; i++) {
+            for (int j = i + 1; j < n - 1; j++) {
+                for (int k = j + 1; k < n; k++) {
+                    if (arr[i] + arr[j] + arr[k] == 0) {
+                        List<Integer> temp = new ArrayList<>();
+                        temp.add(i);
+                        temp.add(j);
+                        temp.add(k);
+                        ans.add(temp);
+                    }
+                }
             }
         }
 
