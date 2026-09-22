@@ -11,27 +11,35 @@
 
 class Solution {
     public void sort012(int[] arr) {
-        int low = 0;
-        int mid = 0;
-        int high = arr.length - 1;
-        while (mid <= high) {
-            if (arr[mid] == 0) {
-                int temp = arr[low];
-                arr[low] = arr[mid];
-                arr[mid] = temp;
-                low++;
-                mid++;
+        int count0 = 0;
+        int count1 = 0;
+        int count2 = 0;
+        for (int i = 0; i < arr.length; i++) {
 
-            } else if (arr[mid] == 1) {
-                mid++;
-
-            } else {
-                int temp = arr[mid];
-                arr[mid] = arr[high];
-                arr[high] = temp;
-
-                high--;
+            if (arr[i] == 0) {
+                count0++;
+            } 
+            else if (arr[i] == 1) {
+                count1++;
+            } 
+            else {
+                count2++;
             }
+        }
+        int index = 0;
+        for (int i = 0; i < count0; i++) {
+            arr[index] = 0;
+            index++;
+        }
+        for (int i = 0; i < count1; i++) {
+            arr[index] = 1;
+            index++;
+        }
+
+        // Put 2s
+        for (int i = 0; i < count2; i++) {
+            arr[index] = 2;
+            index++;
         }
     }
 }
