@@ -20,9 +20,13 @@ class Solution {
         while(l<r)
         {
             int sum=nums[i]+nums[l]+nums[r];
-            if(sum==target)
+            if(sum==0)
             {
-                
+                List<Integer> row=new ArrayList<>();
+                row.add(nums[i]);
+                 row.add(nums[i]);
+
+
             }
         }
        } 
