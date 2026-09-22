@@ -27,6 +27,7 @@ class Solution {
                 row.add(nums[l]);
                 row.add(nums[r]);
                 ans.add(row);
+                l
             }
         }
        } 
