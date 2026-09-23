@@ -14,10 +14,18 @@
 import { useState } from "react";
 import "./App.css";
 
-// Update the Main functional component
-export default function App() {
-  // Declare a state variable 'value' with an initial value of an empty string
-  
+export default function UseStateForm() {
+  const [value, setValue] = useState("");
 
-  // Function to generate a random string and update the state
   const generateRandomString = () => {
+    const randomStr = Math.random().toString(36).substring(2, 8);
+    setValue(randomStr);
+  };
+…      />
+      <div className="output-box">
+        <p>Live Display: {value}</p>
+      </div>
+      <button onClick={generateRandomString} className="btn">Generate Random String</button>
+    </div>
+  );
+}
