@@ -11,13 +11,9 @@
  * Status: ACCEPTED
  */
 
-function App() {
-  let count = 0 ;
-  return (
-    <>
-      <p>You clicked {count} times</p>
-      <button onClick={() => count++}>
-        Click me
-      </button>
-    </>
-  );
+                                  </button>
+                                      </>
+                                        );
+                                        }
+
+                                        export default App;
