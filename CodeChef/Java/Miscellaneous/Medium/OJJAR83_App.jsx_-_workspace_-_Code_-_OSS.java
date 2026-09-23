@@ -11,13 +11,6 @@
  * Status: ACCEPTED
  */
 
-import { useState } from "react";
-import styles from "./App.module.css";
-
-export function Temperature({defaultTemperature = 0}) {
-  // State to store the current temperature value
-  const [temperature, setTemperature] = useState(defaultTemperature);
-  
-  // State to track the current unit (Celsius or Fahrenheit)
-  
-
+                                                                                                                          return <Temperature />;
+                                                                                                                                                                                }
+                                                                                                                                                                                
