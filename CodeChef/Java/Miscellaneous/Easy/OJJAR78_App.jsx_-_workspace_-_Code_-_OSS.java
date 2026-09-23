@@ -11,13 +11,10 @@
  * Status: ACCEPTED
  */
 
-function App() {
-  function addPoints(points) {
-    console.log(`Added ${points} points!`);  // Corrected log message
-  }
+           {/* Resetting Score */}
+                                                                          <button onClick={resetScore}>Reset</button>
+                                                                              </>
+                                                                                );
+                                                                                }
 
-  function subtractPoints(points) {
-    console.log(`Subtracted ${points} points!`); // Corrected log message
-  }
-
-  function resetScore() {
+                                                                                export default App;
