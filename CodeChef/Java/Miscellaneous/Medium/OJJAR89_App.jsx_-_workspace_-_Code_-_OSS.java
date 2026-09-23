@@ -11,13 +11,6 @@
  * Status: ACCEPTED
  */
 
-import React, { useState } from "react"; 
-import "./App.css";
+                               }
 
-// Functional component to update a user's profile information
-function ProfileUpdater() {
-  // User state holding name, age, and address properties
-  const [user, setUser] = useState({ 
-    name: "Alice", 
-    age: 25, 
-    address: { city: "Delhi", country: "India" } 
+                                                                                                                                                                                                                                                                                                                                                                                                                                                    export default ProfileUpdater;
