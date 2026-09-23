@@ -13,7 +13,6 @@
 
 import "./App.css";
 
-// Our list of products - you don't need to change this
 const products = [
   { id: 1, name: "Laptop", price: 900 },
   { id: 2, name: "Mouse", price: 20 },
@@ -21,3 +20,14 @@ const products = [
   { id: 4, name: "Monitor", price: 150 },
   { id: 5, name: "USB Cable", price: 10 },
 ];
+
+…            key={product.id} 
+            product={product} 
+          />
+        ))}
+      </div>
+    </div>
+  );
+}
+
+export default App;
