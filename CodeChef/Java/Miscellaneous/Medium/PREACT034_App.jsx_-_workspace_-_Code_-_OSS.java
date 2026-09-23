@@ -19,5 +19,10 @@ export function Temperature({defaultTemperature = 0}) {
   const [temperature, setTemperature] = useState(defaultTemperature);
   
   // State to track the current unit (Celsius or Fahrenheit)
-  
+  const [unit, setUnit] = useState("C");
 
+…}
+
+export default function App() {
+  return <Temperature />;
+}
