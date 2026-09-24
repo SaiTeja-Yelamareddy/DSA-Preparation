@@ -11,13 +11,9 @@
  * Status: ACCEPTED
  */
 
-import { useState } from 'react'; // 1. Import useState
-import Tabs from './Tabs';
-import './App.css';
+                                                           />
+                                                                                                    </div>
+                                                                                                      );
+                                                                                                      }
 
-function App() {
-  // 1. Manage state for the active tab index
-  const [activeTabIndex, setActiveTabIndex] = useState(0);
-  const totalTabs = 3; // Define total number of tabs (useful for logic)
-
-  // 2. Create navigation handler functions
+                                                                                                      export default App;
