@@ -18,6 +18,16 @@ function WindowTracker() {
     width: window.innerWidth,
     height: window.innerHeight
   });
-  
-  // complete the useEffect hook here
+
   useEffect(() => {
+    function handleResize() {
+…
+  return (
+    <div>
+      <button onClick={() => setShowTracker(!showTracker)}>
+        Toggle Window Tracker
+      </button>
+      {showTracker && <WindowTracker />}
+    </div>
+  );
+}
