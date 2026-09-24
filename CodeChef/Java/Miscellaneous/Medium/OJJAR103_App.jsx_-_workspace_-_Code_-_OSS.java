@@ -21,3 +21,8 @@ function BackgroundChanger() {
   
     // Check if count reaches 5 or more
     
+…    </div>
+  );
+}
+
+export default BackgroundChanger;
