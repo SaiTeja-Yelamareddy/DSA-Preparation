@@ -11,13 +11,16 @@
 
 class Solution {
     public ArrayList<Integer> findUnion(int[] a, int[] b) {
-        HashSet<Integer> set = new HashSet<>();
+        ArrayList<Integer> result = new ArrayList<>();
         for (int i = 0; i < a.length; i++) {
-            set.add(a[i]);
+            result.add(a[i]);
         }
         for (int i = 0; i < b.length; i++) {
-            set.add(b[i]);
+            if (!result.contains(b[i])) {
+                result.add(b[i]);
+            }
         }
-        return new ArrayList<>(set);
+        Collections.sort(result);
+        return result;
     }
 }
