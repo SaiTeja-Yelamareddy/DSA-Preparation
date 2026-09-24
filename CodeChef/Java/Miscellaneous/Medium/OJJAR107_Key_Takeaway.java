@@ -11,13 +11,9 @@
  * Status: ACCEPTED
  */
 
-import React, {useState, useEffect} from "react";
+ss "L" key to toggle!</small>
+                                                                                                          </div>
+                                                                                                            );
+                                                                                                            }
 
-function LightSwitch() {
-  const [isOn, setIsOn] = useState(false);
-
-  useEffect(() => {
-    const handleKeyPress = (e) => {
-      if (e.code === 'KeyL') {
-        // 🚨 Problem: Uses STALE isOn value!
-        setIsOn(!isOn);
+                                                                                                            export default LightSwitch;
