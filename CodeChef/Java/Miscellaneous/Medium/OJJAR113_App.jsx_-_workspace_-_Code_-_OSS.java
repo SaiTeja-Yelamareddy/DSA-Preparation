@@ -11,13 +11,4 @@
  * Status: ACCEPTED
  */
 
-import React from 'react';
-import './App.css';
-
-const ENDPOINT = 'https://jsonplaceholder.typicode.com/posts';
-
-function NewsletterForm() {
-  // TODO: Initialize state variables for name, email, status, and error
-  const [name, setName] = React.useState('');
-  const [/* email state */, setEmail] = React.useState('');
-  const [status, setStatus] = React.useState('idle');
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      export default NewsletterForm;
