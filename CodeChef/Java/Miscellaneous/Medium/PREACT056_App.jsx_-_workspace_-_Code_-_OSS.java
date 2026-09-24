@@ -20,4 +20,6 @@ function Timer() {
     const timerID = setInterval(() => {
       setCount(c => c + 1);
     }, 1000);
-  }, []); // No cleanup
+  
+…  );
+}
