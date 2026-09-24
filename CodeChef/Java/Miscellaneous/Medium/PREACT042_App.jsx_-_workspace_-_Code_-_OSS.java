@@ -12,12 +12,16 @@
  */
 
 import React from 'react';
-import './App.css'; 
+import './App.css'; // Import styles
 
 function App() {
-  // update the code 
   const [guests, setGuests] = React.useState([
-    'Bruce Wayne', 'Clark Kent', 'Diana Prince'
+    { id: crypto.randomUUID(), name: 'Bruce Wayne' },
+    { id: crypto.randomUUID(), name: 'Clark Kent' },
+    { id: crypto.randomUUID(), name: 'Diana Prince' }
   ]);
 
-  return (
+…  );
+}
+
+export default App;
