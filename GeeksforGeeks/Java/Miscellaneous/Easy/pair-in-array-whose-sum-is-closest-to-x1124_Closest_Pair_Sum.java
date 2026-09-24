@@ -10,34 +10,45 @@
  */
 
 class Solution {
-    public ArrayList<Integer> closestPair(int[] arr, int target) {
-        ArrayList<Integer> result = new ArrayList<>();
+    public ArrayList<Integer> sumClosest(int[] arr, int target) {
+
+        ArrayList<Integer> ans = new ArrayList<>();
+
         if (arr.length < 2) {
-            return result;
+            return ans;
         }
+
         Arrays.sort(arr);
+
         int left = 0;
         int right = arr.length - 1;
-        int closestDifference = Integer.MAX_VALUE;
-        int maximumDifference = -1;
+
+        int minDiff = Integer.MAX_VALUE;
+        int maxDiff = -1;
+
         while (left < right) {
             int sum = arr[left] + arr[right];
-            int difference = Math.abs(sum - target);
-            int pairDifference = arr[right] - arr[left];
-            if (difference < closestDifference) {
-                closestDifference = difference;
-                result.clear();
-                result.add(arr[left]);
-                result.add(arr[right]);
-                maximumDifference = pairDifference;
-            }
-            else if (difference == closestDifference &&
-                     pairDifference > maximumDifference) {
-                result.clear();
-                result.add(arr[left]);
-                result.add(arr[right]);
+            int diff = Math.abs(sum - target);
+            int pairDiff = arr[right] - arr[left];
 
-                maximumDifference = pairDifference;
+            if (diff < minDiff) {
+
+                minDiff = diff;
+
+                ans.clear();
+                ans.add(arr[left]);
+                ans.add(arr[right]);
+
+                maxDiff = pairDiff;
+            }
+
+            else if (diff == minDiff && pairDiff > maxDiff) {
+
+                ans.clear();
+                ans.add(arr[left]);
+                ans.add(arr[right]);
+
+                maxDiff = pairDiff;
             }
 
             if (sum < target) {
@@ -48,6 +59,6 @@ class Solution {
             }
         }
 
-        return result;
+        return ans;
     }
 }
