@@ -11,13 +11,7 @@
  * Status: ACCEPTED
  */
 
-import { useState, useId } from "react";
-import "./App.css";
+                                                                                                                                                         }
 
-// eslint-disable-next-line react/prop-types
-function SimpleForm({ name: initialName, email: initialEmail }) {
-  const [name, setName] = useState();
-  if (initialName != undefined){
-    setName(initialName);
-  }
-
+                                                                                                                                                                  export default App;
+                                                                                                                                                                  
