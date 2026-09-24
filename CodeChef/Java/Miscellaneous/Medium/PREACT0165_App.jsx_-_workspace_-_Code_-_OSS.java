@@ -21,3 +21,7 @@ function App() {
   const totalTabs = 3; // Define total number of tabs (useful for logic)
 
   // 2. Create navigation handler functions
+…  );
+}
+
+export default App; 
