@@ -11,13 +11,13 @@
  * Status: ACCEPTED
  */
 
-import { useState } from "react";
+  };
 
-function App() {
-  // Lifted state in parent
-  // Initialize state for tasks here (empty array)
+  // Function to remove a task
+  function removeTask() {
+    // This should remove task by index
+    // Use filter() to create new array without the task
+  };
 
-  // Function to add a new task
-  function addTask() {
-    // This should add new task to tasks array
-    // Prevent adding empty tasks
+  return (
+    <div style={{ textAlign: "center", marginTop: "50px" }}>
