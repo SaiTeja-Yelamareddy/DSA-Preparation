@@ -1,0 +1,17 @@
+/*
+ * Platform: LeetCode
+ * Problem ID: 832
+ * Problem: Flipping an Image
+ * Problem Link: https://leetcode.com/problems/flipping-an-image/
+ * Language: Unknown
+ * Concept: TwoPointers
+ * Difficulty: Easy
+ * Tags: Array, Two Pointers, Bit Manipulation, Matrix, Simulation
+ * Status: ACCEPTED
+ */
+
+class Solution {
+    public int[][] flipAndInvertImage(int[][] image) {
+        
+    }
+}
