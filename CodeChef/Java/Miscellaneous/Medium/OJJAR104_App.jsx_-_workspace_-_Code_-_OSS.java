@@ -11,13 +11,13 @@
  * Status: ACCEPTED
  */
 
-import { useState, useEffect } from "react";
+    window.addEventListener("mousemove", handleMove);
 
-function MouseTracker() {
-  const [position, setPosition] = useState({ x: 0, y: 0 });
+  }, []);
 
-  useEffect(() => {
-    const handleMove = (e) => {
-      setPosition({ x: e.clientX, y: e.clientY });
-    };
+  return <div>Cursor at ({position.x}, {position.y})</div>;
+}
 
+export default function App() {
+  return (
+    <div>
