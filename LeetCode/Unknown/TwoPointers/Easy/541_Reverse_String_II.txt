@@ -14,7 +14,7 @@ class Solution {
     public String reverseStr(String s, int k) {
         int l=0;
         char[] a=s.toCharArray();
-        for(int r=1;r<n-1;r=r+k)
+        for(int r=1;r<n-1;r=r+2*k)
         {
             if(l-r+1==k)
             {
@@ -25,8 +25,8 @@ class Solution {
                    a[r]=temp;
                 }
             }
-            l+=k;
+            l+=2*k;
         }
-        
+
     }
 }
