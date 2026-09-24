@@ -10,7 +10,7 @@
  */
 
 class Solution {
-    public ArrayList<Integer> closestPair(int[] arr1, int[] arr2, int x) {
+    public ArrayList<Integer> findClosestPair(int[] arr1, int[] arr2, int x) {
         ArrayList<Integer> ans = new ArrayList<>();
         int i = 0;
         int j = arr2.length - 1;
