@@ -11,13 +11,22 @@
  * Status: ACCEPTED
  */
 
-import React, {useState, useEffect} from "react";
+      }
+    };
+    
+    window.addEventListener('keydown', handleKeyPress);
+    return () => window.removeEventListener('keydown', handleKeyPress);
+  }, []); // Empty dependency array
 
-function LightSwitch() {
-  const [isOn, setIsOn] = useState(false);
+  return (
+    <div>
+      <button onClick={() => setIsOn(!isOn)}>
+        Toggle Light (Button)
+      </button>
+      <p>Light is {isOn ? "ON 🌟" : "OFF 🌑"}</p>
+      <small>Press "L" key to toggle!</small>
+    </div>
+  );
+}
 
-  useEffect(() => {
-    const handleKeyPress = (e) => {
-      if (e.code === 'KeyL') {
-        // 🚨 Problem: Uses STALE isOn value!
-        setIsOn(!isOn);
+export default LightSwitch;
