@@ -20,9 +20,13 @@ class Solution {
             {
                 while(l<r)
                 {
-
+                   char temp=a[l];
+                   a[l]=a[r];
+                   a[r]=temp;
                 }
             }
+            l+=k;
         }
+        
     }
 }
