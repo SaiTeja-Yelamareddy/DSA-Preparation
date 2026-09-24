@@ -11,13 +11,13 @@
  * Status: ACCEPTED
  */
 
-import React from "react";
-import { useState, useEffect } from "react";
+                                                      }, [delay]);
 
-const useWindowWidth = (delay = 200) => {
-  // Initialize state to track window width
-  
-  // Create effect for resize listener
-  
-    // Timeout ID reference
-    
+                                                        return width;
+                                                        };
+
+
+                                                        const ResponsiveComponent = () => {
+                                                          const width = useWindowWidth();
+
+                                                            return (
