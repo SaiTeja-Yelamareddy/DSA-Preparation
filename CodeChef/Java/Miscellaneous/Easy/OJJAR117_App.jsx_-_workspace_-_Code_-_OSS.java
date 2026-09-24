@@ -11,14 +11,13 @@
  * Status: ACCEPTED
  */
 
-import Tabs from './Tabs';  
-import './App.css';       
+iconst ExpensiveOperationChild = memo(function ({ data }) {
+    // Heavy computation simulation
+      let sum = 0;
+        for (let i = 0; i < 1000000; i++) {
+            sum += i;
+              }
 
-function App() {
-  // complete the code 
-  return (
-    <></>
-  );
-}
+                console.log('Child rendered!'); // Now only logs once 
 
-export default App;
+                  return (
