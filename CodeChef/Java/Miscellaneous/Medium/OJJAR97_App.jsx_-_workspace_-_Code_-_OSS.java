@@ -11,13 +11,11 @@
  * Status: ACCEPTED
  */
 
-import React from "react";
+                          </div>
+                            );
+                            }
 
-function TextInput({ id, label, type = "text" }) {
-  let appliedId;
-  
-  if (!id) {
-    appliedId = React.useId(); // ❌ Hook inside condition (incorrect usage)
-  } else {
-    appliedId = id;
-  }
+                            export default function App() {
+                              return <TextInput id="input-id" label="Enter Text:" />;
+                              }
+                              
