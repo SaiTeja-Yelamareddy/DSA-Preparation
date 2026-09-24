@@ -11,13 +11,19 @@
  * Status: ACCEPTED
  */
 
-    
-    // --- TODO: Define state for email ---
+                            />
+                        </div>
 
-    // --- TODO: Define state for address ---
+                        <div className="form-section">
+                            <label htmlFor="company">Company Name:</label>
+                            <input type="text" id="company" name="company" 
+                                // --- TODO: Connect value and onChange for company ---
+                            />
+                        </div>
 
-    // --- TODO: Define state for jobTitle ---
+…            </div>
+        </div>
+    );
+}
 
-    // --- TODO: Define state for company ---
-
-    // --- TODO: Define state for yearsExperience (initial value: '0-1') ---
+export default Tabs;
