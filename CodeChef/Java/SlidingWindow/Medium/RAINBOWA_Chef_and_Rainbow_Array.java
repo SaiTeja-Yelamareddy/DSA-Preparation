@@ -10,62 +10,67 @@
  */
 
 import java.util.*;
-import java.lang.*;
-import java.io.*;
 
 class Codechef {
-    public static void main (String[] args) throws java.lang.Exception {
+    public static void main(String[] args) {
+
         Scanner sc = new Scanner(System.in);
+
         int T = sc.nextInt();
-        
+
         while (T-- > 0) {
-            int n = sc.nextInt();
-            int[] arr = new int[200];
-            for (int j = 1; j <= n; j++) {
-                arr[j] = sc.nextInt();
+
+            int N = sc.nextInt();
+            int[] a = new int[N];
+
+            for (int i = 0; i < N; i++) {
+                a[i] = sc.nextInt();
             }
 
-            int it1 = 1, it2 = n, number = 0;
-            boolean sol = true;
-            while (number < 6) {
-                ++number;
-                if (arr[it1] != number || arr[it2] != number) {
-                    sol = false;
+            boolean israinbow = true;
+
+            int l = 0;
+            int r = N - 1;
+
+            while (l <= r) {
+
+                if (a[l] != a[r]) {
+                    israinbow = false;
                     break;
                 }
-                int r1 = 0, r2 = 0;
-                while (it1 <= n && arr[it1] == number) {
-                    ++r1;
-                    ++it1;
+
+                l++;
+                r--;
+            }
+
+            l = 0;
+            int num = 1;
+
+            while (israinbow && l < N) {
+
+                if (a[l] != num) {
+                    israinbow = false;
+                    break;
                 }
-                while (it2 > 0 && arr[it2] == number) {
-                    ++r2;
-                    --it2;
+
+                while (l < N && a[l] == num) {
+                    l++;
                 }
-                if (r1 != r2) {
-                    sol = false;
+
+                num++;
+
+                if (num == 8) {
                     break;
                 }
             }
 
-            if (number == 6 && it1 <= it2) {
-                ++number;
-                for (int j = it1; j <= it2; j++) {
-                    if (arr[j] != 7) {
-                        sol = false;
-                        break;
-                    }
-                }
-            } else {
-                sol = false;
+            if (num != 8) {
+                israinbow = false;
             }
-            
-            if (sol) {
-                System.out.println("yes");
-            } else {
-                System.out.println("no");
-            }
+
+            System.out.println(israinbow ? "yes" : "no");
         }
+
         sc.close();
     }
 }
