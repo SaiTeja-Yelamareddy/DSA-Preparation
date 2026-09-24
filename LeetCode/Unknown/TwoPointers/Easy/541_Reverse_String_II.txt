@@ -12,23 +12,21 @@
 
 class Solution {
     public String reverseStr(String s, int k) {
-        int l=0;
-        char[] a=s.toCharArray();
-        for(int r=1;r<n-1;r=r+2*k)
-        {
-            if(l-r+1==k)
-            {
-                while(l<r)
-                {
-                   char temp=a[l];
-                   a[l]=a[r];
-                   a[r]=temp;
-                   l++;
-                   r++;
+        int n = s.length();
+        int l = 0;
+        char[] a = s.toCharArray();
+        for (int r = 1; r < n; r = r + 2 * k) {
+            if (r - l + 1 == k) {
+                while (l < r) {
+                    char temp = a[l];
+                    a[l] = a[r];
+                    a[r] = temp;
+                    l++;
+                    r--;
                 }
             }
-            l+=2*k;
+            l += 2 * k;
         }
-
+        return new String(a);
     }
 }
