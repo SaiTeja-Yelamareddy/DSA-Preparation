@@ -21,3 +21,5 @@ function MovieSearch() {
   const movies = [
     'Inception',
     'The Dark Knight',
+…
+export default MovieSearch;
