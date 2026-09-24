@@ -11,13 +11,22 @@
  * Status: ACCEPTED
  */
 
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import './App.css';
 
 function FocusManager() {
   const [isFocused, setIsFocused] = useState(false);
+  const inputRef = useRef(null); // Create ref
 
-  // ❌ Missing useRef implementation
   const handleFocus = () => {
-    // TODO: Focus input using ref
+    inputRef.current.focus(); // DOM manipulation
     setIsFocused(true);
+…        <button className="action-button" onClick={handleBlur}>
+          Blur Input
+        </button>
+      </div>
+    </div>
+  );
+}
+
+export default FocusManager;
