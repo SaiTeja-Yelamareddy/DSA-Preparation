@@ -9,4 +9,21 @@
  * Status: ACCEPTED
  */
 
-# cook your dish here
+import java.util.Scanner;
+
+public class Main {
+    public static boolean checkSquareSum(long c) {
+        // Write your code here
+    }
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        long c = scanner.nextLong();
+
+        if (checkSquareSum(c)) {
+            System.out.println("true");
+        } else {
+            System.out.println("false");
+        }
+    }
+}
