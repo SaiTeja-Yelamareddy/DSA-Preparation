@@ -14,10 +14,14 @@
 function Tabs() {
   return (
     <div className="tabs-container">
+
       <div className="tab-headers">
         <span>Tab 1 Header</span>
-        {/* <-- ADD Header 2 here */}
+        <span>Tab 2 Header</span> {/* <-- ADDED */}
       </div>
 
       <div className="tab-content">
-        <p>Tab Content Will Appear Here</p>
+…  );
+}
+
+export default Tabs;
