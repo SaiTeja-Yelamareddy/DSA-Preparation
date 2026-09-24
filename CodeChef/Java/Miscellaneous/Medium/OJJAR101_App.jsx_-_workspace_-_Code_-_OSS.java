@@ -11,13 +11,8 @@
  * Status: ACCEPTED
  */
 
-import { useState } from 'react';
-import './App.css';
+iv>
+                                                                                                                                                          );
+                                                                                                                                                          }
 
-function FocusManager() {
-  const [isFocused, setIsFocused] = useState(false);
-
-  // ❌ Missing useRef implementation
-  const handleFocus = () => {
-    // TODO: Focus input using ref
-    setIsFocused(true);
+                                                                                                                                                          export default FocusManager;
