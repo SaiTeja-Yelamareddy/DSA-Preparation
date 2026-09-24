@@ -11,13 +11,14 @@
  * Status: ACCEPTED
  */
 
-import { useState } from 'react';
+import React, { useState } from 'react';
 
-// Problematic Approach - State is NOT lifted
-function TextInput() {
-  const [text, setText] = useState(''); // Each box has its own 'text' state
-  return <input value={text} onChange={(e) => setText(e.target.value)} />;
+// Child Component: Now "controlled" by the parent
+// It receives the value and the function to call when it changes.
+function TextInput({ value, onChange }) {
+  return <input value={value} onChange={onChange} />;
 }
 
+// Parent Component: Now holds the state and the logic to update it
 function App() {
-  return (
+…export default App;
