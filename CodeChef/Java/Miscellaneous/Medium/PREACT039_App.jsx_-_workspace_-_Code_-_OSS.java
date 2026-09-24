@@ -11,6 +11,16 @@
  * Status: ACCEPTED
  */
 
-}
+import { useState } from 'react';
+import './App.css';
+
+function App() {
+  const [todos, setTodos] = useState([]);
+  const [newTodo, setNewTodo] = useState('');
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (!newTodo.trim()) return;
+…}
 
 export default App;
