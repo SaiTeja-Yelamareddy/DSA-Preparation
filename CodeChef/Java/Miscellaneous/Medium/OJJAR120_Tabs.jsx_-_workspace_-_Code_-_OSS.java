@@ -11,13 +11,6 @@
  * Status: ACCEPTED
  */
 
-// Receive currentActiveTab prop
-function Tabs({ currentActiveTab }) {
-  return (
-    <div className="tabs-container">
-      <div className="tab-headers">
-        {/* Add three <button> elements here */}
-        
-      </div>
+                                                                                                                   }
 
-      <div className="tab-content">
+                                                                                                                                                                                                                                                                                                                                                                          export default Tabs;
