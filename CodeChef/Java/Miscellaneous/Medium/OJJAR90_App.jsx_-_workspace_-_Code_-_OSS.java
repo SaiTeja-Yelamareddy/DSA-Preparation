@@ -11,13 +11,6 @@
  * Status: ACCEPTED
  */
 
-import { useState } from 'react';
-import './App.css';
+                                                                                          }
 
-// Main component of the application
-function App() {
-  // State to keep track of the list of todos
-  const [todos, setTodos] = useState([]);
-
-  // State to manage the input for adding new todos
-  const [newTodo, setNewTodo] = useState('');
+                                                                                                                                                                                                                                                                                                                                                                                                    export default App;
