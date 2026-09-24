@@ -11,13 +11,21 @@
  * Status: ACCEPTED
  */
 
-import { useState } from 'react';
+import { useState, memo } from 'react';
 import './App.css';
 
-// Child Component (Unoptimized)
-function ExpensiveOperationChild({ data }) {
+// Optimized Child Component
+const ExpensiveOperationChild = memo(function ({ data }) {
   // Heavy computation simulation
   let sum = 0;
   for (let i = 0; i < 1000000; i++) {
     sum += i;
   }
+…        Click to Increment: {count}
+      </button>
+      <ExpensiveOperationChild data="hello" />
+    </div>
+  );
+}
+
+export default ParentComponent;
