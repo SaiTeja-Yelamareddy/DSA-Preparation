@@ -11,13 +11,18 @@
  * Status: ACCEPTED
  */
 
+import {useState} from 'react';
+
 function Tabs({ activeTabIndex, onPrevious, onNext, onTabClick }) {
     const totalTabs = 3;
     const isFirstTab = activeTabIndex === 0;
     const isLastTab = activeTabIndex === totalTabs - 1;
 
+    // --- SOLUTION: Define state for phone ---
+    const [fullName, setFullName] = useState('');
 
-    // --- TODO: Define state for fullName ---
-    // Example: const [fullName, setFullName] = useState('');
+…        </div>
+    );
+}
 
-    // --- TODO: Define state for fullName ---
+export default Tabs;
