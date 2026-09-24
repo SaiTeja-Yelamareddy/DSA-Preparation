@@ -21,3 +21,6 @@ function WindowTracker() {
   
   // complete the useEffect hook here
   useEffect(() => {
+…    </div>
+  );
+}
