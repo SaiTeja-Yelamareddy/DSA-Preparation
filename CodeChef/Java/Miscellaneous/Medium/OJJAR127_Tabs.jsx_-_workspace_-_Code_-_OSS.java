@@ -11,13 +11,13 @@
  * Status: ACCEPTED
  */
 
-function Tabs({ activeTabIndex, onPrevious, onNext, onTabClick }) {
-    const totalTabs = 3;
-    const isFirstTab = activeTabIndex === 0;
-    const isLastTab = activeTabIndex === totalTabs - 1;
+    
+    // --- TODO: Define state for email ---
 
+    // --- TODO: Define state for address ---
 
-    // --- TODO: Define state for fullName ---
-    // Example: const [fullName, setFullName] = useState('');
+    // --- TODO: Define state for jobTitle ---
 
-    // --- TODO: Define state for fullName ---
+    // --- TODO: Define state for company ---
+
+    // --- TODO: Define state for yearsExperience (initial value: '0-1') ---
