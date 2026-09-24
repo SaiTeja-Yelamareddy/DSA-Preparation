@@ -11,13 +11,9 @@
  * Status: ACCEPTED
  */
 
-iconst ExpensiveOperationChild = memo(function ({ data }) {
-    // Heavy computation simulation
-      let sum = 0;
-        for (let i = 0; i < 1000000; i++) {
-            sum += i;
-              }
-
-                console.log('Child rendered!'); // Now only logs once 
-
-                  return (
+                                            <button>Previous</button>
+                                                                      <button>Next</button>
+                                                                            </div>
+                                                                                </div>
+                                                                                  );
+                                                                                  }
