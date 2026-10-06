@@ -55,7 +55,7 @@ class Solution {
         // code here
         int first=firstSearch(arr,target);
         if(first==-1)
-        return -1;
+        return 0;
         int last=lastSearch(arr,target);
         return last-first+1;
         
