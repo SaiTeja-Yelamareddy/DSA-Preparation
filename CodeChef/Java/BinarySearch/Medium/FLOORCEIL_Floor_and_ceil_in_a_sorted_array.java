@@ -9,4 +9,9 @@
  * Status: ACCEPTED
  */
 
-# cook your dish here
+class Solution {
+    public int[] findFloorCeil(int[] arr, int k) {
+        // write your code here
+        
+    }
+}
