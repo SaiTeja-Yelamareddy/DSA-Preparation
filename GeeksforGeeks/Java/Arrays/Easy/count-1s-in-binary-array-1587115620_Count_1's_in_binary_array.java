@@ -31,6 +31,9 @@ class Solution {
     }
     public int countOnes(int[] arr) {
         // code here
-        return lastSearch(arr,1);
+        int last=lastSearch(arr,1);
+        if(last==-1)
+        return 0;
+        return last+1;
     }
 }
