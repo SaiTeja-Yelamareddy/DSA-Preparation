@@ -53,6 +53,6 @@ class Solution {
             return ans;
         }
     public int[] searchRange(int[] nums, int target) {
-        return new int[]{firstSearch(nums,x),lastSearch(num)}
+        return new int[]{firstSearch(nums,target),lastSearch(nums,target)};
     }
 }
