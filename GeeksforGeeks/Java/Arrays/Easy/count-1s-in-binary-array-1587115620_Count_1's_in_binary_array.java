@@ -20,9 +20,7 @@ class Solution {
                 ans = mid;
                 l = mid + 1;
             }
-            else if (arr[mid] < k) {
-                l = mid + 1;
-            }
+            
             else {
                 r = mid - 1;
             }
