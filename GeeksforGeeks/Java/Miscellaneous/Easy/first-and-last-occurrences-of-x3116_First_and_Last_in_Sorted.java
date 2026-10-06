@@ -55,8 +55,8 @@ class Solution {
     ArrayList<Integer> find(int arr[], int x) {
         // code here
         ArrayList<Integer> al=new ArrayList<>();
-        al.get(firstSearch(arr,x));
-        al.get(lastSearch(arr,x));
+        al.add(firstSearch(arr,x));
+        al.add(lastSearch(arr,x));
         return al;
     }
 }
