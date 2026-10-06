@@ -24,6 +24,6 @@ class Solution {
             else
             r=mid-1;
         }
-        retrun -1;
+        return -1;
     }
 }
