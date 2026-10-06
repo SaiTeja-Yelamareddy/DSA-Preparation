@@ -30,7 +30,7 @@ class Solution {
             }
             return ans;
         }
-    }
+    
     public int lastSearch(int[] arr, int k) {
             // Code Here
             int l=0;
@@ -51,7 +51,7 @@ class Solution {
             }
             return ans;
         }
-    }
+    
     ArrayList<Integer> find(int arr[], int x) {
         // code here
         ArrayList<Integer> al=new ArrayList<>();
