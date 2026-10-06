@@ -53,6 +53,11 @@ public class Solution {
         }
     public static int count(int arr[], int n, int x) {
         //Your code goes here
-        return firstSearch(arr,x)-lastSearch(arr,x)+1;
+         int first = firstSearch(arr, x);
+        if (first == -1) {
+            return 0;
+        }
+        int last = lastSearch(arr, x);
+        return last - first + 1;
     }
 }
