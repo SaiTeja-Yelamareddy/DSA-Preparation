@@ -31,7 +31,8 @@ class Solution {
     public int firstIndex(int[] arr) {
         // code here
         int last=lastSearch(arr,0);
-        if(last==-1)
+        int last1=lastSearch(arr,1);
+        if(last==-1||last1==-1)
         return 0;
         return last+1;
     }
