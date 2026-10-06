@@ -1,0 +1,18 @@
+/*
+ * Platform: LeetCode
+ * Problem ID: 34
+ * Problem: Find First and Last Position of Element in Sorted Array
+ * Problem Link: https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/
+ * Language: Unknown
+ * Concept: BinarySearch
+ * Difficulty: Medium
+ * Tags: Array, Binary Search
+ * Status: ACCEPTED
+ */
+
+class Solution {
+public:
+    vector<int> searchRange(vector<int>& nums, int target) {
+        
+    }
+};
