@@ -10,7 +10,7 @@
  */
 
 public class Solution {
-     public int firstSearch(int[] arr, int k) {
+     public static int firstSearch(int[] arr, int k) {
             // Code Here
             int l=0;
             int r=arr.length-1;
@@ -31,7 +31,7 @@ public class Solution {
             return ans;
         }
     
-    public int lastSearch(int[] arr, int k) {
+    public int static lastSearch(int[] arr, int k) {
             // Code Here
             int l=0;
             int r=arr.length-1;
