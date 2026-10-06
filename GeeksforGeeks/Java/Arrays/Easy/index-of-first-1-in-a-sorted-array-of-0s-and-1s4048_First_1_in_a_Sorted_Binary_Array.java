@@ -9,11 +9,7 @@
  * Status: ACCEPTED
  */
 
-class Solution {
-    public int firstIndex(int arr[]) {
-        // code here
-    }
-}
+
 class Solution {
      public static int lastSearch(int[] arr, int k) {
         int l = 0;
