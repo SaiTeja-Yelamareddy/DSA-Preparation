@@ -5,7 +5,6 @@
  * Problem Link: https://www.naukri.com/code360/problems/three-sum_6922132
  * Language: Java
  * Concept: Miscellaneous
- * Difficulty: Medium
  * Status: ACCEPTED
  */
 
@@ -14,12 +13,17 @@ import java.util.*;
 public class Solution {
 
     public static List<List<Integer>> triplet(int n, int[] arr) {
-        List<List<Integer>> ans = new ArrayList<>()
+
+        List<List<Integer>> ans = new ArrayList<>();
+
         Arrays.sort(arr);
+
         for (int i = 0; i < n - 2; i++) {
+
             if (i > 0 && arr[i] == arr[i - 1]) {
                 continue;
             }
+
             int l = i + 1;
             int r = n - 1;
 
