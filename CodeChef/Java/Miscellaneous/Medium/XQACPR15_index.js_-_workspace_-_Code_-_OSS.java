@@ -5,7 +5,6 @@
  * Problem Link: https://www.codechef.com/learn/course/nodejs/MMVQCY/problems/XQACPR15
  * Language: Java
  * Concept: Miscellaneous
- * Difficulty: Medium
  * Course: Nodejs
  * Module: MMVQCY
  * Status: ACCEPTED
