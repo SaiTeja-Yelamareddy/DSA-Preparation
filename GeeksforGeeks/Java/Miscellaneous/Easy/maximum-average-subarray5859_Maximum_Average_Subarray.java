@@ -9,22 +9,23 @@
  * Status: ACCEPTED
  */
 
+
 class Solution {
     public int findMaxAverage(List<Integer> arr, int k) {
-        // code here
-        int l=0;
-        double sum=0;
-        for(int r=0;r<k;r++)
-        {
-            sum+=arr.get(r);
+        int sum = 0;
+        for (int r = 0; r < k; r++) {
+            sum += arr.get(r);
         }
-        double max=sum;
-        for(int r=k;r<arr.size();r++)
-        {
-            sum=sum-arr.get(r-k);
-            sum+=arr.get(r);
-            max=Math.max(sum,max);
+        int maxSum = sum;
+        int start = 0;
+        for (int r = k; r < arr.size(); r++) {
+            sum = sum - arr.get(r - k) + arr.get(r);
+            if (sum > maxSum) {
+                maxSum = sum;
+                start = r - k + 1;
+            }
         }
-        return (int)(max/k);       
+
+        return start;
     }
 }
