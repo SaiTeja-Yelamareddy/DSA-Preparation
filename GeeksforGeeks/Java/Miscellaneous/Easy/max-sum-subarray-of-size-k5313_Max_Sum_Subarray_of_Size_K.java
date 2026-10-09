@@ -19,7 +19,7 @@ class Solution {
             sum+=arr[r];
         }
         int max=sum;
-        for(int r=k;r<n;r++)
+        for(int r=k;r<arr.length;r++)
         {
             sum-=arr[r-k];
             sum+=arr[k];
