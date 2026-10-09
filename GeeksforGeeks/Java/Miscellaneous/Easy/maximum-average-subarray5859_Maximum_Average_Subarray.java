@@ -19,7 +19,7 @@ class Solution {
             sum+=arr.get(r);
         }
         double max=sum;
-        for(int r=k;r<arr.length;r++)
+        for(int r=k;r<arr.size();r++)
         {
             sum=sum-arr.get(r-k);
             sum+=arr.get(r);
