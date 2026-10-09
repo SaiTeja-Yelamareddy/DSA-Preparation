@@ -5,7 +5,6 @@
  * Problem Link: https://www.geeksforgeeks.org/problems/check-binary-string0402/1
  * Language: Java
  * Concept: Strings
- * Difficulty: Easy
  * Status: ACCEPTED
  */
 
