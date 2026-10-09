@@ -5,7 +5,6 @@
  * Problem Link: https://www.codechef.com/practice/course/two-pointers-new/TWOPOINT02/problems/DSCPPAS278C
  * Language: C++
  * Concept: SlidingWindow
- * Difficulty: Medium
  * Status: ACCEPTED
  */
 
@@ -13,7 +12,21 @@ import java.util.Scanner;
 
 public class Main {
     public static boolean checkSquareSum(long c) {
-        // Write your code here
+        long left = 0;
+        long right = (long) Math.sqrt(c);
+
+        while (left <= right) {
+            long sum = left * left + right * right;
+            if (sum == c) {
+                return true;
+            } else if (sum < c) {
+                left++;
+            } else {
+                right--;
+            }
+        }
+
+        return false;
     }
 
     public static void main(String[] args) {
