@@ -5,7 +5,6 @@
  * Problem Link: https://www.codechef.com/learn/course/nodejs/UQMFVA/problems/ZWDLEP02
  * Language: Java
  * Concept: Miscellaneous
- * Difficulty: Medium
  * Course: Nodejs
  * Module: UQMFVA
  * Status: ACCEPTED
