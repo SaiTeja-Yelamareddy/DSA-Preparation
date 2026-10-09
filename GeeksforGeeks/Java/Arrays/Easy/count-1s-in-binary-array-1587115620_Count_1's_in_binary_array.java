@@ -5,7 +5,6 @@
  * Problem Link: https://www.geeksforgeeks.org/problems/count-1s-in-binary-array-1587115620/1
  * Language: Java
  * Concept: Arrays
- * Difficulty: Easy
  * Status: ACCEPTED
  */
 
