@@ -22,7 +22,7 @@ class Solution {
         for(int r=k;r<arr.length;r++)
         {
             sum=sum-arr[r-k];
-            sum+=arr[k];
+            sum+=arr[r];
             max=Math.max(sum,max);
         }
         return max;
