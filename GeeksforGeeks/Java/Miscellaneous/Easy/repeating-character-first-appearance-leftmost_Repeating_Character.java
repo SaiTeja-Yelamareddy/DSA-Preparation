@@ -5,14 +5,13 @@
  * Problem Link: https://www.geeksforgeeks.org/problems/repeating-character-first-appearance-leftmost/1
  * Language: Java
  * Concept: Miscellaneous
- * Difficulty: Easy
  * Status: ACCEPTED
  */
 
 class Solution {
     static int repeatedCharacter(String S) {
         // code here
-            HashMap<Character, ArrayList<Integer>> map = new HashMap<>();
+            HashMap<Character, ArrayList<Integer>> map = new LinkedHashMap<>();
              for (int i = 0; i < S.length(); i++) {
                  char ch = S.charAt(i);
                 if (!map.containsKey(ch))
