@@ -5,12 +5,13 @@
  * Problem Link: https://www.geeksforgeeks.org/problems/print-all-palindromes-in-the-given-range/1
  * Language: Java
  * Concept: Miscellaneous
- * Difficulty: Easy
  * Status: ACCEPTED
  */
 
+import java.util.*;
+
 class Solution {
-    public ArrayList<Integer> printPalindromes((int m, int n) {
+    public ArrayList<Integer> printPalindromes(int m, int n) {
         ArrayList<Integer> result = new ArrayList<>();
 
         for (int i = m; i <= n; i++) {
@@ -18,7 +19,6 @@ class Solution {
                 result.add(i);
             }
         }
-
         return result;
     }
     private boolean isPalindrome(int num) {
