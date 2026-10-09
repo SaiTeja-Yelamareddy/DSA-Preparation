@@ -5,8 +5,6 @@
  * Problem Link: https://leetcode.com/problems/valid-palindrome-ii/
  * Language: Unknown
  * Concept: TwoPointers
- * Difficulty: Easy
- * Tags: Two Pointers, String, Greedy
  * Status: ACCEPTED
  */
 
@@ -22,20 +20,16 @@ class Solution {
             l++;
             r--;
         }
-
         return true;
     }
-
     public boolean isPalindrome(String s, int l, int r) {
         while (l < r) {
             if (s.charAt(l) != s.charAt(r)) {
                 return false;
             }
-
             l++;
             r--;
         }
-
         return true;
     }
 }
