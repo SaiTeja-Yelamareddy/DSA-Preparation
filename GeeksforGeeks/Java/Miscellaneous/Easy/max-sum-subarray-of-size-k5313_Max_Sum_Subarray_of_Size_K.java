@@ -5,7 +5,6 @@
  * Problem Link: https://www.geeksforgeeks.org/problems/max-sum-subarray-of-size-k5313/1
  * Language: Java
  * Concept: Miscellaneous
- * Difficulty: Easy
  * Status: ACCEPTED
  */
 
