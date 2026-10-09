@@ -5,8 +5,6 @@
  * Problem Link: https://leetcode.com/problems/reverse-string-ii/
  * Language: Unknown
  * Concept: TwoPointers
- * Difficulty: Easy
- * Tags: Two Pointers, String
  * Status: ACCEPTED
  */
 
@@ -16,12 +14,15 @@ class Solution {
         char[] a = s.toCharArray();
         for (int l = 0; l < n; l += 2 * k) {
             int r = Math.min(l + k - 1, n - 1);
-            while (l < r) {
-                char temp = a[l];
-                a[l] = a[r];
-                a[r] = temp;
-                l++;
-                r--;
+             int left = l;
+            int right = r;
+            while (left < right) {
+                char temp = a[left];
+                a[left] = a[right];
+                a[right] = temp;
+
+                left++;
+                right--;
             }
         }
         return new String(a);
