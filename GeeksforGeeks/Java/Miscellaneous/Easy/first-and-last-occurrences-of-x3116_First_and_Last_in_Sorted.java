@@ -5,7 +5,6 @@
  * Problem Link: https://www.geeksforgeeks.org/problems/first-and-last-occurrences-of-x3116/1
  * Language: Java
  * Concept: Miscellaneous
- * Difficulty: Easy
  * Status: ACCEPTED
  */
 
