@@ -5,12 +5,18 @@
  * Problem Link: https://www.codechef.com/practice/course/arrays-intermediate/ARRAYSP04/problems/REMOVEDUPLIC
  * Language: Java
  * Concept: Arrays
- * Difficulty: Medium
  * Status: ACCEPTED
  */
 
- public static int removeDuplicates(int[] nums) {
-     //code here...
-     
-     
- }
+    public static int removeDuplicates(int[] nums) {
+        if (nums.length == 0) return 0;
+
+        int j = 0; 
+        for (int i = 1; i < nums.length; i++) {
+            if (nums[i] != nums[j]) {
+                j++;
+                nums[j] = nums[i];
+            }
+        }
+        return j + 1;
+    }
