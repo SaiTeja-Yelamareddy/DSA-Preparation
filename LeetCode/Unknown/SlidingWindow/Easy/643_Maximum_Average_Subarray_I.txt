@@ -1,0 +1,17 @@
+/*
+ * Platform: LeetCode
+ * Problem ID: 643
+ * Problem: Maximum Average Subarray I
+ * Problem Link: https://leetcode.com/problems/maximum-average-subarray-i/
+ * Language: Unknown
+ * Concept: SlidingWindow
+ * Difficulty: Easy
+ * Tags: Array, Sliding Window
+ * Status: ACCEPTED
+ */
+
+class Solution {
+    public double findMaxAverage(int[] nums, int k) {
+        
+    }
+}
