@@ -25,6 +25,6 @@ class Solution {
             sum+=arr.get(r);
             max=Math.max(sum,max);
         }
-        return max/k;       
+        return (int)(max/k);       
     }
 }
