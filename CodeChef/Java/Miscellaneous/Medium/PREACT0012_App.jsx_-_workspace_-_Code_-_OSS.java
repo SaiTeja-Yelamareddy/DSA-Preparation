@@ -5,7 +5,6 @@
  * Problem Link: https://www.codechef.com/learn/course/react-js/CREACT002/problems/PREACT0012
  * Language: Java
  * Concept: Miscellaneous
- * Difficulty: Medium
  * Course: React Js
  * Module: CREACT002
  * Status: ACCEPTED
