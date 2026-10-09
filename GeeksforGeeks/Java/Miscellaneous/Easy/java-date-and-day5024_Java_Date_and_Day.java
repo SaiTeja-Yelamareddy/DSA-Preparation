@@ -5,7 +5,6 @@
  * Problem Link: https://www.geeksforgeeks.org/problems/java-date-and-day5024/1
  * Language: Java
  * Concept: Miscellaneous
- * Difficulty: Easy
  * Status: ACCEPTED
  */
 
