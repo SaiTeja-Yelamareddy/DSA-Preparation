@@ -5,7 +5,6 @@
  * Problem Link: https://www.geeksforgeeks.org/problems/second-most-repeated-string-in-a-sequence0534/1
  * Language: Java
  * Concept: Miscellaneous
- * Difficulty: Easy
  * Status: ACCEPTED
  */
 
