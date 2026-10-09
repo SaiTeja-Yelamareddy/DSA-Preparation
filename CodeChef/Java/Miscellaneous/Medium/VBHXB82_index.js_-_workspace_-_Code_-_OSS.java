@@ -5,7 +5,6 @@
  * Problem Link: https://www.codechef.com/learn/course/vasavi-v23csse03-fsd-2026/JHASDA98/problems/VBHXB82
  * Language: Java
  * Concept: Miscellaneous
- * Difficulty: Medium
  * Course: Vasavi V23csse03 Fsd 2026
  * Module: JHASDA98
  * Status: ACCEPTED
