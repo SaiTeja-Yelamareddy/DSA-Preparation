@@ -5,7 +5,6 @@
  * Problem Link: https://www.codechef.com/practice/course/matrices/MATRICES/problems/MATMULTIPLIC
  * Language: Java
  * Concept: Arrays
- * Difficulty: Medium
  * Status: ACCEPTED
  */
 
