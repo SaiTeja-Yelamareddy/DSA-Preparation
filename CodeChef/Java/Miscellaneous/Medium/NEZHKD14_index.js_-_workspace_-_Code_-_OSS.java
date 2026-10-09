@@ -5,7 +5,6 @@
  * Problem Link: https://www.codechef.com/learn/course/nodejs/VWHEAQ/problems/NEZHKD14
  * Language: Java
  * Concept: Miscellaneous
- * Difficulty: Medium
  * Course: Nodejs
  * Module: VWHEAQ
  * Status: ACCEPTED
