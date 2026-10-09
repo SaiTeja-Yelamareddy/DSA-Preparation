@@ -5,7 +5,6 @@
  * Problem Link: https://www.codechef.com/learn/course/react-js/CREACT026/problems/KELIQP02
  * Language: Java
  * Concept: Miscellaneous
- * Difficulty: Medium
  * Course: React Js
  * Module: CREACT026
  * Status: ACCEPTED
@@ -14,6 +13,6 @@
 const numbers = [1, 2, 3, 4, 5];
 
 // complete the code 
-const squaredNumbers = numbers.map(/*write you code here*/); 
+const squaredNumbers = numbers.map(num => num * num); 
 
-console.log(squaredNumbers); 
+console.log(squaredNumbers); // Output: [1, 4, 9, 16, 25]
