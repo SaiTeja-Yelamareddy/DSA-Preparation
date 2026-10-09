@@ -5,7 +5,6 @@
  * Problem Link: https://www.geeksforgeeks.org/problems/index-of-first-1-in-a-sorted-array-of-0s-and-1s4048/1
  * Language: Java
  * Concept: Arrays
- * Difficulty: Easy
  * Status: ACCEPTED
  */
 
