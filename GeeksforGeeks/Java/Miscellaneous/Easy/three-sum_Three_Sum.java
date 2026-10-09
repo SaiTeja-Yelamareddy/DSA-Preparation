@@ -5,7 +5,6 @@
  * Problem Link: https://www.geeksforgeeks.org/problems/three-sum/1
  * Language: Java
  * Concept: Miscellaneous
- * Difficulty: Easy
  * Status: ACCEPTED
  */
 
@@ -33,7 +32,6 @@ class Solution {
                 if (sum == 0) {
 
                     ArrayList<Integer> triplet = new ArrayList<>();
-
                     triplet.add(arr[i]);
                     triplet.add(arr[l]);
                     triplet.add(arr[r]);
