@@ -5,19 +5,25 @@
  * Problem Link: https://www.codechef.com/learn/course/react-js/CREACT010/problems/PREACT044
  * Language: Java
  * Concept: Miscellaneous
- * Difficulty: Medium
  * Course: React Js
  * Module: CREACT010
  * Status: ACCEPTED
  */
 
-  };
+import { useState } from "react";
 
-  // Function to remove a task
-  function removeTask() {
-    // This should remove task by index
-    // Use filter() to create new array without the task
-  };
+function App() {
+  const [tasks, setTasks] = useState([]); // Lifted state in parent
 
-  return (
-    <div style={{ textAlign: "center", marginTop: "50px" }}>
+  // Function to add a new task
+  function addTask(task) {
+    if (task.trim() !== "") {
+      setTasks([...tasks, task]);
+    }
+…        </li>
+      ))}
+    </ul>
+  );
+}
+
+export default App;
