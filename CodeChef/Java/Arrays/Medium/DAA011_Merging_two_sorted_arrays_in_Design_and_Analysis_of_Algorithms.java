@@ -5,7 +5,6 @@
  * Problem Link: https://www.codechef.com/learn/course/college-design-analysis-algorithms/CPDAA03/problems/DAA011
  * Language: Java
  * Concept: Arrays
- * Difficulty: Medium
  * Course: College Design Analysis Algorithms
  * Module: CPDAA03
  * Status: ACCEPTED
