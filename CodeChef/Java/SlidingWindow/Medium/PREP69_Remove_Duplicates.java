@@ -5,7 +5,6 @@
  * Problem Link: https://www.codechef.com/practice/course/two-pointers-new/TWOPOINT01/problems/PREP69
  * Language: Java
  * Concept: SlidingWindow
- * Difficulty: Medium
  * Status: ACCEPTED
  */
 
