@@ -5,13 +5,19 @@
  * Problem Link: https://www.codechef.com/practice/course/arrays-intermediate/ARRAYSP04/problems/LASTZERO
  * Language: Java
  * Concept: Arrays
- * Difficulty: Medium
  * Status: ACCEPTED
  */
 
 class Solution {
     public void moveZeroes(int[] nums) {
-        // write your code here
-        
+        int index = 0;
+        for (int i = 0; i < nums.length; i++) {
+            if (nums[i] != 0) {
+                nums[index++] = nums[i];
+            }
+        }
+        while (index < nums.length) {
+            nums[index++] = 0;
+        }
     }
 }
