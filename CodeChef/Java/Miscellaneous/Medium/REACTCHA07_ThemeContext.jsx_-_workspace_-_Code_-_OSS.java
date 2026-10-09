@@ -5,7 +5,6 @@
  * Problem Link: https://www.codechef.com/learn/course/react-js/REACTPRJ02/problems/REACTCHA07
  * Language: Java
  * Concept: Miscellaneous
- * Difficulty: Medium
  * Course: React Js
  * Module: REACTPRJ02
  * Status: ACCEPTED
