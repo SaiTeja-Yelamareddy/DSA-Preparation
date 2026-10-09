@@ -5,7 +5,6 @@
  * Problem Link: https://www.geeksforgeeks.org/problems/repeated-character2058/1
  * Language: Java
  * Concept: Miscellaneous
- * Difficulty: Easy
  * Status: ACCEPTED
  */
 
@@ -18,10 +17,10 @@ class Solution {
                     map.put(ch, map.getOrDefault(ch, 0) + 1);
                 }
                 for (char ch : map.keySet()) {
-                    if (map.get(ch) == 1) {
+                    if (map.get(ch) > 1) {
                         return ch;
                     }
                 }
-                return '$';
+                return '#';
     }
 }
