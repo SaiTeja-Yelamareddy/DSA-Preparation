@@ -5,7 +5,6 @@
  * Problem Link: https://www.geeksforgeeks.org/problems/the-non-repetitive-string5955/1
  * Language: Java
  * Concept: Strings
- * Difficulty: Easy
  * Status: ACCEPTED
  */
 
