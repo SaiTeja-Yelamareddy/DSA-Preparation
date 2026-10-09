@@ -5,7 +5,6 @@
  * Problem Link: https://www.geeksforgeeks.org/problems/find-triplets-with-zero-sum/1
  * Language: Java
  * Concept: Miscellaneous
- * Difficulty: Easy
  * Status: ACCEPTED
  */
 
