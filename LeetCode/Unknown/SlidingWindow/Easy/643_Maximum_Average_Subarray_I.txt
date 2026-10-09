@@ -23,8 +23,8 @@ class Solution {
         {
             sum=sum-arr[r-k];
             sum+=arr[r];
-            max=Math.max(sum/k,max);
+            max=Math.max(sum,max);
         }
-        return max; 
+        return max/k; 
     }
 }
