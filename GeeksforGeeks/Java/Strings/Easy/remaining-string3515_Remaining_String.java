@@ -5,16 +5,9 @@
  * Problem Link: https://www.geeksforgeeks.org/problems/remaining-string3515/1
  * Language: Java
  * Concept: Strings
- * Difficulty: Easy
  * Status: ACCEPTED
  */
 
-class Solution {
-    public String (String s, char ch, int count) {
-        // code here
-        
-    }
-}
 class Solution {
     public String printString(String s, char ch, int count) {
         int found = 0;
