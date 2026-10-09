@@ -5,7 +5,6 @@
  * Problem Link: https://www.geeksforgeeks.org/problems/special-array-reversal2328/1
  * Language: Java
  * Concept: Strings
- * Difficulty: Easy
  * Status: ACCEPTED
  */
 
