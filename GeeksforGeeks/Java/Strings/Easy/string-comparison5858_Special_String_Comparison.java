@@ -5,12 +5,11 @@
  * Problem Link: https://www.geeksforgeeks.org/problems/string-comparison5858/1
  * Language: Java
  * Concept: Strings
- * Difficulty: Easy
  * Status: ACCEPTED
  */
 
 class Solution {
-    public int compareString(String s1, String s2) {
+    public int compareStrings(String s1, String s2) {
         int i = 0, j = 0;
 
         while (i < s1.length() && j < s2.length()) {
@@ -18,7 +17,6 @@ class Solution {
             int rank1, rank2;
             int len1 = 1, len2 = 1;
 
-            // s1
             if (i + 1 < s1.length()
                     && s1.charAt(i) == 'n'
                     && s1.charAt(i + 1) == 'g') {
@@ -31,8 +29,6 @@ class Solution {
                     rank1++;
                 }
             }
-
-            // s2
             if (j + 1 < s2.length()
                     && s2.charAt(j) == 'n'
                     && s2.charAt(j + 1) == 'g') {
