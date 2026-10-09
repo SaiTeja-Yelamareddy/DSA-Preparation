@@ -5,7 +5,6 @@
  * Problem Link: https://www.codechef.com/learn/course/react-js/REACTPRJ01/problems/TICTACTOE02
  * Language: Java
  * Concept: Miscellaneous
- * Difficulty: Medium
  * Course: React Js
  * Module: REACTPRJ01
  * Status: ACCEPTED
