@@ -5,21 +5,11 @@
  * Problem Link: https://www.codechef.com/learn/course/vasavi-v23csse03-fsd-2026/JHASDA73/problems/OJJAR110
  * Language: Java
  * Concept: Miscellaneous
- * Difficulty: Medium
  * Course: Vasavi V23csse03 Fsd 2026
  * Module: JHASDA73
  * Status: ACCEPTED
  */
 
-import { useState, useEffect } from 'react';
-import './App.css';
+                                                                                                                                                                                }
 
-function MovieSearch() {
-  const [searchQuery, setSearchQuery] = useState('');
-  const [filteredMovies, setFilteredMovies] = useState([]);
-
-  const movies = [
-    'Inception',
-    'The Dark Knight',
-…
-export default MovieSearch;
+                                                                                                                                                                                                                                                                                                      export default MovieSearch;
