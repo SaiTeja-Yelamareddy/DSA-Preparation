@@ -5,7 +5,6 @@
  * Problem Link: https://www.naukri.com/code360/problems/find-floor-value_920447
  * Language: Java
  * Concept: Miscellaneous
- * Difficulty: Easy
  * Status: ACCEPTED
  */
 
