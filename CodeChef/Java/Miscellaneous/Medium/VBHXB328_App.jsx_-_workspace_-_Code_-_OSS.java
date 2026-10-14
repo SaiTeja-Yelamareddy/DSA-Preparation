@@ -11,13 +11,22 @@
  * Status: ACCEPTED
  */
 
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Navbar from './components/Navbar';
+import React from 'react';
+import { formatDate } from '../utils/dateUtils'; // Assuming a format helper is available
 
-import Home from './pages/Home';
+function BlogCard({ blog }) {
+  return (
+      <div className="blog-card">
+            <h3>{blog.title}</h3>
+                  <p className="blog-author">By {blog.author}</p>
+                        <p className="blog-date">Published on {formatDate(blog.createdAt)}</p>
+                              <p className="blog-content">
+                                      {blog.content.l…? `${blog.content.substring(0, 150)}...` 
+                                                          : blog.content}
+                                                                </p>
+                                                                    </div>
+                                                                      );
+                                                                      }
 
-import './App.css'; 
-
-function App() {
-    return (
-        <Router>
+                                                                      export default BlogCard;
+                                                                                                                              
