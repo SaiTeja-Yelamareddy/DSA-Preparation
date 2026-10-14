@@ -30,19 +30,19 @@ class Codechef
 		        a[i]=sc.nextInt();
 		    }
 		    int sum=0;
-		    Arrays.sort(a,Collections.reverseOrder());
+		    Arrays.sort(a);
 		   if(k<n-1)
 		   {
 		        for(int i=n-1;i>=n-k-1;i--)
 		       {
-		        sum+=a[i];
+		        sum = Math.max(sum, a[i]);
 		       }
 		   }
 		   else
 		   {
 		       for(int i=0;i<n;i++)
 		       {
-		           sum+=a[i];
+		           sum = Math.max(sum, a[i]);
 		       }
 		   }
 		   System.out.println(sum);
