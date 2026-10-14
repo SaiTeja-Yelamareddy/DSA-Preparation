@@ -9,4 +9,21 @@
  * Status: ACCEPTED
  */
 
-# cook your dish here
+import java.util.*;
+
+public class Main {
+    public static void frequencyBasedSort(int n, List<Integer> arr) {
+        // Write your code here
+    }
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int n = scanner.nextInt();
+        List<Integer> arr = new ArrayList<>();
+        for (int i = 0; i < n; ++i) {
+            arr.add(scanner.nextInt());
+        }
+        // Function call to perform frequency-based sorting
+        frequencyBasedSort(n, arr);
+    }
+}
