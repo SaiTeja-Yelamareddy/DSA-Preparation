@@ -21,7 +21,9 @@ class Codechef
 		Scanner sc=new Scanner(System.in);
 		int a=sc.nextInt();
 		int b=sc.nextInt();
-		if(Math.min(a,b)==a)
+		if(a==b)
+		System.out.println(a+b);
+		else if(Math.min(a,b)==a)
 		System.out.println(a*3);
         else
         System.out.println(a+b);
