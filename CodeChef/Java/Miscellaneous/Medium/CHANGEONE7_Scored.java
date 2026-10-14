@@ -31,11 +31,8 @@ class Codechef
 		   Arrays.sort(a);
 		   
 		   int ans=Integer.MAX_VALUE;
-		   for(int i=1;i<n;i++)
-		   {
-		       int max=a[n-i-1];
-		       ans=Math.min(ans,max-a[i-1]);
-		   }
+		    ans = Math.min(ans, a[n - 1] - a[1]);
+            ans = Math.min(ans, a[n - 2] - a[0]);
 		   System.out.println(ans);
 		}
 	}
