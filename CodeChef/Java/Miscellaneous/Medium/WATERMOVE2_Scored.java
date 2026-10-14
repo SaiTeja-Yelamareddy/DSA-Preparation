@@ -30,7 +30,13 @@ class Codechef
 		        a[i]=sc.nextInt();
 		    }
 		    int sum=0;
-		    for(int i=x;i>)
+		   if(k<n)
+		   {
+		        for(int i=n-1;i>=n-k-1;i--)
+		       {
+		        sum+=a[i];
+		    }
+		   }
 		}
 
 	}
