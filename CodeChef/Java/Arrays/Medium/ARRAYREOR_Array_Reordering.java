@@ -2,7 +2,7 @@
  * Platform: CodeChef
  * Problem ID: ARRAYREOR
  * Problem: Array Reordering Practice Problem in Sorting
- * Problem Link: https://www.codechef.com/practice/course/sorting/SORTINGPRO/problems/ARRAYREOR
+ * Problem Link: https://www.codechef.com/practice/course/sorting-new/SORTING02/problems/ARRAYREOR
  * Language: Java
  * Concept: Arrays
  * Difficulty: Medium
