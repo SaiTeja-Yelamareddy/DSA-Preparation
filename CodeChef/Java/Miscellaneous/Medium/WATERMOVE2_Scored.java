@@ -35,14 +35,15 @@ class Codechef
 		   {
 		        for(int i=n-1;i>=n-k-1;i--)
 		       {
-		        sum = Math.max(sum, a[i]);
+		        sum+=a[i];
 		       }
 		   }
 		   else
 		   {
 		       for(int i=0;i<n;i++)
 		       {
-		           sum = Math.max(sum, a[i]);
+		           sum+=a[i];
+		       }
 		   }
 		   System.out.println(sum);
 		}
