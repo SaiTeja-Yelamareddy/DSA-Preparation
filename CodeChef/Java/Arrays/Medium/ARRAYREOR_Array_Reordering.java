@@ -1,0 +1,23 @@
+/*
+ * Platform: CodeChef
+ * Problem ID: ARRAYREOR
+ * Problem: Array Reordering Practice Problem in Sorting
+ * Problem Link: https://www.codechef.com/practice/course/sorting/SORTINGPRO/problems/ARRAYREOR
+ * Language: Java
+ * Concept: Arrays
+ * Difficulty: Medium
+ * Status: ACCEPTED
+ */
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		// your code goes here
+
+	}
+}
