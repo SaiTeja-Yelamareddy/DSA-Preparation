@@ -15,17 +15,20 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int T = sc.nextInt();
-        
-        while (T-- > 0) {
-            long n = sc.nextLong();
-            long m = sc.nextLong();
-            Long[] p = new Long[(int) n];
-            
+        int t = sc.nextInt();
+        while (t-- > 0) {
+            int n = sc.nextInt();
+            long[] a = new long[n];
             for (int i = 0; i < n; i++) {
-                p[i] = sc.nextLong();
+                a[i] = sc.nextLong();
             }
-            // your code goes here
+            long ans = 0;
+            Arrays.sort(a);
+            for (int i = n - 1; i >= 0; i -= 2) {
+                ans += a[i];
+            }
+            System.out.println(ans);
         }
+        sc.close();
     }
 }
