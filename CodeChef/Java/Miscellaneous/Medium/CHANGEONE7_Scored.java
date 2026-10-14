@@ -33,6 +33,7 @@ class Codechef
 		   int ans=Integer.MAX_VALUE;
 		   for(int i=0;i<n-1;i++)
 		   {
+		       int max=a[n-i-1];
 		       ans=Math.min(ans,max-a[i]);
 		   }
 		   System.out.println(ans);
