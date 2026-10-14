@@ -30,7 +30,7 @@ class Codechef
 		        a[i]=sc.nextInt();
 		    }
 		    int sum=0;
-		    Arrays.sort(a);
+		    Arrays.sort(a,Collections.reverseOrder());
 		   if(k<n-1)
 		   {
 		        for(int i=n-1;i>=n-k-1;i--)
