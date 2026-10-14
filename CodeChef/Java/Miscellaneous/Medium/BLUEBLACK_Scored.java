@@ -18,7 +18,12 @@ class Codechef
 	public static void main (String[] args) throws java.lang.Exception
 	{
 		// your code goes here
-		Scanner sc=new Scanner(System.i)
-
+		Scanner sc=new Scanner(System.in);
+		int a=sc.nextInt();
+		int b=sc.nextInt();
+		if(Math.min(a,b)==a)
+		System.out.println(a*3);
+        else
+        System.out.println(a+b);
 	}
 }
