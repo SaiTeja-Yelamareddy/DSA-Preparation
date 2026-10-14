@@ -9,19 +9,51 @@
  * Status: ACCEPTED
  */
 
-import java.util.Scanner;
+import java.util.*;
+import java.lang.*;
+import java.io.*;
 
-public class Main {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        int t = scanner.nextInt();
-        while (t-- > 0) {
-            int n = scanner.nextInt();
-            long[] a = new long[n];
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner sc = new Scanner(System.in);
+        int T = sc.nextInt();
+        while (T-- > 0) {
+            int n = sc.nextInt();
+            int[] V = new int[n];
             for (int i = 0; i < n; i++) {
-                a[i] = scanner.nextLong();
+                V[i] = sc.nextInt();
             }
-            // your code goes here
+            Arrays.sort(V);
+            int max1 = 0, max2 = 0;
+            int i = n - 1;
+            
+            // Find the first pair of equal sticks
+            while (i > 0) {
+                if (V[i] == V[i - 1]) {
+                    max1 = V[i];
+                    i -= 2;
+                    break;
+                }
+                i--;
+            }
+            
+            // Find the second pair of equal sticks
+            while (i > 0) {
+                if (V[i] == V[i - 1]) {
+                    max2 = V[i];
+                    i -= 2;
+                    break;
+                }
+                i--;
+            }
+            
+            if (max1 > 0 && max2 > 0) {
+                System.out.println(max1 * max2);
+            } else {
+                System.out.println(-1);
+            }
         }
-    }
+	}
 }
