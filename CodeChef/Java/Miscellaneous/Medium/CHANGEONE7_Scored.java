@@ -29,12 +29,12 @@ class Codechef
 		       a[i]=sc.nextInt();
 		   }
 		   Arrays.sort(a);
-		   int max=a[n-1];
+		   
 		   int ans=Integer.MAX_VALUE;
-		   for(int i=0;i<n-1;i++)
+		   for(int i=1;i<n;i++)
 		   {
 		       int max=a[n-i-1];
-		       ans=Math.min(ans,max-a[i]);
+		       ans=Math.min(ans,max-a[i-1]);
 		   }
 		   System.out.println(ans);
 		}
