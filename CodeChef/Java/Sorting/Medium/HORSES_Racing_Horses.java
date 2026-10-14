@@ -2,7 +2,7 @@
  * Platform: CodeChef
  * Problem ID: HORSES
  * Problem: Racing Horses Practice Problem in Sorting
- * Problem Link: https://www.codechef.com/practice/course/sorting/SORTING/problems/HORSES
+ * Problem Link: https://www.codechef.com/practice/course/sorting-new/SORTING01/problems/HORSES
  * Language: Java
  * Concept: Sorting
  * Difficulty: Medium
