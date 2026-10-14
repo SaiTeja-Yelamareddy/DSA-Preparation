@@ -30,9 +30,10 @@ class Codechef
 		   }
 		   Arrays.sort(a);
 		   int max=a[n-1];
-		   for(int i=0;i<n-1;i++)
+		   int ans=Integer.MAX_VALUE;
+		   for(int i=0;i<n;i++)
 		   {
-		       
+		       ans=Math.min(ans,max)
 		   }
 		}
 	}
