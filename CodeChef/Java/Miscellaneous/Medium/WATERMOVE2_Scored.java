@@ -29,7 +29,9 @@ class Codechef
 		    {
 		        a[i]=sc.nextInt();
 		    }
-		    
+		    int x=n-k;
+		    int sum=0;
+		    for(int i=x;i<)
 		}
 
 	}
