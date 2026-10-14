@@ -26,7 +26,7 @@ class Codechef {
             Arrays.sort(a);
             int sum = 0;
             for (int i = 0; i < n - k; i++) {
-                sum = Math.max(sum, a[i]);
+                sum = Math.msum, a[i]);
             }
             System.out.println(sum);
         }
