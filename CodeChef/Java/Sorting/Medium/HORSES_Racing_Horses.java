@@ -9,19 +9,24 @@
  * Status: ACCEPTED
  */
 
-import java.util.Scanner;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        int t = scanner.nextInt();
+        Scanner sc = new Scanner(System.in);
+        int t = sc.nextInt();
         while (t-- > 0) {
-            int n = scanner.nextInt();
+            int n = sc.nextInt();
             long[] s = new long[n];
             for (int i = 0; i < n; i++) {
-                s[i] = scanner.nextLong();
+                s[i] = sc.nextLong();
             }
-            // your code goes here
+            Arrays.sort(s);
+            long min = Long.MAX_VALUE;
+            for (int i = 1; i < n; i++) {
+                min = Math.min(min, s[i] - s[i - 1]);
+            }
+            System.out.println(min);
         }
     }
 }
